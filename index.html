@@ -343,11 +343,20 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-									<div id="appletplace1" style="width:100%;height:100%;background-color:red"></div>
-									<a href="javascript:Jmol.script(jmol1,'animation off')"><button class="btn btn-secondary" href="">Stop</button></a>
-									<a href="javascript:Jmol.script(jmol1,'animation pause')"><button class="btn btn-secondary" href="">Pause</button></a>
-									<a href="javascript:Jmol.script(jmol1,'animation resume')"><button class="btn btn-secondary" href="">Resume</button></a>
-									<a href="javascript:Jmol.script(jmol1,'animation on')"><button class="btn btn-secondary" href="">Play</button></a>
+									<div id="appletplace1" style="width:100%;height:100%;background-color:white"></div>
+									</br>
+									</br>
+									<input type="checkbox" onchange="javascript:if (this.checked) {Jmol.script(jmol1,'animation resume');} else {Jmol.script(jmol1,'animation pause');}"/>
+									<input id="timelineRange" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol1, 'frame ' + this.value); timelineAmount.value=this.value" />
+									<input id="timelineAmount" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol1, 'frame ' + this.value); timelineRange.value=this.value" />
+									<a class="btn btn-secondary" href="javascript: Jmol.script(jmol1, 'frame ' + tsFrameA);">TS</a>
+									</br>
+									</br>
+									<a class="btn btn-secondary">Speed</a>
+									<input id="fpsRange" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol1, 'animation fps ' + this.value); fpsAmount.value=this.value" />
+									<input id="fpsAmount" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol1, 'animation fps ' + this.value); fpsRange.value=this.value" />
+									</br>
+									</br>
 									</br>
 									</br>
 									</br>
@@ -387,7 +396,7 @@
 
                                         When methoxide approaches (see the HOMO), it can attack the C-Br antibond (as shown) or one of the two hydrogens involved in hyperconjugation, aas shown in the LUMO (see the competing E2 reaction).  Attack of the C-Br antibond displaces bromide ion and yields a new C-O bond.  A major contributing factor to the reaction outcome in this case is the steric environment of the C-Br antibond.  In the space-filling model, note that approach of methoxide to the C-Br antibond is hindered by the anti hydrogens.  This steric hindrance will favor attack at one of the anti hydrogens rather than at the C-Br antibond.  Products in this reaction result from both E2 and SN2 pathways (see the text).  Remember that in reactions with a good base/nucleophile such as methoxide, molecules containing primary leaving groups will give almost exclusively SN2 products, while those containing tertiary leaving groups will give E2 products.    .</p>
                                         </p>
-                                        <!-- Icon Divider-->
+                                    <!-- Icon Divider-->
 									<div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
