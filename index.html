@@ -135,8 +135,8 @@
                             <img class="img-fluid" src="assets\img\portfolio\butane.png" alt="..." />
                         </div>
                     </div>
-                      <!-- Portfolio Item 7-->
-                      <div class="col-md-6 col-lg-4">
+                    <!-- Portfolio Item 7-->
+                    <div class="col-md-6 col-lg-4">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal7">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -144,7 +144,7 @@
                             <img class="img-fluid" src="assets\img\portfolio\Butene_EA_bromobutane.png" alt="..." />
                         </div>
                     </div>
-                      <!-- Portfolio Item 8-->
+                    <!-- Portfolio Item 8-->
 <!--                    <div class="col-md-6 col-lg-4">-->
 <!--                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal8">-->
 <!--                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">-->
@@ -153,7 +153,7 @@
 <!--                            <img class="img-fluid" src="assets\img\portfolio\Butoxy_TS_hydroxybutyl.png" alt="..." />-->
 <!--                        </div>-->
 <!--                    </div> -->
-                        <!-- Portfolio Item 9-->
+                    <!-- Portfolio Item 9-->
 <!--                    <div class="col-md-6 col-lg-4">-->
 <!--                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal9">-->
 <!--                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">-->
@@ -162,7 +162,7 @@
 <!--                            <img class="img-fluid" src="assets\img\portfolio\Cyclohexane.png" alt="..." />-->
 <!--                        </div>-->
 <!--                    </div>-->
-                      <!-- Portfolio Item 10-->
+                    <!-- Portfolio Item 10-->
                     <div class="col-md-6 col-lg-4">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal10">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -171,7 +171,7 @@
                             <img class="img-fluid" src="assets\img\portfolio\hexadiene_cope_hexadiene.png" alt="..." />
                         </div>
                     </div>
-                      <!-- Portfolio Item 11-->
+                    <!-- Portfolio Item 11-->
                     <div class="col-md-6 col-lg-4">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal11">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -180,7 +180,7 @@
                             <img class="img-fluid" src="assets\img\portfolio\Iodotertbutane_Sn1_tertbutyl.png" alt="..." />
                         </div>
                     </div>
-                      <!-- Portfolio Item 12-->
+                    <!-- Portfolio Item 12-->
 <!--                    <div class="col-md-6 col-lg-4">-->
 <!--                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal12">-->
 <!--                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">-->
@@ -1033,6 +1033,431 @@
 				</div>
 			</div>
 		</div>
+		<!-- Portfolio Modal 13-->
+		<div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" aria-labelledby="portfolioModal13" aria-hidden="true">
+			<div class="modal-dialog modal-fullscreen">
+				<div class="modal-content">
+					<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+					<div class="modal-body text-center pb-5">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-lg-8">
+									<!-- Portfolio Modal - Title-->
+									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Hydroboration</h2>
+									<!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <!--
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                        -->
+                                    </div>
+									<!-- Portfolio Modal - Image-->
+									<div id="appletplace13" style="width:100%;height:100%;background-color:white"></div>
+									</br>
+									</br>
+									<input type="checkbox" onchange="javascript:if (this.checked) {Jmol.script(jmol13,'animation resume');} else {Jmol.script(jmol13,'animation pause');}"/>
+									<input id="timelineRange13" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol13, 'frame ' + this.value); timelineAmount13.value=this.value" />
+									<input id="timelineAmount13" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol13, 'frame ' + this.value); timelineRange13.value=this.value" />
+									<!-- <a class="btn btn-secondary" href="javascript: Jmol.script(jmol13, 'frame 1000');">TS</a> -->
+									</br>
+									</br>
+									<a class="btn btn-secondary">Speed</a>
+									<input id="fpsRange13" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol13, 'animation fps ' + this.value); fpsAmount13.value=this.value" />
+									<input id="fpsAmount13" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol13, 'animation fps ' + this.value); fpsRange13.value=this.value" />
+									</br>
+									</br>                                    
+									<!-- Portfolio Modal - Text-->
+                                    <p class="mb-4"> Check later.</p>
+									<button class="btn btn-primary" href="javascript:Jmol.script(jmol13,'animation off')" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Portfolio Modal 14-->
+		<div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" aria-labelledby="portfolioModal14" aria-hidden="true">
+			<div class="modal-dialog modal-fullscreen">
+				<div class="modal-content">
+					<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+					<div class="modal-body text-center pb-5">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-lg-8">
+									<!-- Portfolio Modal - Title-->
+									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Peroxidation</h2>
+									<!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <!--
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                        -->
+                                    </div>
+									<!-- Portfolio Modal - Image-->
+									<div id="appletplace14" style="width:100%;height:100%;background-color:white"></div>
+									</br>
+									</br>
+									<input type="checkbox" onchange="javascript:if (this.checked) {Jmol.script(jmol14,'animation resume');} else {Jmol.script(jmol14,'animation pause');}"/>
+									<input id="timelineRange14" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol14, 'frame ' + this.value); timelineAmount14.value=this.value" />
+									<input id="timelineAmount14" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol14, 'frame ' + this.value); timelineRange14.value=this.value" />
+									<!-- <a class="btn btn-secondary" href="javascript: Jmol.script(jmol14, 'frame 1000');">TS</a> -->
+									</br>
+									</br>
+									<a class="btn btn-secondary">Speed</a>
+									<input id="fpsRange14" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol14, 'animation fps ' + this.value); fpsAmount14.value=this.value" />
+									<input id="fpsAmount14" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol14, 'animation fps ' + this.value); fpsRange14.value=this.value" />
+									</br>
+									</br>                                    
+									<!-- Portfolio Modal - Text-->
+									<p class="mb-4">Check Later</p>
+									<button class="btn btn-primary" href="javascript:Jmol.script(jmol14,'animation off')" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Portfolio Modal 15-->
+		<div class="portfolio-modal modal fade" id="portfolioModal15" tabindex="-1" aria-labelledby="portfolioModal15" aria-hidden="true">
+			<div class="modal-dialog modal-fullscreen">
+				<div class="modal-content">
+					<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+					<div class="modal-body text-center pb-5">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-lg-8">
+									<!-- Portfolio Modal - Title-->
+									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Carbene Cycloaddition</h2>
+									<!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <!--
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                        -->
+                                    </div>
+									<!-- Portfolio Modal - Image-->
+									<div id="appletplace15" style="width:100%;height:100%;background-color:white"></div>
+									</br>
+									</br>
+									<input type="checkbox" onchange="javascript:if (this.checked) {Jmol.script(jmol15,'animation resume');} else {Jmol.script(jmol15,'animation pause');}"/>
+									<input id="timelineRange15" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol15, 'frame ' + this.value); timelineAmount15.value=this.value" />
+									<input id="timelineAmount15" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol15, 'frame ' + this.value); timelineRange15.value=this.value" />
+									<!-- <a class="btn btn-secondary" href="javascript: Jmol.script(jmol15, 'frame 1000');">TS</a> -->
+									</br>
+									</br>
+									<a class="btn btn-secondary">Speed</a>
+									<input id="fpsRange15" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol15, 'animation fps ' + this.value); fpsAmount15.value=this.value" />
+									<input id="fpsAmount15" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol15, 'animation fps ' + this.value); fpsRange15.value=this.value" />
+									</br>
+									</br>                                    
+									<!-- Portfolio Modal - Text-->
+									<p class="mb-4">Check Later</p>
+									<button class="btn btn-primary" href="javascript:Jmol.script(jmol15,'animation off')" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Portfolio Modal 16-->
+		<div class="portfolio-modal modal fade" id="portfolioModal16" tabindex="-1" aria-labelledby="portfolioModal16" aria-hidden="true">
+			<div class="modal-dialog modal-fullscreen">
+				<div class="modal-content">
+					<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+					<div class="modal-body text-center pb-5">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-lg-8">
+									<!-- Portfolio Modal - Title-->
+									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">TFA-Methoxide Proton exchange</h2>
+									<!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <!--
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                        -->
+                                    </div>
+									<!-- Portfolio Modal - Image-->
+									<div id="appletplace16" style="width:100%;height:100%;background-color:white"></div>
+									</br>
+									</br>
+									<input type="checkbox" onchange="javascript:if (this.checked) {Jmol.script(jmol16,'animation resume');} else {Jmol.script(jmol16,'animation pause');}"/>
+									<input id="timelineRange16" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol16, 'frame ' + this.value); timelineAmount16.value=this.value" />
+									<input id="timelineAmount16" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol16, 'frame ' + this.value); timelineRange16.value=this.value" />
+									<!-- <a class="btn btn-secondary" href="javascript: Jmol.script(jmol16, 'frame 1000');">TS</a> -->
+									</br>
+									</br>
+									<a class="btn btn-secondary">Speed</a>
+									<input id="fpsRange16" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol16, 'animation fps ' + this.value); fpsAmount16.value=this.value" />
+									<input id="fpsAmount16" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol16, 'animation fps ' + this.value); fpsRange16.value=this.value" />
+									</br>
+									</br>                                    
+									<!-- Portfolio Modal - Text-->
+									<p class="mb-4">Check Later</p>
+									<button class="btn btn-primary" href="javascript:Jmol.script(jmol16,'animation off')" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Portfolio Modal 17-->
+		<div class="portfolio-modal modal fade" id="portfolioModal17" tabindex="-1" aria-labelledby="portfolioModal17" aria-hidden="true">
+			<div class="modal-dialog modal-fullscreen">
+				<div class="modal-content">
+					<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+					<div class="modal-body text-center pb-5">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-lg-8">
+									<!-- Portfolio Modal - Title-->
+									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Acetone-LDA Proton Exchange </h2>
+									<!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <!--
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                        -->
+                                    </div>
+									<!-- Portfolio Modal - Image-->
+									<div id="appletplace17" style="width:100%;height:100%;background-color:white"></div>
+									</br>
+									</br>
+									<input type="checkbox" onchange="javascript:if (this.checked) {Jmol.script(jmol17,'animation resume');} else {Jmol.script(jmol17,'animation pause');}"/>
+									<input id="timelineRange17" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol17, 'frame ' + this.value); timelineAmount17.value=this.value" />
+									<input id="timelineAmount17" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol17, 'frame ' + this.value); timelineRange17.value=this.value" />
+									<!-- <a class="btn btn-secondary" href="javascript: Jmol.script(jmol17, 'frame 1000');">TS</a> -->
+									</br>
+									</br>
+									<a class="btn btn-secondary">Speed</a>
+									<input id="fpsRange17" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol17, 'animation fps ' + this.value); fpsAmount17.value=this.value" />
+									<input id="fpsAmount17" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol17, 'animation fps ' + this.value); fpsRange17.value=this.value" />
+									</br>
+									</br>                                    
+									<!-- Portfolio Modal - Text-->
+									<p class="mb-4">Check Later</p>
+									<button class="btn btn-primary" href="javascript:Jmol.script(jmol17,'animation off')" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Portfolio Modal 18-->
+		<div class="portfolio-modal modal fade" id="portfolioModal18" tabindex="-1" aria-labelledby="portfolioModal18" aria-hidden="true">
+			<div class="modal-dialog modal-fullscreen">
+				<div class="modal-content">
+					<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+					<div class="modal-body text-center pb-5">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-lg-8">
+									<!-- Portfolio Modal - Title-->
+									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Non-produtive SN2 Reaction</h2>
+									<!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <!--
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                        -->
+                                    </div>
+									<!-- Portfolio Modal - Image-->
+									<div id="appletplace18" style="width:100%;height:100%;background-color:white"></div>
+									</br>
+									</br>
+									<input type="checkbox" onchange="javascript:if (this.checked) {Jmol.script(jmol18,'animation resume');} else {Jmol.script(jmol18,'animation pause');}"/>
+									<input id="timelineRange18" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol18, 'frame ' + this.value); timelineAmount18.value=this.value" />
+									<input id="timelineAmount18" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol18, 'frame ' + this.value); timelineRange18.value=this.value" />
+									<!-- <a class="btn btn-secondary" href="javascript: Jmol.script(jmol18, 'frame 1000');">TS</a> -->
+									</br>
+									</br>
+									<a class="btn btn-secondary">Speed</a>
+									<input id="fpsRange18" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol18, 'animation fps ' + this.value); fpsAmount18.value=this.value" />
+									<input id="fpsAmount18" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol18, 'animation fps ' + this.value); fpsRange18.value=this.value" />
+									</br>
+									</br>                                    
+									<!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Check Later</p>
+									<button class="btn btn-primary" href="javascript:Jmol.script(jmol18,'animation off')" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Portfolio Modal 19-->
+		<div class="portfolio-modal modal fade" id="portfolioModal19" tabindex="-1" aria-labelledby="portfolioModal19" aria-hidden="true">
+			<div class="modal-dialog modal-fullscreen">
+				<div class="modal-content">
+					<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+					<div class="modal-body text-center pb-5">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-lg-8">
+									<!-- Portfolio Modal - Title-->
+									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">E1cb Reaction</h2>
+									<!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <!--
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                        -->
+                                    </div>
+									<!-- Portfolio Modal - Image-->
+									<div id="appletplace19" style="width:100%;height:100%;background-color:white"></div>
+									</br>
+									</br>
+									<input type="checkbox" onchange="javascript:if (this.checked) {Jmol.script(jmol19,'animation resume');} else {Jmol.script(jmol19,'animation pause');}"/>
+									<input id="timelineRange19" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol19, 'frame ' + this.value); timelineAmount19.value=this.value" />
+									<input id="timelineAmount19" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol19, 'frame ' + this.value); timelineRange19.value=this.value" />
+									<!-- <a class="btn btn-secondary" href="javascript: Jmol.script(jmol19, 'frame 1000');">TS</a> -->
+									</br>
+									</br>
+									<a class="btn btn-secondary">Speed</a>
+									<input id="fpsRange19" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol19, 'animation fps ' + this.value); fpsAmount19.value=this.value" />
+									<input id="fpsAmount19" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol19, 'animation fps ' + this.value); fpsRange19.value=this.value" />
+									</br>
+									</br>                                    
+									<!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Check Later</p>
+									<button class="btn btn-primary" href="javascript:Jmol.script(jmol19,'animation off')" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Portfolio Modal 20-->
+		<div class="portfolio-modal modal fade" id="portfolioModal20" tabindex="-1" aria-labelledby="portfolioModal20" aria-hidden="true">
+			<div class="modal-dialog modal-fullscreen">
+				<div class="modal-content">
+					<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+					<div class="modal-body text-center pb-5">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-lg-8">
+									<!-- Portfolio Modal - Title-->
+									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Carbocation Rearrangement</h2>
+									<!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <!--
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                        -->
+                                    </div>
+									<!-- Portfolio Modal - Image-->
+									<div id="appletplace20" style="width:100%;height:100%;background-color:white"></div>
+									</br>
+									</br>
+									<input type="checkbox" onchange="javascript:if (this.checked) {Jmol.script(jmol20,'animation resume');} else {Jmol.script(jmol20,'animation pause');}"/>
+									<input id="timelineRange20" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol20, 'frame ' + this.value); timelineAmount20.value=this.value" />
+									<input id="timelineAmount20" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol20, 'frame ' + this.value); timelineRange20.value=this.value" />
+									<!-- <a class="btn btn-secondary" href="javascript: Jmol.script(jmol20, 'frame 1000');">TS</a> -->
+									</br>
+									</br>
+									<a class="btn btn-secondary">Speed</a>
+									<input id="fpsRange20" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol20, 'animation fps ' + this.value); fpsAmount20.value=this.value" />
+									<input id="fpsAmount20" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol20, 'animation fps ' + this.value); fpsRange20.value=this.value" />
+									</br>
+									</br>                                    
+									<!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Check Later</p>
+									<button class="btn btn-primary" href="javascript:Jmol.script(jmol20,'animation off')" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Portfolio Modal 21-->
+		<div class="portfolio-modal modal fade" id="portfolioModal21" tabindex="-1" aria-labelledby="portfolioModal21" aria-hidden="true">
+			<div class="modal-dialog modal-fullscreen">
+				<div class="modal-content">
+					<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+					<div class="modal-body text-center pb-5">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-lg-8">
+									<!-- Portfolio Modal - Title-->
+									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Acetone Reduction</h2>
+									<!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <!--
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                        -->
+                                    </div>
+									<!-- Portfolio Modal - Image-->
+									<div id="appletplace21" style="width:100%;height:100%;background-color:white"></div>
+									</br>
+									</br>
+									<input type="checkbox" onchange="javascript:if (this.checked) {Jmol.script(jmol21,'animation resume');} else {Jmol.script(jmol21,'animation pause');}"/>
+									<input id="timelineRange21" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol21, 'frame ' + this.value); timelineAmount21.value=this.value" />
+									<input id="timelineAmount21" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol21, 'frame ' + this.value); timelineRange21.value=this.value" />
+									<!-- <a class="btn btn-secondary" href="javascript: Jmol.script(jmol21, 'frame 1000');">TS</a> -->
+									</br>
+									</br>
+									<a class="btn btn-secondary">Speed</a>
+									<input id="fpsRange21" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol21, 'animation fps ' + this.value); fpsAmount21.value=this.value" />
+									<input id="fpsAmount21" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol21, 'animation fps ' + this.value); fpsRange21.value=this.value" />
+									</br>
+									</br>                                    
+									<!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Check Later</p>
+									<button class="btn btn-primary" href="javascript:Jmol.script(jmol21,'animation off')" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
@@ -1138,6 +1563,60 @@
 			timelineRange12.value = modelNo;
 			timelineAmount12.max = lastNo - fileNo * 1000000;
 			timelineRange12.max = lastNo - fileNo * 1000000;
+		}
+		update13 = function(_, _, fileNo, modelNo, _, lastNo){
+			timelineAmount13.value = modelNo;
+			timelineRange13.value = modelNo;
+			timelineAmount13.max = lastNo - fileNo * 1000000;
+			timelineRange13.max = lastNo - fileNo * 1000000;
+		}
+		update14 = function(_, _, fileNo, modelNo, _, lastNo){
+			timelineAmount14.value = modelNo;
+			timelineRange14.value = modelNo;
+			timelineAmount14.max = lastNo - fileNo * 1000000;
+			timelineRange14.max = lastNo - fileNo * 1000000;
+		}
+		update15 = function(_, _, fileNo, modelNo, _, lastNo){
+			timelineAmount15.value = modelNo;
+			timelineRange15.value = modelNo;
+			timelineAmount15.max = lastNo - fileNo * 1000000;
+			timelineRange15.max = lastNo - fileNo * 1000000;
+		}
+		update16 = function(_, _, fileNo, modelNo, _, lastNo){
+			timelineAmount16.value = modelNo;
+			timelineRange16.value = modelNo;
+			timelineAmount16.max = lastNo - fileNo * 1000000;
+			timelineRange16.max = lastNo - fileNo * 1000000;
+		}
+		update17 = function(_, _, fileNo, modelNo, _, lastNo){
+			timelineAmount17.value = modelNo;
+			timelineRange17.value = modelNo;
+			timelineAmount17.max = lastNo - fileNo * 1000000;
+			timelineRange17.max = lastNo - fileNo * 1000000;
+		}
+		update18 = function(_, _, fileNo, modelNo, _, lastNo){
+			timelineAmount18.value = modelNo;
+			timelineRange18.value = modelNo;
+			timelineAmount18.max = lastNo - fileNo * 1000000;
+			timelineRange18.max = lastNo - fileNo * 1000000;
+		}
+		update19 = function(_, _, fileNo, modelNo, _, lastNo){
+			timelineAmount19.value = modelNo;
+			timelineRange19.value = modelNo;
+			timelineAmount19.max = lastNo - fileNo * 1000000;
+			timelineRange19.max = lastNo - fileNo * 1000000;
+		}
+		update20 = function(_, _, fileNo, modelNo, _, lastNo){
+			timelineAmount20.value = modelNo;
+			timelineRange20.value = modelNo;
+			timelineAmount20.max = lastNo - fileNo * 1000000;
+			timelineRange20.max = lastNo - fileNo * 1000000;
+		}
+		update21 = function(_, _, fileNo, modelNo, _, lastNo){
+			timelineAmount21.value = modelNo;
+			timelineRange21.value = modelNo;
+			timelineAmount21.max = lastNo - fileNo * 1000000;
+			timelineRange21.max = lastNo - fileNo * 1000000;
 		}
 		
 		Info1 = {
@@ -1404,6 +1883,204 @@
 			//defaultModel: "$dopamine",
 			script: "load ../assets/traj/TertButyl_RA_tertpentyl.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update12';"
 		}
+		Info13 = {
+			width: "100%",
+			height: "100%",
+			debug: false,
+			color: "white",
+			addSelectionOptions: false,
+			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
+			use: "HTML5",
+			coverImage: "assets/img/portfolio/Propene_EA_Propylborane.png",//"data/1hxw.png",        // initial image instead of applet
+			coverScript: "",	// special script for click of cover image (otherwise equal to script)
+			deferApplet: true,                  // wait to load applet until click
+			deferUncover: false,                 // wait to uncover applet until script completed
+			jarPath: "java",
+			j2sPath: "js/j2s",
+			jarFile: "JmolApplet.jar",
+			isSigned: false,
+			//disableJ2SLoadMonitor: true,
+			//disableInitialConsole: true,
+			//readyFunction: jmol_isReady,
+			//defaultModel: "$dopamine",
+			script: "load ../assets/traj/propene_EA_propylborane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update13';"
+		}
+		Info14 = {
+			width: "100%",
+			height: "100%",
+			debug: false,
+			color: "white",
+			addSelectionOptions: false,
+			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
+			use: "HTML5",
+			coverImage: "assets/img/portfolio/Butene_EA_DiMethylOxirane.png",//"data/1hxw.png",        // initial image instead of applet
+			coverScript: "",	// special script for click of cover image (otherwise equal to script)
+			deferApplet: true,                  // wait to load applet until click
+			deferUncover: false,                 // wait to uncover applet until script completed
+			jarPath: "java",
+			j2sPath: "js/j2s",
+			jarFile: "JmolApplet.jar",
+			isSigned: false,
+			//disableJ2SLoadMonitor: true,
+			//disableInitialConsole: true,
+			//readyFunction: jmol_isReady,
+			//defaultModel: "$dopamine",
+			script: "load ../assets/traj/Butene_EA_dimethyloxirane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update14';"
+		}
+		Info15 = {
+			width: "100%",
+			height: "100%",
+			debug: false,
+			color: "white",
+			addSelectionOptions: false,
+			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
+			use: "HTML5",
+			coverImage: "assets/img/portfolio/DiChloroCarbene_EA_DiChloroCyclopane.png",//"data/1hxw.png",        // initial image instead of applet
+			coverScript: "",	// special script for click of cover image (otherwise equal to script)
+			deferApplet: true,                  // wait to load applet until click
+			deferUncover: false,                 // wait to uncover applet until script completed
+			jarPath: "java",
+			j2sPath: "js/j2s",
+			jarFile: "JmolApplet.jar",
+			isSigned: false,
+			//disableJ2SLoadMonitor: true,
+			//disableInitialConsole: true,
+			//readyFunction: jmol_isReady,
+			//defaultModel: "$dopamine",
+			script: "load ../assets/traj/DiChloroCarbene_EA_DiChloroCyclopropane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update15';"
+		}
+		Info16 = {
+			width: "100%",
+			height: "100%",
+			debug: false,
+			color: "white",
+			addSelectionOptions: false,
+			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
+			use: "HTML5",
+			coverImage: "assets/img/portfolio/TFA_Methoxide.png",//"data/1hxw.png",        // initial image instead of applet
+			coverScript: "",	// special script for click of cover image (otherwise equal to script)
+			deferApplet: true,                  // wait to load applet until click
+			deferUncover: false,                 // wait to uncover applet until script completed
+			jarPath: "java",
+			j2sPath: "js/j2s",
+			jarFile: "JmolApplet.jar",
+			isSigned: false,
+			//disableJ2SLoadMonitor: true,
+			//disableInitialConsole: true,
+			//readyFunction: jmol_isReady,
+			//defaultModel: "$dopamine",
+			script: "load ../assets/traj/TFA_Methoxide.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update16';"
+		}
+		Info17 = {
+			width: "100%",
+			height: "100%",
+			debug: false,
+			color: "white",
+			addSelectionOptions: false,
+			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
+			use: "HTML5",
+			coverImage: "assets/img/portfolio/Acetone_LDA.png",//"data/1hxw.png",        // initial image instead of applet
+			coverScript: "",	// special script for click of cover image (otherwise equal to script)
+			deferApplet: true,                  // wait to load applet until click
+			deferUncover: false,                 // wait to uncover applet until script completed
+			jarPath: "java",
+			j2sPath: "js/j2s",
+			jarFile: "JmolApplet.jar",
+			isSigned: false,
+			//disableJ2SLoadMonitor: true,
+			//disableInitialConsole: true,
+			//readyFunction: jmol_isReady,
+			//defaultModel: "$dopamine",
+			script: "load ../assets/traj/Acetone_LDA.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update17';"
+		}
+		Info18 = {
+			width: "100%",
+			height: "100%",
+			debug: false,
+			color: "white",
+			addSelectionOptions: false,
+			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
+			use: "HTML5",
+			coverImage: "assets/img/portfolio/Chloroethane_SN2_Propionitrile.png",//"data/1hxw.png",        // initial image instead of applet
+			coverScript: "",	// special script for click of cover image (otherwise equal to script)
+			deferApplet: true,                  // wait to load applet until click
+			deferUncover: false,                 // wait to uncover applet until script completed
+			jarPath: "java",
+			j2sPath: "js/j2s",
+			jarFile: "JmolApplet.jar",
+			isSigned: false,
+			//disableJ2SLoadMonitor: true,
+			//disableInitialConsole: true,
+			//readyFunction: jmol_isReady,
+			//defaultModel: "$dopamine",
+			script: "load ../assets/traj/Chloroethane_SN2_Propionitrile_nonproductive.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update18';"
+		}
+		Info19 = {
+			width: "100%",
+			height: "100%",
+			debug: false,
+			color: "white",
+			addSelectionOptions: false,
+			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
+			use: "HTML5",
+			coverImage: "assets/img/portfolio/PhenylChloroNitroPropane_E1cb_NitroPhenylPropene.png",//"data/1hxw.png",        // initial image instead of applet
+			coverScript: "",	// special script for click of cover image (otherwise equal to script)
+			deferApplet: true,                  // wait to load applet until click
+			deferUncover: false,                 // wait to uncover applet until script completed
+			jarPath: "java",
+			j2sPath: "js/j2s",
+			jarFile: "JmolApplet.jar",
+			isSigned: false,
+			//disableJ2SLoadMonitor: true,
+			//disableInitialConsole: true,
+			//readyFunction: jmol_isReady,
+			//defaultModel: "$dopamine",
+			script: "load ../assets/traj/PhenylChloroNitroPropane_E1cb_NitroPhenylPropene.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update19';"
+		}
+		Info20 = {
+			width: "100%",
+			height: "100%",
+			debug: false,
+			color: "white",
+			addSelectionOptions: false,
+			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
+			use: "HTML5",
+			coverImage: "assets/img/portfolio/MethylPentylCation.png",//"data/1hxw.png",        // initial image instead of applet
+			coverScript: "",	// special script for click of cover image (otherwise equal to script)
+			deferApplet: true,                  // wait to load applet until click
+			deferUncover: false,                 // wait to uncover applet until script completed
+			jarPath: "java",
+			j2sPath: "js/j2s",
+			jarFile: "JmolApplet.jar",
+			isSigned: false,
+			//disableJ2SLoadMonitor: true,
+			//disableInitialConsole: true,
+			//readyFunction: jmol_isReady,
+			//defaultModel: "$dopamine",
+			script: "load ../assets/traj/MethylPentylCation.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update20';"
+		}
+		Info21 = {
+			width: "100%",
+			height: "100%",
+			debug: false,
+			color: "white",
+			addSelectionOptions: false,
+			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
+			use: "HTML5",
+			coverImage: "assets/img/portfolio/Acetone_NA_Isopropanol.png",//"data/1hxw.png",        // initial image instead of applet
+			coverScript: "",	// special script for click of cover image (otherwise equal to script)
+			deferApplet: true,                  // wait to load applet until click
+			deferUncover: false,                 // wait to uncover applet until script completed
+			jarPath: "java",
+			j2sPath: "js/j2s",
+			jarFile: "JmolApplet.jar",
+			isSigned: false,
+			//disableJ2SLoadMonitor: true,
+			//disableInitialConsole: true,
+			//readyFunction: jmol_isReady,
+			//defaultModel: "$dopamine",
+			script: "load ../assets/traj/Acetone_NA_Isopropanol.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update21';"
+		}
 		})();
 
 		$(document).ready(function(){
@@ -1419,6 +2096,15 @@
 		  $("#appletplace10").html(Jmol.getAppletHtml("jmol10", Info10));
 		  $("#appletplace11").html(Jmol.getAppletHtml("jmol11", Info11));
 		  $("#appletplace12").html(Jmol.getAppletHtml("jmol12", Info12));
+		  $("#appletplace13").html(Jmol.getAppletHtml("jmol13", Info13));
+		  $("#appletplace14").html(Jmol.getAppletHtml("jmol14", Info14));
+		  $("#appletplace15").html(Jmol.getAppletHtml("jmol15", Info15));
+		  $("#appletplace16").html(Jmol.getAppletHtml("jmol16", Info16));
+		  $("#appletplace17").html(Jmol.getAppletHtml("jmol17", Info17));
+		  $("#appletplace18").html(Jmol.getAppletHtml("jmol18", Info18));
+		  $("#appletplace19").html(Jmol.getAppletHtml("jmol19", Info19));
+		  $("#appletplace20").html(Jmol.getAppletHtml("jmol20", Info20));
+		  $("#appletplace21").html(Jmol.getAppletHtml("jmol21", Info21));
 
 		});
 
