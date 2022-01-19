@@ -11496,7 +11496,7 @@ html {
   background-color: #1a252f;
 }
 
-/* .switch {
+input[type="checkbox"] {
 	appearance: none;
 	width: 64px;
 	height: 32px;
@@ -11505,7 +11505,7 @@ html {
 	cursor: pointer;
 	background-color: #777;
 }
-.switch:before {
+input[type="checkbox"]:before {
 	content: "";
 	position: absolute;
 	width: 28px;
@@ -11516,7 +11516,7 @@ html {
 	border-radius: 50%;
 	transition: left cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
 }
-.switch:after {
+input[type="checkbox"]:after {
 	content: "|> ||";
 	text-indent: 12px;
 	word-spacing: 4px;
@@ -11526,61 +11526,19 @@ html {
 	font: 14px/30px monospace;
 	font-weight: bold;
 }
-.switch:hover:before {
+input[type="checkbox"]:hover:before {
         box-shadow: inset 0px 0px 5px 0px black;
 }
-.switch:checked {
+input[type="checkbox"]:checked {
         background-color: limegreen;
 }
-.switch:checked:before {
+input[type="checkbox"]:checked:before {
         left: 34px;
 }
-.switch:checked:after {
-        color: black;
-} */
-.switch {
-	appearance: none;
-	width: 64px;
-	height: 32px;
-	position: relative;
-	border-radius: 16px;
-	cursor: pointer;
-	background-color: #777;
-}
-.switch:before {
-	content: "";
-	position: absolute;
-	width: 28px;
-	height: 28px;
-	background: white;
-	left: 2px;
-	top: 2px;
-	border-radius: 50%;
-	transition: left cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
-}
-.switch:after {
-	content: "|> ||";
-	text-indent: 12px;
-	word-spacing: 4px;
-	display: inline-block;
-	white-space: nowrap;
-	color: white;
-	font: 14px/30px monospace;
-	font-weight: bold;
-}
-.switch:hover:before {
-        box-shadow: inset 0px 0px 5px 0px black;
-}
-.switch:checked {
-        background-color: limegreen;
-}
-.switch:checked:before {
-        left: 34px;
-}
-.switch:checked:after {
+input[type="checkbox"]:checked:after {
         color: black;
 }
-/* 
+
 .switch {
   width: 57px;
   height: 28px;
@@ -11596,7 +11554,7 @@ html {
   outline: none;
 }
 .switch:before {
-  content: '|> ||';
+  content: '';
   width: 26px;
   height: 26px;
   position: absolute;
@@ -11605,6 +11563,16 @@ html {
   border-radius: 20px;
   background-color: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+.switch:after {
+	content: "|> ||";
+	text-indent: 12px;
+	word-spacing: 4px;
+	display: inline-block;
+	white-space: nowrap;
+	color: white;
+	font: 14px/30px monospace;
+	font-weight: bold;
 }
 .switch:checked {
   border-color: #64bd63;
@@ -11627,4 +11595,4 @@ html {
 }
 .switch.switch-anim:checked:before {
   transition: left 0.3s;
-} */
+}
