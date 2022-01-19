@@ -11554,7 +11554,7 @@ input[type="checkbox"]:checked:after {
   outline: none;
 }
 .switch:before {
-  content: '';
+  content: '|> ||';
   width: 26px;
   height: 26px;
   position: absolute;
