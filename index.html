@@ -1467,7 +1467,7 @@
 									<div id="appletplace21" style="width:100%;height:100%;background-color:white"></div>
 									</br>
 									</br>
-									<input type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol21,'animation resume');} else {Jmol.script(jmol21,'animation pause');}"/>
+									<input id="switch21" type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol21,'animation resume');} else {Jmol.script(jmol21,'animation pause');}"/>
 									<input id="timelineRange21" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol21, 'frame ' + this.value); timelineAmount21.value=this.value" />
 									<input id="timelineAmount21" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol21, 'frame ' + this.value); timelineRange21.value=this.value" />
 									<a class="btn btn-secondary" href="javascript: Jmol.script(jmol21, 'frame 1000');">TS</a>
@@ -1658,6 +1658,12 @@
 			timelineRange21.value = modelNo;
 			timelineAmount21.max = lastNo - fileNo * 1000000;
 			timelineRange21.max = lastNo - fileNo * 1000000;
+			if (modelNo == 10) {
+				alert("subtitle1");
+			}
+			if (modelNo == 20) {
+				alert("subtitle2");
+			}
 		}
 		
 		Info1 = {
