@@ -1477,7 +1477,10 @@
 									<input id="fpsRange21" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol21, 'animation fps ' + this.value); fpsAmount21.value=this.value" />
 									<input id="fpsAmount21" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol21, 'animation fps ' + this.value); fpsRange21.value=this.value" />
 									</br>
-									</br>                                    
+									</br>
+									<input id="toggle21" type="checkbox"/>
+									<p class="mb-4">Textbox</p>
+									</br>       
 									<!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Check Later</p>
 									<button class="btn btn-primary" href="javascript:Jmol.script(jmol21,'animation off')" data-bs-dismiss="modal">
@@ -1658,12 +1661,12 @@
 			timelineRange21.value = modelNo;
 			timelineAmount21.max = lastNo - fileNo * 1000000;
 			timelineRange21.max = lastNo - fileNo * 1000000;
-			if (modelNo == 10) {
+			if (modelNo == 10 && toggle21.checked) {
 				alert("subtitle1");
 				Jmol.script(jmol21,'animation pause');
 				switch21.checked = false;
 			}
-			if (modelNo == 20) {
+			if (modelNo == 20 && toggle21.checked) {
 				alert("subtitle2");
 				Jmol.script(jmol21,'animation pause');
 				switch21.checked = false
