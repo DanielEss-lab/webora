@@ -11430,6 +11430,9 @@ html {
 .masthead .masthead-subheading {
   font-size: 1.25rem;
 }
+.masthead .masthead-notice {
+  font-size: 0.75rem;
+}
 .masthead .masthead-avatar {
   width: 15rem;
 }
