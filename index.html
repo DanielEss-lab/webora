@@ -507,7 +507,7 @@
 									<input id="fpsAmount1" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol1, 'animation fps ' + this.value); fpsRange1.value=this.value" />
 									</br>
 									</br>
-									<label><input id="toggle1" type="checkbox"/>Check here to pause the animation once the description changes.</label>
+									<label><input id="toggle1" type="checkbox"/>Walk me through the reaction.</label>
 									</br> 
 									</br>                                    
 									<!-- Portfolio Modal - Text-->
@@ -560,11 +560,11 @@
 									<input id="fpsAmount2" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol2, 'animation fps ' + this.value); fpsRange2.value=this.value" />
 									</br>
 									</br>
-									<label><input id="toggle2" type="checkbox"/>Check here to turn on the pop-up subtitles for the reaction.</label>
+									<label class="text-body"><input id="toggle2" type="checkbox"/>Walk me through the reaction.</label>
 									</br> 
 									</br>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4"> 
+                                    <p class="mb-4 text-body"> 
                                     The SN2 and E2 transition states have similar energies and are therefore competitive. This SN2 trajectory shows a different approach of the methoxide to the secondary alkyl halide. In this trajectory the methoxide collides with the backside of the C-Br bond with enough energy and at the right angle to induce a new O-C bond and cleavage of the C-Br bond.
                                     </p>
 									<a class="btn btn-primary" href="javascript:Jmol.script(jmol2,'animation off')" data-bs-dismiss="modal">
@@ -1596,17 +1596,17 @@
 			timelineAmount2.max = lastNo - fileNo * 1000000;
 			timelineRange2.max = lastNo - fileNo * 1000000;			
 			if (modelNo == 100 && toggle2.checked) {
-				alert("The animation begins with the methoxide in proximity of the backside of the carbon-bromine bond. It is that position that is required for the reaction to proceed. The two reagents would be held in proximity of each other by the solvent used in the reaction. The animation does not show the solvent in this case.");
+				Jmol.script(jmol2,"echo The animation begins with the methoxide in proximity of the backside of the carbon-bromine bond.|It is that position that is required for the reaction to proceed.|The two reagents would be held in proximity of each other by the solvent used in the reaction.|The animation does not show the solvent in this case.");
 				Jmol.script(jmol2,'animation pause');
 				switch2.checked = false;
 			}
 			if (modelNo == 300 && toggle2.checked) {
-				alert("Notice that the methoxide is tempted to deprotonate one of the beta hydrogens. That would lead to the E2 reaction. There are two anti-periplanar beta hydrogens and both are acidic.");
+				Jmol.script(jmol2,"echo Notice that the methoxide is tempted to deprotonate one of the beta hydrogens. |That would lead to the E2 reaction. There are two anti-periplanar beta hydrogens and both are acidic.");
 				Jmol.script(jmol2,'animation pause');
 				switch2.checked = false
 			}
 			if (modelNo == 500 && toggle2.checked) {
-				alert("Once the methoxide group gets into a conformation that favors the nucleophilic attack into the unoccupied anti-bond of the C—Br bond (the LUMO), then the reaction proceeds to give the substituted product. Note that inversion occurs at the carbon that the methoxide attacks.");
+				Jmol.script(jmol2,"echo Once the methoxide group gets into a conformation that favors |the nucleophilic attack into the unoccupied anti-bond of the C—Br bond (the LUMO),| then the reaction proceeds to give the substituted product. |Note that inversion occurs at the carbon that the methoxide attacks.|");
 				Jmol.script(jmol2,'animation pause');
 				switch2.checked = false
 			}
@@ -1762,7 +1762,7 @@
 			//disableInitialConsole: true,
 			//readyFunction: jmol_isReady,
 			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/2-Bromobutane_E2_Butene.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update1';"
+			script: "load ../assets/traj/2-Bromobutane_E2_Butene.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update1'; "
 		}
 		Info2 = {
 			width: "100%",
@@ -1784,7 +1784,7 @@
 			//disableInitialConsole: true,
 			//readyFunction: jmol_isReady,
 			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/2-Bromobutane_SN2_2-Methoxybutane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update2';"
+			script: "load ../assets/traj/2-Bromobutane_SN2_2-Methoxybutane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update2'; set echo top center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
 		}
 		Info3 = {
 			width: "100%",

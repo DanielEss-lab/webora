@@ -11579,9 +11579,9 @@ input[type="checkbox"]:checked:after {
 	font-weight: bold;
 }
 .switch:checked {
-  border-color: #64bd63;
-  box-shadow: #64bd63 0 0 0 16px inset;
-  background-color: #64bd63;
+  border-color: #2c3e50;
+  box-shadow: #2c3e50 0 0 0 16px inset;
+  background-color: #2c3e50;
 }
 .switch:checked:before {
   left: 34px;
@@ -11593,8 +11593,8 @@ input[type="checkbox"]:checked:after {
   transition: left 0.3s;
 }
 .switch.switch-anim:checked {
-  box-shadow: #64bd63 0 0 0 16px inset;
-  background-color: #64bd63;
+  box-shadow: #2c3e50 0 0 0 16px inset;
+  background-color: #2c3e50;
   transition: border ease 0.4s, box-shadow ease 0.4s, background-color ease 1.2s;
 }
 .switch.switch-anim:checked:before {
