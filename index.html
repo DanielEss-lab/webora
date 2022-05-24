@@ -1788,7 +1788,7 @@
 			//disableInitialConsole: true,
 			//readyFunction: jmol_isReady,
 			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/2-Bromobutane_SN2_2-Methoxybutane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update2'; set echo top center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
+			script: "load ../assets/traj/2-Bromobutane_SN2_2-Methoxybutane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update2'; set echo myecho 50% 5%; set echo myecho CENTER; set echo SCALE 0.5; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
 		}
 		Info3 = {
 			width: "100%",
