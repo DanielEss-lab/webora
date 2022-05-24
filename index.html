@@ -1551,34 +1551,34 @@
 			timelineAmount1.max = lastNo - fileNo * 1000000;
 			timelineRange1.max = lastNo - fileNo * 1000000;
 			if (modelNo == 2 && toggle1.checked) {
-				Jmol.script(jmol1,"echo The animation begins with the methoxide in proximity of the backside of the carbon-bromine bond (compare to Reaction #1).| However, the SN2 path from this position would be hindered by the steric interaction between the C-1 methyl group and the methyl group of the methoxide.");
+				Jmol.script(jmol1,"echo The animation begins with the methoxide |in proximity of the backside of the carbon-bromine bond (compare to Reaction #1).| However, the SN2 path from this position would be hindered by the steric interaction |between the C-1 methyl group and the methyl group of the methoxide.");
 				Jmol.script(jmol1,'animation pause');
-				switch2.checked = false;
+				switch1.checked = false;
 			}
 			if (modelNo == 282 && toggle1.checked) {
 				Jmol.script(jmol1,"echo Notice that the methoxide is tempted to deprotonate the beta anti-periplanar hydrogen on C-1 at step 282.");
 				Jmol.script(jmol1,'animation pause');
-				switch2.checked = false;
+				switch1.checked = false;
 			}
 			if (modelNo == 321 && toggle1.checked) {
 				Jmol.script(jmol1,"echo The methoxide shifts over to the beta anti-periplanar hydrogen on C-3 at step 321.");
 				Jmol.script(jmol1,'animation pause');
-				switch2.checked = false;
+				switch1.checked = false;
 			}
 			if (modelNo == 357 && toggle1.checked) {
-				Jmol.script(jmol1,"echo Then at step 357 that beta hydrogen is deprotonated. The C—Br bond is elongated as the beta hydrogen is deprotonated.");
+				Jmol.script(jmol1,"echo Then at step 357 that beta hydrogen is deprotonated. |The C—Br bond is elongated as the beta hydrogen is deprotonated.");
 				Jmol.script(jmol1,'animation pause');
-				switch2.checked = false;
+				switch1.checked = false;
 			}
 			if (modelNo == 365 && toggle1.checked) {
-				Jmol.script(jmol1,"echo The alkene forms at roughly the same time as the methanol is formed and the bromide anion is released. You can see this at step 365.");
+				Jmol.script(jmol1,"echo The alkene forms at roughly the same time as the methanol is formed and the bromide anion is released.| You can see this at step 365.");
 				Jmol.script(jmol1,'animation pause');
-				switch2.checked = false;
+				switch1.checked = false;
 			}
 			if (modelNo == 365 && toggle1.checked) {
-				Jmol.script(jmol1,"echo The methanol and the bromide both move away from the alkene because there are no attractive forces to hold them together.");
+				Jmol.script(jmol1,"echo The methanol and the bromide both move away from the alkene |because there are no attractive forces to hold them together.");
 				Jmol.script(jmol1,'animation pause');
-				switch2.checked = false;
+				switch1.checked = false;
 			}	
 		}
 		update2 = function(_, _, fileNo, modelNo, _, lastNo){
