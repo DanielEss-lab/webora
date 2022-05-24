@@ -70,11 +70,15 @@
                 </br>
                 </br>
                 </br>
-				<p class="col-lg-4 text-black text-center fst-italic">How to use?</p>
+				</br>
+				</br>
+				</br>
+				</br>
+				<!-- <p class="col-lg-4 text-black text-center fst-italic">How to use?</p>
 				<p class="col-lg-4 text-black text-center fst-italic">1. Click images and play button to activate the animations.</p>
 				<p class="col-lg-4 text-black text-center fst-italic">2. Move molecules with left mouse button and zoom in/out with the mouse wheel.</p>
 				<p class="col-lg-4 text-black text-center fst-italic">3. Double click to measure bonds/angles/dihedrals and double click again to end the measurement.</p>
-				<p class="col-lg-4 text-black text-center fst-italic"><a style="color:inherit" href="http://biomodel.uah.es/en/DIY/Jmol/help/inicio.en.htm">More...</a></p>
+				<p class="col-lg-4 text-black text-center fst-italic"><a style="color:inherit" href="http://biomodel.uah.es/en/DIY/Jmol/help/inicio.en.htm">More...</a></p> -->
 
             </div>
         </header>
@@ -507,11 +511,11 @@
 									<input id="fpsAmount1" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol1, 'animation fps ' + this.value); fpsRange1.value=this.value" />
 									</br>
 									</br>
-									<label><input id="toggle1" type="checkbox"/>Walk me through the reaction.</label>
+									<label class="text-body"><input id="toggle1" type="checkbox"/>Walk me through the reaction.</label>
 									</br> 
 									</br>                                    
 									<!-- Portfolio Modal - Text-->
-                                    <p id="description1"class="mb-4">
+                                    <p id="description1"class="mb-4 text-body">
                                         <!-- This trajectory shows that the methoxide base collides into and induces deprotonation of the C-H bond adjacent to the C-Br bond. Very rapidly after deportation the π bond is formed and bromide is ejected. Click on the TS button and then click the atoms to examine the transition state distances. -->
 										The SN2 and E2 transition states have similar energies and are therefore competitive. This E2 trajectory shows that the methoxide base deprotonates the beta anti-periplanar hydrogen on C-3. As this deprotonation occurs, the  bond is formed and the bromide is ejected. Observe the transition state (TS button) to examine the distances for the atoms involved in the reaction, which are: the base, the beta hydrogen, C-2, C-3, and the leaving group (the bromide). While at the TS rotate the molecule so that the deprotonated hydrogen is anti to the C—Br bond.
 									</p>
@@ -1309,7 +1313,7 @@
 							<div class="row justify-content-center">
 								<div class="col-lg-8">
 									<!-- Portfolio Modal - Title-->
-									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Non-produtive SN2 Reaction</h2>
+									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Non-productive SN2 Reaction</h2>
 									<!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <!--
@@ -1762,7 +1766,7 @@
 			//disableInitialConsole: true,
 			//readyFunction: jmol_isReady,
 			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/2-Bromobutane_E2_Butene.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update1'; "
+			script: "load ../assets/traj/2-Bromobutane_E2_Butene.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update1'; set echo top center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
 		}
 		Info2 = {
 			width: "100%",
@@ -1806,7 +1810,7 @@
 			//disableInitialConsole: true,
 			//readyFunction: jmol_isReady,
 			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/Acetone_NA_2-hydroxy-2-methylpropanenitrile.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update3';"
+			script: "load ../assets/traj/Acetone_NA_2-hydroxy-2-methylpropanenitrile.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update3';set echo top center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
 		}
 		Info4 = {
 			width: "100%",
@@ -1828,7 +1832,7 @@
 			//disableInitialConsole: true,
 			//readyFunction: jmol_isReady,
 			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/butadiene_ethene_DA_cyclohexane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update4';"
+			script: "load ../assets/traj/butadiene_ethene_DA_cyclohexane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update4';set echo top center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
 		}
 		Info5 = {
 			width: "100%",
@@ -1850,7 +1854,7 @@
 			//disableInitialConsole: true,
 			//readyFunction: jmol_isReady,
 			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/butadiene_TS_cyclobutene.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update5';"
+			script: "load ../assets/traj/butadiene_TS_cyclobutene.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update5';set echo top center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
 		}
 		Info6 = {
 			width: "100%",
@@ -1872,7 +1876,7 @@
 			//disableInitialConsole: true,
 			//readyFunction: jmol_isReady,
 			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/butane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update6';"
+			script: "load ../assets/traj/butane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update6';set echo top center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
 		}
 		Info7 = {
 			width: "100%",
@@ -1894,7 +1898,7 @@
 			//disableInitialConsole: true,
 			//readyFunction: jmol_isReady,
 			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/Butene_EA_bromobutane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update7';"
+			script: "load ../assets/traj/Butene_EA_bromobutane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update7';set echo top center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
 		}
 		Info8 = {
 			width: "100%",
@@ -1916,7 +1920,7 @@
 			//disableInitialConsole: true,
 			//readyFunction: jmol_isReady,
 			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/Butoxy_TS_hydroxybutyl.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update8';"
+			script: "load ../assets/traj/Butoxy_TS_hydroxybutyl.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update8';set echo top center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
 		}
 		Info9 = {
 			width: "100%",
@@ -1938,7 +1942,7 @@
 			//disableInitialConsole: true,
 			//readyFunction: jmol_isReady,
 			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/cyclohexane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update9';"
+			script: "load ../assets/traj/cyclohexane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update9';set echo top center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
 		}
 		Info10 = {
 			width: "100%",
@@ -1960,7 +1964,7 @@
 			//disableInitialConsole: true,
 			//readyFunction: jmol_isReady,
 			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/hexadiene_cope_hexadiene.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update10';"
+			script: "load ../assets/traj/hexadiene_cope_hexadiene.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update10';set echo top center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
 		}
 		Info11 = {
 			width: "100%",
@@ -1982,7 +1986,7 @@
 			//disableInitialConsole: true,
 			//readyFunction: jmol_isReady,
 			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/Iodotertbutane_SN1_tertbutyl.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update11';"
+			script: "load ../assets/traj/Iodotertbutane_SN1_tertbutyl.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update11';set echo top center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
 		}
 		Info12 = {
 			width: "100%",
@@ -2004,7 +2008,7 @@
 			//disableInitialConsole: true,
 			//readyFunction: jmol_isReady,
 			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/TertButyl_RA_tertpentyl.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update12';"
+			script: "load ../assets/traj/TertButyl_RA_tertpentyl.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update12';set echo top center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
 		}
 		Info13 = {
 			width: "100%",
@@ -2026,7 +2030,7 @@
 			//disableInitialConsole: true,
 			//readyFunction: jmol_isReady,
 			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/propene_EA_propylborane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update13';"
+			script: "load ../assets/traj/propene_EA_propylborane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update13';set echo top center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
 		}
 		Info14 = {
 			width: "100%",
@@ -2048,7 +2052,7 @@
 			//disableInitialConsole: true,
 			//readyFunction: jmol_isReady,
 			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/Butene_EA_dimethyloxirane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update14';"
+			script: "load ../assets/traj/Butene_EA_dimethyloxirane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update14';set echo top center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement.set echo top center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
 		}
 		Info15 = {
 			width: "100%",
@@ -2070,7 +2074,7 @@
 			//disableInitialConsole: true,
 			//readyFunction: jmol_isReady,
 			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/DiChloroCarbene_EA_DiChloroCyclopropane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update15';"
+			script: "load ../assets/traj/DiChloroCarbene_EA_DiChloroCyclopropane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update15';set echo top center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
 		}
 		Info16 = {
 			width: "100%",
@@ -2092,7 +2096,7 @@
 			//disableInitialConsole: true,
 			//readyFunction: jmol_isReady,
 			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/TFA_Methoxide.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update16';"
+			script: "load ../assets/traj/TFA_Methoxide.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update16';set echo top center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
 		}
 		Info17 = {
 			width: "100%",
@@ -2114,7 +2118,7 @@
 			//disableInitialConsole: true,
 			//readyFunction: jmol_isReady,
 			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/Acetone_LDA.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update17';"
+			script: "load ../assets/traj/Acetone_LDA.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update17';set echo top center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
 		}
 		Info18 = {
 			width: "100%",
@@ -2136,7 +2140,7 @@
 			//disableInitialConsole: true,
 			//readyFunction: jmol_isReady,
 			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/Chloroethane_SN2_Propionitrile_nonproductive.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update18';"
+			script: "load ../assets/traj/Chloroethane_SN2_Propionitrile_nonproductive.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update18';set echo top center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
 		}
 		Info18a = {
 			width: "100%",
@@ -2158,7 +2162,7 @@
 			//disableInitialConsole: true,
 			//readyFunction: jmol_isReady,
 			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/Chloroethane_SN2_Propionitrile.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update18a';"
+			script: "load ../assets/traj/Chloroethane_SN2_Propionitrile.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update18a';set echo top center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
 		}
 		Info19 = {
 			width: "100%",
@@ -2180,7 +2184,7 @@
 			//disableInitialConsole: true,
 			//readyFunction: jmol_isReady,
 			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/PhenylChloroNitroPropane_E1cb_NitroPhenylPropene.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update19';"
+			script: "load ../assets/traj/PhenylChloroNitroPropane_E1cb_NitroPhenylPropene.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update19';set echo top center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
 		}
 		Info20 = {
 			width: "100%",
@@ -2202,7 +2206,7 @@
 			//disableInitialConsole: true,
 			//readyFunction: jmol_isReady,
 			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/MethylPentylCation.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update20';"
+			script: "load ../assets/traj/MethylPentylCation.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update20';set echo top center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
 		}
 		Info21 = {
 			width: "100%",
@@ -2224,7 +2228,7 @@
 			//disableInitialConsole: true,
 			//readyFunction: jmol_isReady,
 			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/Acetone_NA_Isopropanol.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update21';"
+			script: "load ../assets/traj/Acetone_NA_Isopropanol.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update21';set echo top center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
 		}
 		})();
 
