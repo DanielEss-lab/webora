@@ -1,2250 +1,566 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>WebORA - A Molecular View of Organic Reactions</title>
-        <!-- Favicon-->
-        <link rel="icon" href="assets/logo.svg" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top">WebORA</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#Reactions">Organic Reactions</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#details">Trajectory Details</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About US</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead -->
-        <header class="masthead bg-primary text-white text-center">
-			<p class="masthead-notice fst-italic">This website can be cited as:</p>
-			<p class="masthead-notice fst-italic">Chen, S.; Fleming, S. A.; Ess, D. H. WebORA, 2021, https://webora.netlify.app/.</p>
-			<p class="masthead-notice text-center">Notice: webORA is a web platform to view trajectories as preparation for the iPhone application iORA. </p>
-			<p class="masthead-notice text-center">If you would like to view a pre-release beta version of iORA download the testflight application and then use the following link: </p>
-			<a class="masthead-notice text-center" style="color:inherit" href="https://testflight.apple.com/join/FEW77U8m">https://testflight.apple.com/join/FEW77U8m</a>
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <!-- <img class="masthead-avatar mb-5" src="assets\img\logo.light.png" alt="..." /> -->
-                <!-- Masthead Heading-->
-                </br>
-                </br>
-                </br>
-                </br>
-				</br>
-                </br>
-                </br>
-                <h1 class="masthead-heading text-uppercase mb-0">WebORA</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <!--
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                    -->
-                </div>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Organic Reaction Trajectories</p>
-				</br>
-				</br>
-				</br>
-                </br>
-                </br>
-                </br>
-				</br>
-				</br>
-				</br>
-				</br>
-				<!-- <p class="col-lg-4 text-black text-center fst-italic">How to use?</p>
-				<p class="col-lg-4 text-black text-center fst-italic">1. Click images and play button to activate the animations.</p>
-				<p class="col-lg-4 text-black text-center fst-italic">2. Move molecules with left mouse button and zoom in/out with the mouse wheel.</p>
-				<p class="col-lg-4 text-black text-center fst-italic">3. Double click to measure bonds/angles/dihedrals and double click again to end the measurement.</p>
-				<p class="col-lg-4 text-black text-center fst-italic"><a style="color:inherit" href="http://biomodel.uah.es/en/DIY/Jmol/help/inicio.en.htm">More...</a></p> -->
 
-            </div>
-        </header>
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="Reactions">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Organic Reactions</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <!--
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                    -->
-                </div>
-                <!-- Portfolio Grid Items-->
-                               <!-- Portfolio Grid Items-->
-                               <div class="row justify-content-center">
-                                <!-- Portfolio Item 2 SN2-->
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                                        <h3>SN2 REACTION							</h3>
-                                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                        </div>
-                                        <img class="img-fluid" src="assets\img\portfolio\2-Bromobutane_SN2_2-Methoxybutane.png" alt="..." />
-                                    </div>
-                                </div>
-                                <!-- Portfolio Item 18 SN2-non -->
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal18">
-                                        <h3>NON-PRODUCTIVE SN2 REACTION							</h3>
-                                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                        </div>
-                                        <img class="img-fluid" src="assets\img\portfolio\Chloroethane_SN2_Propionitrile_productive.png" alt="..." />
-                                    </div>
-                                </div>
-                                <!-- Portfolio Item 11 SN1-->
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal11">
-                                        <h3>SN1 REACTION							</h3>
-                                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                        </div>
-                                        <img class="img-fluid" src="assets\img\portfolio\Iodotertbutane_Sn1_tertbutyl.png" alt="..." />
-                                    </div>
-                                </div>
-                                <!-- Portfolio Item 1 E2-->
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                                        <h3>E2 REACTION							</h3>
-                                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                        </div>
-                                        <img class="img-fluid" src="assets\img\portfolio\2-Bromobutane_E2_Butene.png" alt="..." />
-                                    </div>
-                                </div>
-                                <!-- Portfolio Item 19 E1cb-->
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal19">
-                                        <h3>E1CB REACTION							</h3>
-                                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                        </div>
-                                        <img class="img-fluid" src="assets\img\portfolio\PhenylChloroNitroPropane_E1cb_NitroPhenylPropene.png" alt="..." />
-                                    </div>
-                                </div>
-                                <!-- Portfolio Item 7 AdE HBr-->
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal7">
-                                        <h3>ALKENE HYDROHALOGENATION							</h3>
-                                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                        </div>
-                                        <img class="img-fluid" src="assets\img\portfolio\Butene_EA_bromobutane.png" alt="..." />
-                                    </div>
-                                </div>
-                                <!-- Portfolio Item 13 AdE hydroboration-->
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal13">
-                                        <h3>HYDROBORATION</h3>
-                                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                        </div>
-                                        <img class="img-fluid" src="assets\img\portfolio\Propene_EA_Propylborane.png" alt="..." />
-                                    </div>
-                                </div>
-                                <!-- Portfolio Item 14 AdE Epoxidation-->
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal14">
-                                        <h3>EPOXIDATION							</h3>
-                                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                        </div>
-                                        <img class="img-fluid" src="assets\img\portfolio\Butene_EA_DiMethylOxirane.png" alt="..." />
-                                    </div>
-                                </div>
-                                <!-- Portfolio Item 15 AdE carbene-->
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal15">
-                                        <h3>CARBENE CYCLOADDITION							</h3>
-                                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                        </div>
-                                        <img class="img-fluid" src="assets\img\portfolio\DiChloroCarbene_EA_DiChloroCyclopropane.png" alt="..." />
-                                    </div>
-                                </div>
-                                <!-- Portfolio Item 3 AdN CN-->
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                                        <h3>ADN2 REACTION							</h3>
-                                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                        </div>
-                                        <img class="img-fluid" src="assets\img\portfolio\Acetone_NA_2-hydroxy-2-methylpropanenitrile.png" alt="..." />
-                                    </div>
-                                </div>
-                                <!-- Portfolio Item 21 AdN Reduction-->
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal21">
-                                       <h3>ACETONE REDUCTION						</h3>
-                                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                        </div>
-                                        <img class="img-fluid" src="assets\img\portfolio\Acetone_NA_Isopropanol.png" alt="..." />
-                                    </div>
-                                </div>					
-                                <!-- Portfolio Item 16 HAB-->
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal16">
-                                       <h3>PROTON TRANSFER						</h3>
-                                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                        </div>
-                                        <img class="img-fluid" src="assets\img\portfolio\TFA_Methoxide.png" alt="..." />
-                                    </div>
-                                </div>
-                                <!-- Portfolio Item 17 HAB-->
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal17">
-                                       <h3>PROTON TRANSFER						</h3>
-                                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                        </div>
-                                        <img class="img-fluid" src="assets\img\portfolio\Acetone_LDA.png" alt="..." />
-                                    </div>
-                                </div>
-                                <!-- Portfolio Item 6 conformation-->
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                                       <h3>BUTANE CONFORMATIONS						</h3>
-                                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                        </div>
-                                        <img class="img-fluid" src="assets\img\portfolio\butane.png" alt="..." />
-                                    </div>
-                                </div>					
-                                <!-- Portfolio Item 20 Rearragement-->
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal20">
-                                      <h3>CARBOCATION REARRANGEMENT						</h3>
-                                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                        </div>
-                                        <img class="img-fluid" src="assets\img\portfolio\MethylPentylCation.png" alt="..." />
-                                    </div>
-                                </div>	
-                                <!-- Portfolio Item 4 Diels alder-->
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                                      <h3>DIELS-ALDER REACTION						</h3>
-                                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                        </div>
-                                        <img class="img-fluid" src="assets\img\portfolio\butadiene_ethene_DA_cyclohexane.png" alt="..." />
-                                    </div>
-                                </div>
-                                <!-- Portfolio Item 5 Cyclo-closure-->
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                                       <h3>ELECTROCYCLIC RING CLOSURE						</h3>
-                                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                        </div>
-                                        <img class="img-fluid" src="assets\img\portfolio\Butadiene_TS_Cyclobutene.png" alt="..." />
-                                    </div>
-                                </div>
-                                <!-- Portfolio Item 8 H abstract-->
-            <!--                    <div class="col-md-6 col-lg-4 mb-5">-->
-            <!--                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal8">-->
-            <!--                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">-->
-            <!--                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>-->
-            <!--                            </div>-->
-            <!--                            <img class="img-fluid" src="assets\img\portfolio\Butoxy_TS_hydroxybutyl.png" alt="..." />-->
-            <!--                        </div>-->
-            <!--                    </div> -->
-                                <!-- Portfolio Item 9 chair boat -->
-            <!--                    <div class="col-md-6 col-lg-4 mb-5">-->
-            <!--                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal9">-->
-            <!--                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">-->
-            <!--                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>-->
-            <!--                            </div>-->
-            <!--                            <img class="img-fluid" src="assets\img\portfolio\Cyclohexane.png" alt="..." />-->
-            <!--                        </div>-->
-            <!--                    </div>-->
-                                <!-- Portfolio Item 10 cope reaction-->
-                                <div class="col-md-6 col-lg-4 mb-5">
-                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal10">
-                                        <h3>COPE REARRANGEMENT</h3>
-                                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                        </div>
-                                        <img class="img-fluid" src="assets\img\portfolio\hexadiene_cope_hexadiene.png" alt="..." />
-                                    </div>
-                                </div>
-            </div>
-            </div>
-        </section>
-        <!-- Details Section-->
-        <section class="page-section bg-primary text-white mb-0" id="details">
-            <div class="container">
-                <!-- Details Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Trajectory Details</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <!--
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                    -->
-                </div>
-                <!-- Details Section Content-->
-                <div class="row">
-                    <div class="lg-4 ms-auto text-center"><p class="lead">The direct dynamics trajectories presented are displayed using JSmol. Each trajectory was generated using a density functional theory transition-state structure followed by vibrational normal mode sampling and propagation in forward and reverse directions using mass-weighted velocities with the Gaussian 16 program. Generally, a propagation step size of 0.5 femtosecond was used.</p></div>
-                </div>
-            </div>
-        </section>
-        <!-- About Section-->
-        <section class="page-section" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">About Us</h2>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<title>WebORA - A Molecular View of Organic Reactions</title>
+	<!-- Favicon-->
+	<link rel="icon" href="assets/logo.svg" />
+	<!-- Font Awesome icons (free version)-->
+	<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+	<!-- Google fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+		type="text/css" />
+	<!-- Core theme CSS (includes Bootstrap)-->
+	<link href="css/styles.css" rel="stylesheet" />
+	<script type="text/javascript">
+		//put reactions dataset here.
+		const reactions = [
+			{
+				name: "SN2 REACTION",
+				TSframe: 500,
+				writeup: "The SN2 and E2 transition states have similar energies and are therefore competitive. This SN2 trajectory shows a different approach of the methoxide to the secondary alkyl halide. In this trajectory the methoxide collides with the backside of the C-Br bond with enough energy and at the right angle to induce a new O-C bond and cleavage of the C-Br bond.",
+				figDir: "assets/img/portfolio/2-Bromobutane_SN2_2-Methoxybutane.png",
+				trjDir: "assets/traj/2-Bromobutane_SN2_2-Methoxybutane.sdf",
+				events: {
+					100: "The animation begins with the methoxide in proximity of the backside of the carbon-bromine bond.|It is that position that is required for the reaction to proceed.|The two reagents would be held in proximity of each other by the solvent used in the reaction.|The animation does not show the solvent in this case.",
+					300: "Notice that the methoxide is tempted to deprotonate one of the beta hydrogens. |That would lead to the E2 reaction. There are two anti-periplanar beta hydrogens and both are acidic.",
+					500: "Once the methoxide group gets into a conformation that favors |the nucleophilic attack into the unoccupied anti-bond of the C—Br bond (the LUMO),| then the reaction proceeds to give the substituted product. |Note that inversion occurs at the carbon that the methoxide attacks.|"
+				}
+			},
+			{
+				name: "E2 REACTION",
+				writeup: "The SN2 and E2 transition states have similar energies and are therefore competitive. This E2 trajectory shows that the methoxide base deprotonates the beta anti-periplanar hydrogen on C-3. As this deprotonation occurs, the  bond is formed and the bromide is ejected. Observe the transition state (TS button) to examine the distances for the atoms involved in the reaction, which are: the base, the beta hydrogen, C-2, C-3, and the leaving group (the bromide). While at the TS rotate the molecule so that the deprotonated hydrogen is anti to the C—Br bond.",
+				TSframe: 353,
+				figDir: "assets/img/portfolio/2-Bromobutane_E2_Butene.png",
+				trjDir: "assets/traj/2-Bromobutane_E2_Butene.sdf",
+				events: {
+					2: "The animation begins with the methoxide |in proximity of the backside of the carbon-bromine bond (compare to Reaction #1).| However, the SN2 path from this position would be hindered by the steric interaction |between the C-1 methyl group and the methyl group of the methoxide.",
+					282: "Notice that the methoxide is tempted to deprotonate the beta anti-periplanar hydrogen on C-1 at step 282.",
+					321: "The methoxide shifts over to the beta anti-periplanar hydrogen on C-3 at step 321.",
+					357: "Then at step 357 that beta hydrogen is deprotonated. |The C—Br bond is elongated as the beta hydrogen is deprotonated.",
+					365: "The alkene forms at roughly the same time as the methanol is formed and the bromide anion is released.| You can see this at step 365.",
+					400: "The methanol and the bromide both move away from the alkene |because there are no attractive forces to hold them together."
+				}
+			},
+			{
+				name: "NON-PRODUCTIVE SN2 REACTION",
+				figDir: "assets/img/portfolio/Chloroethane_SN2_Propionitrile.png",
+				trjDir: "assets/traj/Chloroethane_SN2_Propionitrile_nonproductive.sdf",
+				writeup: "This animation shows the cyanide anion and chloroethane in proximity of one another, without leading to the SN2 reaction. Compare this non-productive reaction with the productive SN2 reaction shown below it. Although the cyanide is an excellent nucleophile, the correct orientation of the collision is essential for an S N 2 reaction to proceed. The animation for the productive SN2	shows the methoxide eventually lining up with the anti-bond at the backside of the C—Cl bond. The molecules in the non-productive animation never find that proper alignment.",
+				events: {
+					500: "The cyanide ion never finds the proper angle for substitution to occur. |There are several factors that can lead to this lack of reaction.| One, might be that the solvent (water, for example) solvates |the nucleophile and prevents it from finding access to |the backside of the C—Cl bond.",
+					1000: "Another situation that prevents the SN2 reaction, |is steric hindrance of the backside of the C—Cl bond. |You should be familiar with this situation. |Leaving groups on tertiary carbons do not undergo the SN2 reaction. |But in this case, chloroethane is a primary chloride |and sterics are not a problem. ",
+					1500: "A third explanation for this non-productive outcome| is that insufficient heat is applied to the reaction."
+				},
+				variants: [
+					{
+						TSframe: 1000,
+						figDir: "assets/img/portfolio/Chloroethane_SN2_Propionitrile_productive.png",
+						trjDir: "assets/traj/Chloroethane_SN2_Propionitrile.sdf",
+						events: {
+							2: "The cyanide ion starts in a position that |is not close to the backside of the C—Cl bond. ",
+							993: "After vibrating and rotating, |the cyanide anion does align with the antibond| of the C—Cl which allows for orbital mixing.| This leads to a transition state at step 993.",
+							1500: "The chloride ion is not nucleophilic enough |to lead to the orbital mixing needed |for the substitution of the cyanide, |the reverse reaction."
+						}
+					}
+				]
+			},
+			{
+				name: "SN1 REACTION",
+				figDir: "assets/img/portfolio/Iodotertbutane_Sn1_tertbutyl.png",
+				trjDir: "assets/traj/Iodotertbutane_SN1_tertbutyl.sdf",
+			},
 
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <!--
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                    -->
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto text-secondary"><p class="lead">By adhering to accepted guidelines and standards for accessibility and usability webORA is committed to providing a website that is accessible to the widest possible audience. This work is the result of a Brigham Young University-Temple University collaboration with the goal of providing organic reaction animations based on physically correct direct dynamics simulations.</p></div>
-                    <div class="col-lg-4 me-auto text-secondary"><p class="lead">Prof. Ess, Prof. Fleming, Dr. Shusen Chen, and undergraduate students Allyson Yu and Josh Schneider have contributed to creating webORA. The development of webORA is supported by the US National Science Foundation: DUE-2121023.</p></div>
-                </div>
-                <!--
-				<div class="container d-flex align-items-center flex-column">
-					<img class="masthead-avatar mb-5" src="assets/img/app-store-badge-128x128.png" alt="..." />
-				</div>
-                -->
-                <!-- About Section Button-->
+			{
+				name: "E1cb REACTION",
+				writeup: "The E1cb reaction occurs when a strong base deprotonates a somewhat acidic hydrogen that is  to a leaving group. In this calculation, methoxide deprotonates a hydrogen that is  to a nitro group. The anion that is formed is stabilized by resonance. In a pure E1cb reaction this is a distinct intermediate. The intermediate anion (the conjugate base) then can kick out the leaving group, in this case the chloride ion.",
+				figDir: "assets/img/portfolio/2-Bromobutane_SN2_2-Methoxybutane.png",
+				trjDir: "assets/traj/2-Bromobutane_SN2_2-Methoxybutane.sdf",
+				events: {
+					5: "The animation begins with the methoxide in proximity of |the backside of the carbon-bromine bond. The two anti-periplanar |beta hydrogens are both drawn to the methoxide, which indicates that both are acidic.",
+					41: "The methoxide moves toward the more acidic hydrogen in step 41. |Eventually, the anti-periplanar beta hydrogen on C-1 is deprotonated.",
+					293: "The anion on C-1 isn’t fully formed until step 293. |This can be seen by watching the hybridization of the C-1 carbon. |It becomes sp2 hybridized at this point. ",
+					297: "Then the chloride is dispatched from C-2 carbon at step 297.",
+					350: "The chloride ion and the methanol move away from the less polar alkene product."
+				}
+			},
+			{
+				name: "ALKENE HYDROHALOGENATION",
+				writeup: "The hydrohalogenation of an alkene is a reaction that typically forms an intermediate carbocation. This calculated trajectory shows the HBr approach the alkene. It is the H+ of HBr that is the electrophile. It is the  bond that is the nucleophile in the first step of the reaction. The electrophile adds to the carbon of the alkene that results in the most stable intermediate, a tertiary carbocation in this example. The bromide then adds to the give the t-butyl bromide product.",
+				figDir: "assets/img/portfolio/Butene_EA_bromobutane.png",
+				trjDir: "assets/traj/Butene_EA_bromobutane.sdf",
+				TSframe: 300,
+				events: {
+					5: "The animation begins with the HBr far from the alkene. |In a non-polar solvent, like diethyl ether, the H—Br bond is covalent. |The HBr eventually approaches the alkene.",
+					258: "At step #258, the H+ electrophile is roughly between both carbons of the alkene.",
+					300: "As the nucleophilic alkene reacts with the electrophilic H+ |the more stable carbocation is formed. |This also frees up the bromide anion.",
+					315: "The carbocation in this calculation is not long-lived. |The bromide anion is formed in close proximity and there is no solvent included in this simulation. |As a result, there is no sp2 hybridized carbocation intermediate in the calculation. |The structure at step #315 is the closest to the intermediate carbocation in this case.",
+					398: "The animation has t-butyl bromide as the final product at step #398. "
+				}
+			},
+			{
+				name: "Hydroboration",
+				writeup: "Hydroboration of an alkene is a reaction that does not have an intermediate. This calculated trajectory shows the BH3 approach the alkene. It is the B (boron) that is the electrophile. It is the π bond that is the nucleophile in the first step of the reaction. The electrophile adds to the carbon of the alkene that results in what would be the most stable carbocation on C-2, however the hydride from the boron transfers to C-2 before the carbocation is formed.",
+				figDir: "assets/img/portfolio/Propene_EA_Propylborane.png",
+				trjDir: "assets/traj/propene_EA_propylborane.sdf",
+				events: {
+					5: "The animation begins with the BH3 moving toward the alkene. ",
+					124: "At step #124, the boron electrophile is roughly between both carbons of the alkene. ",
+					137: "By step #137 the C—B bond between C-1 and the boron has begun to form.",
+					163: "The hydride begins to transfer over to the C-2 carbon at step #163. |The C-2 hybridization is sp3 at this point.",
+					173: "At step #173 the hydroboration is complete. |The original alkene carbons are both sp3 now and the boron is back to being sp2.",
+					200: "The alkylborane rotates and vibrates freely from step #200 on. |We usually treat an alkylborane with NaOH and H2O2 in order to obtain an alcohol. |We have not animated this oxidation step. |The oxidation process occurs with no change of stereochemistry, |therefore the two steps of hydroboration and oxidation result in syn addition of H and OH to an alkene. "
+				}
+			},
+			{
+				name: "EPOXIDATION",
+				writeup: "Epoxidation of an alkene is a reaction that does not have an intermediate. This calculated trajectory shows the peroxy acid, m-chloroperbenzoic acid (mCPBA), approach the alkene. It is the O (oxygen) of the peroxy acid that is the electrophile. It is the π bond that is the nucleophile in the reaction. The electrophile adds to the carbon of the alkene that results in what would be a carbocation on C-3, however the oxygen electrons add to C-3 before a carbocation is formed.",
+				figDir: "assets/img/portfolio/Butene_EA_dimethyloxirane.png",
+				trjDir: "assets/traj/Butene_EA_dimethyloxirane.sdf",
+				TSframe: 1000,
+				events: {
+					5: "The animation begins with the peroxy acid moving toward the alkene. ",
+					975: "At step #975, the oxygen electrophile is roughly |between both carbons of the alkene. |This equal distance is maintained all the way through |step #1081 where the epoxide to C-2 and C-3 is formed.",
+					1100: "Once the epoxide is formed the carboxylic acid |moves away from the relatively non-polar 3-member ring ether."
+				}
+			},
+			{
+				name: "CARBENE CYCLOADDITION",
+				figDir: "assets/img/portfolio/DiChloroCarbene_EA_DiChloroCyclopropane.png",
+				trjDir: "assets/traj/DiChloroCarbene_EA_DiChloroCyclopropane.sdf",
+				TSframe: 251,
+			},
+			{
+				name: "ADN2 REACTION",
+				figDir: "assets/img/portfolio/Acetone_NA_2-hydroxy-2-methylpropanenitrile.png",
+				trjDir: "assets/traj/Acetone_NA_2-hydroxy-2-methylpropanenitrile.sdf",
+				TSframe: 430,
+				writeup: "This addition reaction trajectory shows formation of a new C-CN bond with simultaneous cleavage of the C=O π bond. However, before addition, this trajectory shows an initial unproductive collision between cyanide and the ketone. It is important to realize that many unproductive collisions occur between reacting compounds before a productive, product-forming collision occurs."
+			},
+			{
+				name: "ACETONE REDUCTION",
+				figDir: "assets/img/portfolio/Acetone_NA_Isopropanol.png",
+				trjDir: "assets/traj/Acetone_NA_Isopropanol.sdf",
+				TSframe: 231,
+			},
+			{
+				name: "PROTON TRANSFER",
+				figDir: "assets/img/portfolio/TFA_Methoxide.png",
+				trjDir: "assets/traj/TFA_Methoxide.sdf",
+			},
+			{
+				name: "PROTON TRANSFER",
+				figDir: "assets/img/portfolio/Acetone_LDA.png",
+				trjDir: "assets/traj/Acetone_LDA.sdf",
+			},
+			{
+				name: "BUTANE CONFORMATIONS",
+				figDir: "assets/img/portfolio/butane.png",
+				trjDir: "assets/traj/butane.sdf",
+				TSframe: 1000,
+				writeup: "This trajectory the motion of butane over time. There is both rotation of C2-C3 bond and C1-C2 bonds, although not at the exact same time."
+			},
+			{
+				name: "CARBOCATION REARRANGEMENT",
+				figDir: "assets/img/portfolio/MethylPentylCation.png",
+				trjDir: "assets/traj/MethylPentylCation.sdf",
+				variants: [
+					{
+						figDir: "assets/img/portfolio/Iodotertbutane_Sn1_tertbutyl.png",
+						trjDir: "assets/traj/Carbocation_gen.sdf",
+					}
+				]
+			},
+			{
+				name: "DIELS-ALDER REACTION",
+				figDir: "assets/img/portfolio/butadiene_acrylate_DA_cyclohexenecarboxylate.png",
+				trjDir: "assets/traj/butadiene_acrylate_DA_cyclohexenecarboxylate.sdf",
+				TSframe: 1000,
+				writeup: "The Diels-Alder reaction is an example of a highly synchronous one-step reaction. Click on the TS button and measure the newly forming C-C sigma bond lengths. Track these bond lengths before and after the transition state."
+			},
+			{
+				name: "ELECTROCYCLIC RING CLOSURE",
+				figDir: "assets/img/portfolio/Butadiene_TS_Cyclobutene.png",
+				trjDir: "assets/traj/Butadiene_TS_Cyclobutene.sdf",
+				TSframe: 871,
+				writeup: "This trajectory shows the cyclization of 1,3-butadiene to cyclobutene. This trajectory first shows the rapid interconversion between s-trans and s-cis conformations of 1,3-butadiene before achieving the transition state for C-C bond formation. Move the trajectory reverse and forward from the transition state to see the conrotatory motion."
+			},
+			{
+				name: "COPE REARRANGEMENT",
+				figDir: "assets/img/portfolio/hexadiene_cope_hexadiene.png",
+				trjDir: "assets/traj/hexadiene_cope_hexadiene.sdf",
+				TSframe: 1000,
+				writeup: "This trajectory shows the conformational change required to achieve the highly organized [3,3] sigmatropic rearrangement transition state. Press the TS button to look at the transition-state structure, which has a chair conformation. After the transition state the structure unwraps through another conformational change."
+			},
+		]
+	</script>
+</head>
+
+<body id="page-top">
+	<!-- Navigation-->
+	<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+		<div class="container">
+			<a class="navbar-brand" href="#page-top">WebORA</a>
+			<button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+				aria-expanded="false" aria-label="Toggle navigation">
+				Menu
+				<i class="fas fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+							href="#Reactions">Organic Reactions</a></li>
+					<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+							href="#details">Trajectory Details</a></li>
+					<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About
+							US</a></li>
+					<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+							href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Masthead -->
+	<header class="masthead bg-primary text-white text-center">
+		<p class="masthead-notice fst-italic">This website can be cited as:</p>
+		<p class="masthead-notice fst-italic">Chen, S.; Fleming, S. A.; Ess, D. H. WebORA, 2021,
+			https://webora.netlify.app/.</p>
+		<p class="masthead-notice text-center">Notice: webORA is a web platform to view trajectories as preparation for
+			the iPhone application iORA. </p>
+		<p class="masthead-notice text-center">If you would like to view a pre-release beta version of iORA download the
+			testflight application and then use the following link: </p>
+		<a class="masthead-notice text-center" style="color:inherit"
+			href="https://testflight.apple.com/join/FEW77U8m">https://testflight.apple.com/join/FEW77U8m</a>
+		<div class="container d-flex align-items-center flex-column">
+			<!-- Masthead Avatar Image-->
+			<!-- <img class="masthead-avatar mb-5" src="assets\img\logo.light.png" alt="..." /> -->
+			<!-- Masthead Heading-->
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<h1 class="masthead-heading text-uppercase mb-0">WebORA</h1>
+			<!-- Icon Divider-->
+			<div class="divider-custom divider-light">
 				<!--
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                        <i class="fas fa-download me-2"></i>
-                        Free Download!
-                    </a>
-                </div>
-				-->
-            </div>
-        </section>
-        <!-- Contact Section-->
-        <section class="page-section bg-primary text-white mb-0" id="contact">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase mb-0">Contact Us</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <!--
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                     -->
-                
-                </div>
-                <div class="lg-4 ms-auto text-center"><p class="lead">For more information, please contact Prof. Dan Ess (dhe@chem.byu.edu) or Prof. Steven Fleming (sfleming@temple.edu).</p></div>
-				<h5> <a href="https://forms.gle/3SHWJLsFzEHbUnLi8" style="color:white">Feedback Form</a> </h5>
-                
-                <!-- Contact Section Form-->
-                <!--
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms. -->
-                        <!-- To make this form functional, sign up at -->
-                        <!-- https://startbootstrap.com/solution/contact-forms -->
-                        <!-- to get an API token! -->
-                <!--
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                <!--
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                <!--
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                <!--
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                <!--
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <!--
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <!--
-
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <!--
-
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
-                        </form>
-                    </div>
-                            -->
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Support</h4>
-                        <p class="lead mb-0">
-                            The development of webORA and iORA are supported by the US National Science Foundation: DUE-2121023
-                        </p>
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
-                    </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Webora</h4>
-                        <p class="lead mb-0">
-                            WebORA uses Freelance, a MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; WebORA 2021</small></div>
-        </div>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">E2 reaction</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <!--
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                        -->
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-									<div id="appletplace1" style="width:100%;height:100%;background-color:white" ></div>
-									</br>
-									</br>
-									<input id="switch1" type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol1,'animation resume');} else {Jmol.script(jmol1,'animation pause');}"/>
-									<input id="timelineRange1" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol1, 'frame ' + this.value); timelineAmount1.value=this.value" />
-									<input id="timelineAmount1" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol1, 'frame ' + this.value); timelineRange1.value=this.value" />
-									<a class="btn btn-secondary" href="javascript: Jmol.script(jmol1, 'frame 353');" title="Transtion State">TS</a>
-									</br>
-									</br>
-									<a class="btn btn-secondary">Speed</a>
-									<input id="fpsRange1" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol1, 'animation fps ' + this.value); fpsAmount1.value=this.value" />
-									<input id="fpsAmount1" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol1, 'animation fps ' + this.value); fpsRange1.value=this.value" />
-									</br>
-									</br>
-									<label class="text-body"><input id="toggle1" type="checkbox"/>Walk me through the reaction.</label>
-									</br> 
-									</br>                                    
-									<!-- Portfolio Modal - Text-->
-                                    <p id="description1"class="mb-4 text-body">
-                                        <!-- This trajectory shows that the methoxide base collides into and induces deprotonation of the C-H bond adjacent to the C-Br bond. Very rapidly after deportation the π bond is formed and bromide is ejected. Click on the TS button and then click the atoms to examine the transition state distances. -->
-										The SN2 and E2 transition states have similar energies and are therefore competitive. This E2 trajectory shows that the methoxide base deprotonates the beta anti-periplanar hydrogen on C-3. As this deprotonation occurs, the  bond is formed and the bromide is ejected. Observe the transition state (TS button) to examine the distances for the atoms involved in the reaction, which are: the base, the beta hydrogen, C-2, C-3, and the leaving group (the bromide). While at the TS rotate the molecule so that the deprotonated hydrogen is anti to the C—Br bond.
-									</p>
-									<a class="btn btn-primary" href="javascript:Jmol.script(jmol1,'animation off')" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">SN2 Reaction</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <!--
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                        -->
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-									<div id="appletplace2" style="width:100%;height:100%;background-color:white"></div>
-									</br>
-									</br>
-									<input id="switch2" type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol2,'animation resume');} else {Jmol.script(jmol2,'animation pause');}"/>
-									<input id="timelineRange2" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol2, 'frame ' + this.value); timelineAmount2.value=this.value" />
-									<input id="timelineAmount2" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol2, 'frame ' + this.value); timelineRange2.value=this.value" />
-									<a class="btn btn-secondary" href="javascript: Jmol.script(jmol2, 'frame 500');" title="Transtion State">TS</a>
-									</br>
-									</br>
-									<a class="btn btn-secondary">Speed</a>
-									<input id="fpsRange2" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol2, 'animation fps ' + this.value); fpsAmount2.value=this.value" />
-									<input id="fpsAmount2" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol2, 'animation fps ' + this.value); fpsRange2.value=this.value" />
-									</br>
-									</br>
-									<label class="text-body"><input id="toggle2" type="checkbox"/>Walk me through the reaction.</label>
-									</br> 
-									</br>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4 text-body"> 
-                                    The SN2 and E2 transition states have similar energies and are therefore competitive. This SN2 trajectory shows a different approach of the methoxide to the secondary alkyl halide. In this trajectory the methoxide collides with the backside of the C-Br bond with enough energy and at the right angle to induce a new O-C bond and cleavage of the C-Br bond.
-                                    </p>
-									<a class="btn btn-primary" href="javascript:Jmol.script(jmol2,'animation off')" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">AdN2 reaction</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <!--
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                        -->
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-									<div id="appletplace3" style="width:100%;height:100%;background-color:white"></div>
-									</br>
-									</br>
-									<input type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol3,'animation resume');} else {Jmol.script(jmol3,'animation pause');}"/>
-									<input id="timelineRange3" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol3, 'frame ' + this.value); timelineAmount3.value=this.value" />
-									<input id="timelineAmount3" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol3, 'frame ' + this.value); timelineRange3.value=this.value" />
-									<a class="btn btn-secondary" href="javascript: Jmol.script(jmol3, 'frame 430');" title="Transtion State">TS</a>
-									</br>
-									</br>
-									<a class="btn btn-secondary">Speed</a>
-									<input id="fpsRange3" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol3, 'animation fps ' + this.value); fpsAmount3.value=this.value" />
-									<input id="fpsAmount3" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol3, 'animation fps ' + this.value); fpsRange3.value=this.value" />
-									</br>
-									</br>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">
-                                    This addition reaction trajectory shows formation of a new C-CN bond with simultaneous cleavage of the C=O π bond. However, before addition, this trajectory shows an initial unproductive collision between cyanide and the ketone. It is important to realize that many unproductive collisions occur between reacting compounds before a productive, product-forming collision occurs.
-                                    </p>
-									<a class="btn btn-primary" href="javascript:Jmol.script(jmol3,'animation off')" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Diels-Alder Reaction</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <!--
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                        -->
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-									<div id="appletplace4" style="width:100%;height:100%;background-color:white"></div>
-									</br>
-									</br>
-									<input type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol4,'animation resume');} else {Jmol.script(jmol4,'animation pause');}"/>
-									<input id="timelineRange4" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol4, 'frame ' + this.value); timelineAmount4.value=this.value" />
-									<input id="timelineAmount4" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol4, 'frame ' + this.value); timelineRange4.value=this.value" />
-									<a class="btn btn-secondary" href="javascript: Jmol.script(jmol4, 'frame 150');" title="Transtion State">TS</a>
-									</br>
-									</br>
-									<a class="btn btn-secondary">Speed</a>
-									<input id="fpsRange4" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol4, 'animation fps ' + this.value); fpsAmount4.value=this.value" />
-									<input id="fpsAmount4" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol4, 'animation fps ' + this.value); fpsRange4.value=this.value" />
-									</br>
-									</br>                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">
-                                        The Diels-Alder reaction is an example of a highly synchronous one-step reaction. Click on the TS button and measure the newly forming C-C sigma bond lengths. Track these bond lengths before and after the transition state.
-                                    </p>
-									<!-- Icon Divider-->
-									<button class="btn btn-primary" href="javascript:Jmol.script(jmol4,'animation off')" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Electrocyclic Ring Closure</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <!--
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                        -->
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-									<div id="appletplace5" style="width:100%;height:100%;background-color:white"></div>
-									</br>
-									</br>
-									<input type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol5,'animation resume');} else {Jmol.script(jmol5,'animation pause');}"/>
-									<input id="timelineRange5" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol5, 'frame ' + this.value); timelineAmount5.value=this.value" />
-									<input id="timelineAmount5" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol5, 'frame ' + this.value); timelineRange5.value=this.value" />
-									<a class="btn btn-secondary" href="javascript: Jmol.script(jmol5, 'frame 1000');" title="Transtion State">TS</a>
-									</br>
-									</br>
-									<a class="btn btn-secondary">Speed</a>
-									<input id="fpsRange5" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol5, 'animation fps ' + this.value); fpsAmount5.value=this.value" />
-									<input id="fpsAmount5" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol5, 'animation fps ' + this.value); fpsRange5.value=this.value" />
-									</br>
-									</br>                                    
-									<!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">
-                                    This trajectory shows the cyclization of 1,3-butadiene to cyclobutene. This trajectory first shows the rapid interconversion between s-trans and s-cis conformations of 1,3-butadiene before achieving the transition state for C-C bond formation. Move the trajectory reverse and forward from the transition state to see the conrotatory motion.
-                                    </p>
-									<button class="btn btn-primary" href="javascript:Jmol.script(jmol5,'animation off')" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Butane Conformations</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <!--
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                        -->
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-									<div id="appletplace6" style="width:100%;height:100%;background-color:white"></div>
-									</br>
-									</br>
-									<input type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol6,'animation resume');} else {Jmol.script(jmol6,'animation pause');}"/>
-									<input id="timelineRange6" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol6, 'frame ' + this.value); timelineAmount6.value=this.value" />
-									<input id="timelineAmount6" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol6, 'frame ' + this.value); timelineRange6.value=this.value" />
-									<a class="btn btn-secondary" href="javascript: Jmol.script(jmol6, 'frame 3000');" title="Transtion State">TS</a>
-									</br>
-									</br>
-									<a class="btn btn-secondary">Speed</a>
-									<input id="fpsRange6" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol6, 'animation fps ' + this.value); fpsAmount6.value=this.value" />
-									<input id="fpsAmount6" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol6, 'animation fps ' + this.value); fpsRange6.value=this.value" />
-									</br>
-									</br>                                    
-									<!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">
-                                    This trajectory the motion of butane over time. There is both rotation of C2-C3 bond and C1-C2 bonds, although not at the exact same time.
-                                    </p>
-									<button class="btn btn-primary" href="javascript:Jmol.script(jmol6,'animation off')" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-		<!-- Portfolio Modal 7-->
-		<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal7" aria-hidden="true">
-			<div class="modal-dialog modal-fullscreen">
-				<div class="modal-content">
-					<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-					<div class="modal-body text-center pb-5">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-lg-8">
-									<!-- Portfolio Modal - Title-->
-									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Alkene Hydrohalogenation</h2>
-									<!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <!--
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                        -->
-                                    </div>
-									<!-- Portfolio Modal - Image-->
-									<div id="appletplace7" style="width:100%;height:100%;background-color:white"></div>
-									</br>
-									</br>
-									<input type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol7,'animation resume');} else {Jmol.script(jmol7,'animation pause');}"/>
-									<input id="timelineRange7" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol7, 'frame ' + this.value); timelineAmount7.value=this.value" />
-									<input id="timelineAmount7" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol7, 'frame ' + this.value); timelineRange7.value=this.value" />
-									<a class="btn btn-secondary" href="javascript: Jmol.script(jmol7, 'frame 1000');" title="Transtion State">TS</a>
-									</br>
-									</br>
-									<a class="btn btn-secondary">Speed</a>
-									<input id="fpsRange7" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol7, 'animation fps ' + this.value); fpsAmount7.value=this.value" />
-									<input id="fpsAmount7" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol7, 'animation fps ' + this.value); fpsRange7.value=this.value" />
-									</br>
-									</br>                                    
-									<!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Check here later.</p>
-									<button class="btn btn-primary" href="javascript:Jmol.script(jmol7,'animation off')" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
+			</div>
+			<!-- Masthead Subheading-->
+			<p class="masthead-subheading font-weight-light mb-0">Organic Reaction Trajectories</p>
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<p class="col-lg-4 text-black text-center fst-italic">How to use?</p>
+			<p class="col-lg-4 text-black text-center fst-italic">1. Click images and play button to activate the
+				animations.</p>
+			<p class="col-lg-4 text-black text-center fst-italic">2. Move molecules with left mouse button and zoom
+				in/out with the mouse wheel.</p>
+			<p class="col-lg-4 text-black text-center fst-italic">3. Double click to measure bonds/angles/dihedrals and
+				double click again to end the measurement.</p>
+			<p class="col-lg-4 text-black text-center fst-italic"><a style="color:inherit"
+					href="http://biomodel.uah.es/en/DIY/Jmol/help/inicio.en.htm">More...</a></p>
+		</div>
+	</header>
+	<!-- Portfolio Section-->
+	<section class="page-section portfolio" id="Reactions">
+		<div class="container">
+			<!-- Portfolio Section Heading-->
+			<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Organic Reactions</h2>
+			<br />
+			<br />
+			<!-- Portfolio Grid Items-->
+			<div class="row justify-content-center">
+				<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+				<script type="text/javascript">
+					for (let i = 0; i < reactions.length; i++) {
+						let html = `<div class="col-md-6 col-lg-4 mb-5">
+							<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal${i}">
+								<h3>${reactions[i].name}							</h3>
+								<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+									<div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
 								</div>
+								<img class="img-fluid" src="${reactions[i].figDir}" alt="..." />
 							</div>
-						</div>
-					</div>
+						</div>`;
+						document.write(html);
+					}
+				</script>
+			</div>
+		</div>
+	</section>
+	<!-- Details Section-->
+	<section class="page-section bg-primary text-white mb-0" id="details">
+		<div class="container">
+			<!-- Details Section Heading-->
+			<h2 class="page-section-heading text-center text-uppercase text-white">Trajectory Details</h2>
+			<br />
+			<br />
+			<!-- Details Section Content-->
+			<div class="row">
+				<div class="lg-4 ms-auto text-center">
+					<p class="lead">
+						The direct dynamics trajectories presented are displayed using JSmol.
+						Each trajectory was generated using a density functional theory transition-state structure
+						followed
+						by vibrational normal mode sampling and propagation in forward and reverse directions using
+						mass-weighted
+						velocities with the Gaussian 16 program. Generally, a propagation step size of 0.5 femtosecond
+						was used.
+					</p>
 				</div>
 			</div>
 		</div>
-
-		<!-- Portfolio Modal 8-->
-		<div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" aria-labelledby="portfolioModal8" aria-hidden="true">
-			<div class="modal-dialog modal-fullscreen">
-				<div class="modal-content">
-					<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-					<div class="modal-body text-center pb-5">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-lg-8">
-									<!-- Portfolio Modal - Title-->
-									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Hydrogen Atom Transfer</h2>
-									<!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <!--
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                        -->
-                                    </div>
-									<!-- Portfolio Modal - Image-->
-									<div id="appletplace8" style="width:100%;height:100%;background-color:white"></div>
-									</br>
-									</br>
-									<input type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol8,'animation resume');} else {Jmol.script(jmol8,'animation pause');}"/>
-									<input id="timelineRange8" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol8, 'frame ' + this.value); timelineAmount8.value=this.value" />
-									<input id="timelineAmount8" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol8, 'frame ' + this.value); timelineRange8.value=this.value" />
-									<a class="btn btn-secondary" href="javascript: Jmol.script(jmol8, 'frame 425');" title="Transtion State">TS</a>
-									</br>
-									</br>
-									<a class="btn btn-secondary">Speed</a>
-									<input id="fpsRange8" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol8, 'animation fps ' + this.value); fpsAmount8.value=this.value" />
-									<input id="fpsAmount8" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol8, 'animation fps ' + this.value); fpsRange8.value=this.value" />
-									</br>
-									</br>                                    
-									<!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">									The antibond of a carbon-leaving group bond is typically low in energy and constitutes the LUMO for many molecules containing leaving groups.  Note that the LUMO of the starting material in the reaction shown is comprised primarily of the C-Br antibond.  However, in this molecule adjacent C-H bonds can align and hyperconjugate with the C-Br antibond.  Consequently, the LUMO is extended to the hydrogens that are anti to the C-Br bond.  
-                                    When methoxide approaches (see the HOMO), it can attack the C-Br antibond (as shown) or one of the two hydrogens involved in hyperconjugation, aas shown in the LUMO (see the competing E2 reaction).  Attack of the C-Br antibond displaces bromide ion and yields a new C-O bond.  A major contributing factor to the reaction outcome in this case is the steric environment of the C-Br antibond.  In the space-filling model, note that approach of methoxide to the C-Br antibond is hindered by the anti hydrogens.  This steric hindrance will favor attack at one of the anti hydrogens rather than at the C-Br antibond.  Products in this reaction result from both E2 and SN2 pathways (see the text).  Remember that in reactions with a good base/nucleophile such as methoxide, molecules containing primary leaving groups will give almost exclusively SN2 products, while those containing tertiary leaving groups will give E2 products.    .</p>
-									<button class="btn btn-primary" href="javascript:Jmol.script(jmol8,'animation off')" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-								</div>
-							</div>
-						</div>
-					</div>
+	</section>
+	<!-- About Section-->
+	<section class="page-section" id="about">
+		<div class="container">
+			<!-- About Section Heading-->
+			<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">About Us</h2>
+			<br />
+			<br />
+			<!-- About Section Content-->
+			<div class="row">
+				<div class="col-lg-4 ms-auto text-secondary">
+					<p class="lead">By adhering to accepted guidelines and standards for accessibility and usability
+						webORA is committed to providing a website that is accessible to the widest possible audience.
+						This work is the result of a Brigham Young University-Temple University collaboration with the
+						goal of providing organic reaction animations based on physically correct direct dynamics
+						simulations.</p>
+				</div>
+				<div class="col-lg-4 me-auto text-secondary">
+					<p class="lead">Prof. Ess, Prof. Fleming, Dr. Shusen Chen, and undergraduate students Allyson Yu and
+						Josh Schneider have contributed to creating webORA. The development of webORA is supported by
+						the US National Science Foundation: DUE-2121023.</p>
 				</div>
 			</div>
 		</div>
-
-		<!-- Portfolio Modal 9-->
-		<div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" aria-labelledby="portfolioModal9" aria-hidden="true">
-			<div class="modal-dialog modal-fullscreen">
-				<div class="modal-content">
-					<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-					<div class="modal-body text-center pb-5">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-lg-8">
-									<!-- Portfolio Modal - Title-->
-									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Ring Flip of Cyclohexane</h2>
-									<!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <!--
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                        -->
-                                    </div>
-									<!-- Portfolio Modal - Image-->
-									<div id="appletplace9" style="width:100%;height:100%;background-color:white"></div>
-									</br>
-									</br>
-									<input type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol9,'animation resume');} else {Jmol.script(jmol9,'animation pause');}"/>
-									<input id="timelineRange9" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol9, 'frame ' + this.value); timelineAmount9.value=this.value" />
-									<input id="timelineAmount9" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol9, 'frame ' + this.value); timelineRange9.value=this.value" />
-									<a class="btn btn-secondary" href="javascript: Jmol.script(jmol9, 'frame 3000');" title="Transtion State">TS</a>
-									</br>
-									</br>
-									<a class="btn btn-secondary">Speed</a>
-									<input id="fpsRange9" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol9, 'animation fps ' + this.value); fpsAmount9.value=this.value" />
-									<input id="fpsAmount9" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol9, 'animation fps ' + this.value); fpsRange9.value=this.value" />
-									</br>
-									</br>                                    
-									<!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">									The antibond of a carbon-leaving group bond is typically low in energy and constitutes the LUMO for many molecules containing leaving groups.  Note that the LUMO of the starting material in the reaction shown is comprised primarily of the C-Br antibond.  However, in this molecule adjacent C-H bonds can align and hyperconjugate with the C-Br antibond.  Consequently, the LUMO is extended to the hydrogens that are anti to the C-Br bond.  
-                                    When methoxide approaches (see the HOMO), it can attack the C-Br antibond (as shown) or one of the two hydrogens involved in hyperconjugation, aas shown in the LUMO (see the competing E2 reaction).  Attack of the C-Br antibond displaces bromide ion and yields a new C-O bond.  A major contributing factor to the reaction outcome in this case is the steric environment of the C-Br antibond.  In the space-filling model, note that approach of methoxide to the C-Br antibond is hindered by the anti hydrogens.  This steric hindrance will favor attack at one of the anti hydrogens rather than at the C-Br antibond.  Products in this reaction result from both E2 and SN2 pathways (see the text).  Remember that in reactions with a good base/nucleophile such as methoxide, molecules containing primary leaving groups will give almost exclusively SN2 products, while those containing tertiary leaving groups will give E2 products.    .</p>
-									<button class="btn btn-primary" href="javascript:Jmol.script(jmol9,'animation off')" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-								</div>
-							</div>
-						</div>
-					</div>
+	</section>
+	<!-- Contact Section-->
+	<section class="page-section bg-primary text-white mb-0" id="contact">
+		<div class="container">
+			<!-- Contact Section Heading-->
+			<h2 class="page-section-heading text-center text-uppercase mb-0">Contact Us</h2>
+			<br />
+			<br />
+			<div class="lg-4 ms-auto text-center">
+				<p class="lead">For more information, please contact Prof. Dan Ess (dhe@chem.byu.edu) or Prof. Steven
+					Fleming (sfleming@temple.edu).</p>
+			</div>
+			<h5> <a href="https://forms.gle/3SHWJLsFzEHbUnLi8" style="color:white">Feedback Form</a> </h5>
+		</div>
+		</div>
+	</section>
+	<!-- Footer-->
+	<footer class="footer text-center">
+		<div class="container">
+			<div class="row">
+				<!-- Footer Location-->
+				<div class="col-lg-4 mb-5 mb-lg-0">
+					<h4 class="text-uppercase mb-4">Support</h4>
+					<p class="lead mb-0">
+						The development of webORA and iORA are supported by the US National Science Foundation:
+						DUE-2121023
+					</p>
+				</div>
+				<!-- Footer Social Icons-->
+				<div class="col-lg-4 mb-5 mb-lg-0">
+					<h4 class="text-uppercase mb-4">Around the Web</h4>
+					<a class="btn btn-outline-light btn-social mx-1" href="#!"><i
+							class="fab fa-fw fa-facebook-f"></i></a>
+					<a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+					<a class="btn btn-outline-light btn-social mx-1" href="#!"><i
+							class="fab fa-fw fa-linkedin-in"></i></a>
+					<a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+				</div>
+				<!-- Footer About Text-->
+				<div class="col-lg-4">
+					<h4 class="text-uppercase mb-4">About Webora</h4>
+					<p class="lead mb-0">
+						WebORA uses Freelance, a MIT licensed Bootstrap theme created by
+						<a href="http://startbootstrap.com">Start Bootstrap</a>
+					</p>
 				</div>
 			</div>
 		</div>
-		
-		<!-- Portfolio Modal 10-->
-		<div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" aria-labelledby="portfolioModal10" aria-hidden="true">
-			<div class="modal-dialog modal-fullscreen">
-				<div class="modal-content">
-					<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-					<div class="modal-body text-center pb-5">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-lg-8">
-									<!-- Portfolio Modal - Title-->
-									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Cope Rearrangement</h2>
-									<!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <!--
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                        -->
-                                    </div>
-									<!-- Portfolio Modal - Image-->
-									<div id="appletplace10" style="width:100%;height:100%;background-color:white"></div>
-									</br>
-									</br>
-									<input type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol10,'animation resume');} else {Jmol.script(jmol10,'animation pause');}"/>
-									<input id="timelineRange10" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol10, 'frame ' + this.value); timelineAmount10.value=this.value" />
-									<input id="timelineAmount10" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol10, 'frame ' + this.value); timelineRange10.value=this.value" />
-									<a class="btn btn-secondary" href="javascript: Jmol.script(jmol10, 'frame 1000');" title="Transtion State">TS</a>
-									</br>
-									</br>
-									<a class="btn btn-secondary">Speed</a>
-									<input id="fpsRange10" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol10, 'animation fps ' + this.value); fpsAmount10.value=this.value" />
-									<input id="fpsAmount10" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol10, 'animation fps ' + this.value); fpsRange10.value=this.value" />
-									</br>
-									</br>                                    
-									<!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">
-                                    This trajectory shows the conformational change required to achieve the highly organized [3,3] sigmatropic rearrangement transition state. Press the TS button to look at the transition-state structure, which has a chair conformation. After the transition state the structure unwraps through another conformational change.
-                                    </p>
-									<button class="btn btn-primary" href="javascript:Jmol.script(jmol10,'animation off')" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Portfolio Modal 11-->
-		<div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" aria-labelledby="portfolioModal11" aria-hidden="true">
-			<div class="modal-dialog modal-fullscreen">
-				<div class="modal-content">
-					<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-					<div class="modal-body text-center pb-5">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-lg-8">
-									<!-- Portfolio Modal - Title-->
-									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">SN1 Reaction</h2>
-									<!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <!--
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                        -->
-                                    </div>
-									<!-- Portfolio Modal - Image-->
-									<div id="appletplace11" style="width:100%;height:100%;background-color:white"></div>
-									</br>
-									</br>
-									<input type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol11,'animation resume');} else {Jmol.script(jmol11,'animation pause');}"/>
-									<input id="timelineRange11" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol11, 'frame ' + this.value); timelineAmount11.value=this.value" />
-									<input id="timelineAmount11" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol11, 'frame ' + this.value); timelineRange11.value=this.value" />
-									<!-- <a class="btn btn-secondary" href="javascript: Jmol.script(jmol11, 'frame 73');" title="Transtion State">TS</a> -->
-									</br>
-									</br>
-									<a class="btn btn-secondary">Speed</a>
-									<input id="fpsRange11" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol11, 'animation fps ' + this.value); fpsAmount11.value=this.value" />
-									<input id="fpsAmount11" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol11, 'animation fps ' + this.value); fpsRange11.value=this.value" />
-									</br>
-									</br>                                    
-									<!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Check later.</p>
-									<button class="btn btn-primary" href="javascript:Jmol.script(jmol11,'animation off')" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Portfolio Modal 12-->
-		<div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" aria-labelledby="portfolioModal12" aria-hidden="true">
-			<div class="modal-dialog modal-fullscreen">
-				<div class="modal-content">
-					<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-					<div class="modal-body text-center pb-5">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-lg-8">
-									<!-- Portfolio Modal - Title-->
-									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Radical Addition</h2>
-									<!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <!--
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                        -->
-                                    </div>
-									<!-- Portfolio Modal - Image-->
-									<div id="appletplace12" style="width:100%;height:100%;background-color:white"></div>
-									</br>
-									</br>
-									<input type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol12,'animation resume');} else {Jmol.script(jmol12,'animation pause');}"/>
-									<input id="timelineRange12" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol12, 'frame ' + this.value); timelineAmount12.value=this.value" />
-									<input id="timelineAmount12" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol12, 'frame ' + this.value); timelineRange12.value=this.value" />
-									<a class="btn btn-secondary" href="javascript: Jmol.script(jmol12, 'frame 1000');" title="Transtion State">TS</a>
-									</br>
-									</br>
-									<a class="btn btn-secondary">Speed</a>
-									<input id="fpsRange12" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol12, 'animation fps ' + this.value); fpsAmount12.value=this.value" />
-									<input id="fpsAmount12" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol12, 'animation fps ' + this.value); fpsRange12.value=this.value" />
-									</br>
-									</br>                                    
-									<!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">									The antibond of a carbon-leaving group bond is typically low in energy and constitutes the LUMO for many molecules containing leaving groups.  Note that the LUMO of the starting material in the reaction shown is comprised primarily of the C-Br antibond.  However, in this molecule adjacent C-H bonds can align and hyperconjugate with the C-Br antibond.  Consequently, the LUMO is extended to the hydrogens that are anti to the C-Br bond.  
-                                    When methoxide approaches (see the HOMO), it can attack the C-Br antibond (as shown) or one of the two hydrogens involved in hyperconjugation, aas shown in the LUMO (see the competing E2 reaction).  Attack of the C-Br antibond displaces bromide ion and yields a new C-O bond.  A major contributing factor to the reaction outcome in this case is the steric environment of the C-Br antibond.  In the space-filling model, note that approach of methoxide to the C-Br antibond is hindered by the anti hydrogens.  This steric hindrance will favor attack at one of the anti hydrogens rather than at the C-Br antibond.  Products in this reaction result from both E2 and SN2 pathways (see the text).  Remember that in reactions with a good base/nucleophile such as methoxide, molecules containing primary leaving groups will give almost exclusively SN2 products, while those containing tertiary leaving groups will give E2 products.    .</p>
-									<button class="btn btn-primary" href="javascript:Jmol.script(jmol12,'animation off')" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Portfolio Modal 13-->
-		<div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" aria-labelledby="portfolioModal13" aria-hidden="true">
-			<div class="modal-dialog modal-fullscreen">
-				<div class="modal-content">
-					<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-					<div class="modal-body text-center pb-5">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-lg-8">
-									<!-- Portfolio Modal - Title-->
-									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Hydroboration</h2>
-									<!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <!--
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                        -->
-                                    </div>
-									<!-- Portfolio Modal - Image-->
-									<div id="appletplace13" style="width:100%;height:100%;background-color:white"></div>
-									</br>
-									</br>
-									<input type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol13,'animation resume');} else {Jmol.script(jmol13,'animation pause');}"/>
-									<input id="timelineRange13" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol13, 'frame ' + this.value); timelineAmount13.value=this.value" />
-									<input id="timelineAmount13" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol13, 'frame ' + this.value); timelineRange13.value=this.value" />
-									<!-- <a class="btn btn-secondary" href="javascript: Jmol.script(jmol13, 'frame 1000');" title="Transtion State">TS</a> -->
-									</br>
-									</br>
-									<a class="btn btn-secondary">Speed</a>
-									<input id="fpsRange13" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol13, 'animation fps ' + this.value); fpsAmount13.value=this.value" />
-									<input id="fpsAmount13" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol13, 'animation fps ' + this.value); fpsRange13.value=this.value" />
-									</br>
-									</br>                                    
-									<!-- Portfolio Modal - Text-->
-                                    <p class="mb-4"> Check later.</p>
-									<button class="btn btn-primary" href="javascript:Jmol.script(jmol13,'animation off')" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Portfolio Modal 14-->
-		<div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" aria-labelledby="portfolioModal14" aria-hidden="true">
-			<div class="modal-dialog modal-fullscreen">
-				<div class="modal-content">
-					<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-					<div class="modal-body text-center pb-5">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-lg-8">
-									<!-- Portfolio Modal - Title-->
-									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Epoxidation</h2>
-									<!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <!--
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                        -->
-                                    </div>
-									<!-- Portfolio Modal - Image-->
-									<div id="appletplace14" style="width:100%;height:100%;background-color:white"></div>
-									</br>
-									</br>
-									<input type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol14,'animation resume');} else {Jmol.script(jmol14,'animation pause');}"/>
-									<input id="timelineRange14" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol14, 'frame ' + this.value); timelineAmount14.value=this.value" />
-									<input id="timelineAmount14" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol14, 'frame ' + this.value); timelineRange14.value=this.value" />
-									<a class="btn btn-secondary" href="javascript: Jmol.script(jmol14, 'frame 1000');" title="Transtion State">TS</a>
-									</br>
-									</br>
-									<a class="btn btn-secondary">Speed</a>
-									<input id="fpsRange14" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol14, 'animation fps ' + this.value); fpsAmount14.value=this.value" />
-									<input id="fpsAmount14" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol14, 'animation fps ' + this.value); fpsRange14.value=this.value" />
-									</br>
-									</br>                                    
-									<!-- Portfolio Modal - Text-->
-									<p class="mb-4">Check Later</p>
-									<button class="btn btn-primary" href="javascript:Jmol.script(jmol14,'animation off')" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Portfolio Modal 15-->
-		<div class="portfolio-modal modal fade" id="portfolioModal15" tabindex="-1" aria-labelledby="portfolioModal15" aria-hidden="true">
-			<div class="modal-dialog modal-fullscreen">
-				<div class="modal-content">
-					<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-					<div class="modal-body text-center pb-5">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-lg-8">
-									<!-- Portfolio Modal - Title-->
-									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Carbene Cycloaddition</h2>
-									<!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <!--
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                        -->
-                                    </div>
-									<!-- Portfolio Modal - Image-->
-									<div id="appletplace15" style="width:100%;height:100%;background-color:white"></div>
-									</br>
-									</br>
-									<input type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol15,'animation resume');} else {Jmol.script(jmol15,'animation pause');}"/>
-									<input id="timelineRange15" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol15, 'frame ' + this.value); timelineAmount15.value=this.value" />
-									<input id="timelineAmount15" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol15, 'frame ' + this.value); timelineRange15.value=this.value" />
-									<a class="btn btn-secondary" href="javascript: Jmol.script(jmol15, 'frame 251');" title="Transtion State">TS</a>
-									</br>
-									</br>
-									<a class="btn btn-secondary">Speed</a>
-									<input id="fpsRange15" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol15, 'animation fps ' + this.value); fpsAmount15.value=this.value" />
-									<input id="fpsAmount15" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol15, 'animation fps ' + this.value); fpsRange15.value=this.value" />
-									</br>
-									</br>                                    
-									<!-- Portfolio Modal - Text-->
-									<p class="mb-4">Check Later</p>
-									<button class="btn btn-primary" href="javascript:Jmol.script(jmol15,'animation off')" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Portfolio Modal 16-->
-		<div class="portfolio-modal modal fade" id="portfolioModal16" tabindex="-1" aria-labelledby="portfolioModal16" aria-hidden="true">
-			<div class="modal-dialog modal-fullscreen">
-				<div class="modal-content">
-					<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-					<div class="modal-body text-center pb-5">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-lg-8">
-									<!-- Portfolio Modal - Title-->
-									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Proton Transfer</h2>
-									<!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <!--
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                        -->
-                                    </div>
-									<!-- Portfolio Modal - Image-->
-									<div id="appletplace16" style="width:100%;height:100%;background-color:white"></div>
-									</br>
-									</br>
-									<input type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol16,'animation resume');} else {Jmol.script(jmol16,'animation pause');}"/>
-									<input id="timelineRange16" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol16, 'frame ' + this.value); timelineAmount16.value=this.value" />
-									<input id="timelineAmount16" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol16, 'frame ' + this.value); timelineRange16.value=this.value" />
-									<!-- <a class="btn btn-secondary" href="javascript: Jmol.script(jmol16, 'frame 1000');" title="Transtion State">TS</a> -->
-									</br>
-									</br>
-									<a class="btn btn-secondary">Speed</a>
-									<input id="fpsRange16" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol16, 'animation fps ' + this.value); fpsAmount16.value=this.value" />
-									<input id="fpsAmount16" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol16, 'animation fps ' + this.value); fpsRange16.value=this.value" />
-									</br>
-									</br>                                    
-									<!-- Portfolio Modal - Text-->
-									<p class="mb-4">Check Later</p>
-									<button class="btn btn-primary" href="javascript:Jmol.script(jmol16,'animation off')" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Portfolio Modal 17-->
-		<div class="portfolio-modal modal fade" id="portfolioModal17" tabindex="-1" aria-labelledby="portfolioModal17" aria-hidden="true">
-			<div class="modal-dialog modal-fullscreen">
-				<div class="modal-content">
-					<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-					<div class="modal-body text-center pb-5">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-lg-8">
-									<!-- Portfolio Modal - Title-->
-									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Proton Transfer</h2>
-									<!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <!--
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                        -->
-                                    </div>
-									<!-- Portfolio Modal - Image-->
-									<div id="appletplace17" style="width:100%;height:100%;background-color:white"></div>
-									</br>
-									</br>
-									<input type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol17,'animation resume');} else {Jmol.script(jmol17,'animation pause');}"/>
-									<input id="timelineRange17" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol17, 'frame ' + this.value); timelineAmount17.value=this.value" />
-									<input id="timelineAmount17" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol17, 'frame ' + this.value); timelineRange17.value=this.value" />
-									<!-- <a class="btn btn-secondary" href="javascript: Jmol.script(jmol17, 'frame 1000');" title="Transtion State">TS</a> -->
-									</br>
-									</br>
-									<a class="btn btn-secondary">Speed</a>
-									<input id="fpsRange17" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol17, 'animation fps ' + this.value); fpsAmount17.value=this.value" />
-									<input id="fpsAmount17" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol17, 'animation fps ' + this.value); fpsRange17.value=this.value" />
-									</br>
-									</br>                                    
-									<!-- Portfolio Modal - Text-->
-									<p class="mb-4">Check Later</p>
-									<button class="btn btn-primary" href="javascript:Jmol.script(jmol17,'animation off')" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Portfolio Modal 18-->
-		<div class="portfolio-modal modal fade" id="portfolioModal18" tabindex="-1" aria-labelledby="portfolioModal18" aria-hidden="true">
-			<div class="modal-dialog modal-fullscreen">
-				<div class="modal-content">
-					<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-					<div class="modal-body text-center pb-5">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-lg-8">
-									<!-- Portfolio Modal - Title-->
-									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Non-productive SN2 Reaction</h2>
-									<!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <!--
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                        -->
-                                    </div>
-									<!-- Portfolio Modal - Image-->
-									<div id="appletplace18a" style="width:100%;height:100%;background-color:white"></div>
-									</br>
-									</br>
-									<input type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol18a,'animation resume');} else {Jmol.script(jmol18a,'animation pause');}"/>
-									<input id="timelineRange18a" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol18a, 'frame ' + this.value); timelineAmount18a.value=this.value" />
-									<input id="timelineAmount18a" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol18a, 'frame ' + this.value); timelineRange18a.value=this.value" />
-									<a class="btn btn-secondary" href="javascript: Jmol.script(jmol18a, 'frame 1000');" title="Transtion State">TS</a>
-									</br>
-									</br>
-									<a class="btn btn-secondary">Speed</a>
-									<input id="fpsRange18a" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol18a, 'animation fps ' + this.value); fpsAmount18a.value=this.value" />
-									<input id="fpsAmount18a" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol18a, 'animation fps ' + this.value); fpsRange18a.value=this.value" />
-									</br>
-									</br>
-									<!-- Portfolio Modal - Image-->
-									<div id="appletplace18" style="width:100%;height:100%;background-color:white"></div>
-									</br>
-									</br>
-									<input type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol18,'animation resume');} else {Jmol.script(jmol18,'animation pause');}"/>
-									<input id="timelineRange18" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol18, 'frame ' + this.value); timelineAmount18.value=this.value" />
-									<input id="timelineAmount18" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol18, 'frame ' + this.value); timelineRange18.value=this.value" />
-									<!-- <a class="btn btn-secondary" href="javascript: Jmol.script(jmol18, 'frame 1000');" title="Transtion State">TS</a> -->
-									</br>
-									</br>
-									<a class="btn btn-secondary">Speed</a>
-									<input id="fpsRange18" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol18, 'animation fps ' + this.value); fpsAmount18.value=this.value" />
-									<input id="fpsAmount18" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol18, 'animation fps ' + this.value); fpsRange18.value=this.value" />
-									</br>
-									</br> 									
-									<!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Check Later</p>
-									<button class="btn btn-primary" href="javascript:Jmol.script(jmol18,'animation off');Jmol.script(jmol18a,'animation off')" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Portfolio Modal 19-->
-		<div class="portfolio-modal modal fade" id="portfolioModal19" tabindex="-1" aria-labelledby="portfolioModal19" aria-hidden="true">
-			<div class="modal-dialog modal-fullscreen">
-				<div class="modal-content">
-					<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-					<div class="modal-body text-center pb-5">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-lg-8">
-									<!-- Portfolio Modal - Title-->
-									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">E1cb Reaction</h2>
-									<!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <!--
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                        -->
-                                    </div>
-									<!-- Portfolio Modal - Image-->
-									<div id="appletplace19" style="width:100%;height:100%;background-color:white"></div>
-									</br>
-									</br>
-									<input type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol19,'animation resume');} else {Jmol.script(jmol19,'animation pause');}"/>
-									<input id="timelineRange19" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol19, 'frame ' + this.value); timelineAmount19.value=this.value" />
-									<input id="timelineAmount19" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol19, 'frame ' + this.value); timelineRange19.value=this.value" />
-									<!-- <a class="btn btn-secondary" href="javascript: Jmol.script(jmol19, 'frame 1000');" title="Transtion State">TS</a> -->
-									</br>
-									</br>
-									<a class="btn btn-secondary">Speed</a>
-									<input id="fpsRange19" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol19, 'animation fps ' + this.value); fpsAmount19.value=this.value" />
-									<input id="fpsAmount19" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol19, 'animation fps ' + this.value); fpsRange19.value=this.value" />
-									</br>
-									</br>                                    
-									<!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Check Later</p>
-									<button class="btn btn-primary" href="javascript:Jmol.script(jmol19,'animation off')" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Portfolio Modal 20-->
-		<div class="portfolio-modal modal fade" id="portfolioModal20" tabindex="-1" aria-labelledby="portfolioModal20" aria-hidden="true">
-			<div class="modal-dialog modal-fullscreen">
-				<div class="modal-content">
-					<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-					<div class="modal-body text-center pb-5">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-lg-8">
-									<!-- Portfolio Modal - Title-->
-									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Carbocation Rearrangement</h2>
-									<!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <!--
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                        -->
-                                    </div>
-									<!-- Portfolio Modal - Image-->
-									<div id="appletplace20" style="width:100%;height:100%;background-color:white"></div>
-									</br>
-									</br>
-									<input type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol20,'animation resume');} else {Jmol.script(jmol20,'animation pause');}"/>
-									<input id="timelineRange20" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol20, 'frame ' + this.value); timelineAmount20.value=this.value" />
-									<input id="timelineAmount20" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol20, 'frame ' + this.value); timelineRange20.value=this.value" />
-									<!-- <a class="btn btn-secondary" href="javascript: Jmol.script(jmol20, 'frame 1000');" title="Transtion State">TS</a> -->
-									</br>
-									</br>
-									<a class="btn btn-secondary">Speed</a>
-									<input id="fpsRange20" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol20, 'animation fps ' + this.value); fpsAmount20.value=this.value" />
-									<input id="fpsAmount20" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol20, 'animation fps ' + this.value); fpsRange20.value=this.value" />
-									</br>
-									</br>                                    
-									<!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Check Later</p>
-									<button class="btn btn-primary" href="javascript:Jmol.script(jmol20,'animation off')" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Portfolio Modal 21-->
-		<div class="portfolio-modal modal fade" id="portfolioModal21" tabindex="-1" aria-labelledby="portfolioModal21" aria-hidden="true">
-			<div class="modal-dialog modal-fullscreen">
-				<div class="modal-content">
-					<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-					<div class="modal-body text-center pb-5">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-lg-8">
-									<!-- Portfolio Modal - Title-->
-									<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Acetone Reduction</h2>
-									<!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <!--
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                        -->
-                                    </div>
-									<!-- Portfolio Modal - Image-->
-									<div id="appletplace21" style="width:100%;height:100%;background-color:white"></div>
-									</br>
-									</br>
-									<input id="switch21" type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol21,'animation resume');} else {Jmol.script(jmol21,'animation pause');}"/>
-									<input id="timelineRange21" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol21, 'frame ' + this.value); timelineAmount21.value=this.value" />
-									<input id="timelineAmount21" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol21, 'frame ' + this.value); timelineRange21.value=this.value" />
-									<a class="btn btn-secondary" href="javascript: Jmol.script(jmol21, 'frame 1000');" title="Transtion State">TS</a>
-									</br>
-									</br>
-									<a class="btn btn-secondary">Speed</a>
-									<input id="fpsRange21" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol21, 'animation fps ' + this.value); fpsAmount21.value=this.value" />
-									<input id="fpsAmount21" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol21, 'animation fps ' + this.value); fpsRange21.value=this.value" />
-									</br>
-									</br>
-									<label><input id="toggle21" type="checkbox"/>Check here to turn on the pop-up subtitles for the reaction.</label>
-									</br> 
-									</br>
-									<!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Check Later</p>
-									<button class="btn btn-primary" href="javascript:Jmol.script(jmol21,'animation off')" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-		<!-- Put JSmol script here -->
-		<script src="https://3Dmol.org/build/3Dmol-min.js" async></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-		<script type="text/javascript" src="js/JSmol.min.js"></script>
-
-		<script type="text/javascript">
-
-		;(function() {
-
-		// ?_USE=JAVA   ?_USE=SIGNED   ?_USE=HTML5
-
-		// Developers: The _debugCode flag is checked in j2s/java/core.z.js, 
-		// and, if TRUE, skips loading the core methods, forcing those
-		// to be read from their individual directories. Set this
-		// true if you want to do some code debugging by inserting
-		// System.out.println(x), document.title=x, or alert(x) 
-		// anywhere in the Java or Jmol code.
-
-		//var s = document.location.search;
-		//Jmol._debugCode = (s.indexOf("debugcode") >= 0);
-
-		//jmol_isReady = function(applet) {
-		//	document.title = (applet._id + " is ready")
-		//	Jmol._getElement(applet, "appletdiv").style.border="1px solid blue"
-		//}		
-		
-		update1 = function(_, _, fileNo, modelNo, _, lastNo){
-			timelineAmount1.value = modelNo;
-			timelineRange1.value = modelNo;
-			timelineAmount1.max = lastNo - fileNo * 1000000;
-			timelineRange1.max = lastNo - fileNo * 1000000;
-			if (modelNo == 2 && toggle1.checked) {
-				Jmol.script(jmol1,"echo The animation begins with the methoxide |in proximity of the backside of the carbon-bromine bond (compare to Reaction #1).| However, the SN2 path from this position would be hindered by the steric interaction |between the C-1 methyl group and the methyl group of the methoxide.");
-				Jmol.script(jmol1,'animation pause');
-				switch1.checked = false;
+	</footer>
+	<!-- Copyright Section-->
+	<div class="copyright py-4 text-center text-white">
+		<div class="container"><small>Copyright &copy; WebORA 2021</small></div>
+	</div>
+	<!-- Portfolio Modals-->
+	<script type="text/javascript">
+		for (let i = 0; i < reactions.length; i++) {
+			let tsBotton = "";
+			if(reactions[i].TSframe) {
+				tsBotton = `<a class="btn btn-secondary" href="javascript: Jmol.script(jmol${i}, 'frame ${reactions[i].TSframe}');" title="Transtion State">TS</a>`;
 			}
-			if (modelNo == 282 && toggle1.checked) {
-				Jmol.script(jmol1,"echo Notice that the methoxide is tempted to deprotonate the beta anti-periplanar hydrogen on C-1 at step 282.");
-				Jmol.script(jmol1,'animation pause');
-				switch1.checked = false;
+			let variantHtml = "";
+			for (let j = 0; reactions[i].variants && j < reactions[i].variants.length; j++) {
+				let variantTsBotton = "";
+				if (reactions[i].variants[j].TSframe) variantTsBotton = `<a class="btn btn-secondary" href="javascript: Jmol.script(jmol${i}_${j}, 'frame ${reactions[i].variants[j].TSframe}');" title="Transtion State">TS</a>`;
+				variantHtml += `<div id="appletplace${i}_${j}" style="width:100%;height:100%;background-color:white"></div>
+				<br /><br />
+				<input id="switch${i}_${j}" type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol${i}_${j},'animation resume');} else {Jmol.script(jmol${i}_${j},'animation pause');}"/>
+				<input id="timelineRange${i}_${j}" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol${i}_${j}, 'frame ' + this.value); timelineAmount${i}_${j}.value=this.value" />
+				<input id="timelineAmount${i}_${j}" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol${i}_${j}, 'frame ' + this.value); timelineRange${i}_${j}.value=this.value" />
+				${variantTsBotton}
+				<br /><br />
+				<a class="btn btn-secondary">Speed</a>
+				<input id="fpsRange${i}_${j}" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol${i}_${j}, 'animation fps ' + this.value); fpsAmount${i}_${j}.value=this.value" />
+				<input id="fpsAmount${i}_${j}" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol${i}_${j}, 'animation fps ' + this.value); fpsRange${i}_${j}.value=this.value" />
+				<br /><br />
+				<label class="text-body"><input id="toggle${i}_${j}" type="checkbox"/>Walk me through the reaction</label>
+				<br /><br />`
 			}
-			if (modelNo == 321 && toggle1.checked) {
-				Jmol.script(jmol1,"echo The methoxide shifts over to the beta anti-periplanar hydrogen on C-3 at step 321.");
-				Jmol.script(jmol1,'animation pause');
-				switch1.checked = false;
-			}
-			if (modelNo == 357 && toggle1.checked) {
-				Jmol.script(jmol1,"echo Then at step 357 that beta hydrogen is deprotonated. |The C—Br bond is elongated as the beta hydrogen is deprotonated.");
-				Jmol.script(jmol1,'animation pause');
-				switch1.checked = false;
-			}
-			if (modelNo == 365 && toggle1.checked) {
-				Jmol.script(jmol1,"echo The alkene forms at roughly the same time as the methanol is formed and the bromide anion is released.| You can see this at step 365.");
-				Jmol.script(jmol1,'animation pause');
-				switch1.checked = false;
-			}
-			if (modelNo == 365 && toggle1.checked) {
-				Jmol.script(jmol1,"echo The methanol and the bromide both move away from the alkene |because there are no attractive forces to hold them together.");
-				Jmol.script(jmol1,'animation pause');
-				switch1.checked = false;
-			}	
+			const html = `<div class="portfolio-modal modal fade" id="portfolioModal${i}" tabindex="-1" aria-labelledby="portfolioModal${i}" aria-hidden="true">
+				<div class="modal-dialog modal-fullscreen">
+					<div class="modal-content">
+						<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+							<div class="modal-body text-center pb-5">
+								<div class="container">
+									<div class="row justify-content-center">
+										<div class="col-lg-8">
+											<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">${reactions[i].name}</h2>
+											<br /><br />
+											<div id="appletplace${i}" style="width:100%;height:100%;background-color:white"></div>
+											<br /><br />
+											<input id="switch${i}" type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol${i}, 'animation resume');} else {Jmol.script(jmol${i}, 'animation pause');}"/>
+											<input id="timelineRange${i}" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol${i}, 'frame ' + this.value); timelineAmount${i}.value=this.value" />
+											<input id="timelineAmount${i}" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol${i}, 'frame ' + this.value); timelineRange${i}.value=this.value" />
+											${tsBotton}
+											<br /><br />
+											<a class="btn btn-secondary">Speed</a>
+											<input id="fpsRange${i}" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol${i}, 'animation fps ' + this.value); fpsAmount${i}.value=this.value" />
+											<input id="fpsAmount${i}" type="number" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol${i}, 'animation fps ' + this.value); fpsRange${i}.value=this.value" />
+											<br /><br />
+											<label class="text-body"><input id="toggle${i}" type="checkbox"/>Walk me through the reaction</label>
+											<br /><br />
+											${variantHtml}
+											<p class="mb-4 text-body">${reactions[i].writeup}</p>
+											<a class="btn btn-primary" href="javascript:Jmol.script(jmol${i}, 'animation off')" data-bs-dismiss="modal">
+												<i class="fas fa-times fa-fw"></i>
+												Close Window
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>`;
+			document.write(html);
 		}
-		update2 = function(_, _, fileNo, modelNo, _, lastNo){
-			timelineAmount2.value = modelNo;
-			timelineRange2.value = modelNo;
-			timelineAmount2.max = lastNo - fileNo * 1000000;
-			timelineRange2.max = lastNo - fileNo * 1000000;			
-			if (modelNo == 100 && toggle2.checked) {
-				Jmol.script(jmol2,"echo The animation begins with the methoxide in proximity of the backside of the carbon-bromine bond.|It is that position that is required for the reaction to proceed.|The two reagents would be held in proximity of each other by the solvent used in the reaction.|The animation does not show the solvent in this case.");
-				Jmol.script(jmol2,'animation pause');
-				switch2.checked = false;
-			}
-			if (modelNo == 300 && toggle2.checked) {
-				Jmol.script(jmol2,"echo Notice that the methoxide is tempted to deprotonate one of the beta hydrogens. |That would lead to the E2 reaction. There are two anti-periplanar beta hydrogens and both are acidic.");
-				Jmol.script(jmol2,'animation pause');
-				switch2.checked = false
-			}
-			if (modelNo == 500 && toggle2.checked) {
-				Jmol.script(jmol2,"echo Once the methoxide group gets into a conformation that favors |the nucleophilic attack into the unoccupied anti-bond of the C—Br bond (the LUMO),| then the reaction proceeds to give the substituted product. |Note that inversion occurs at the carbon that the methoxide attacks.|");
-				Jmol.script(jmol2,'animation pause');
-				switch2.checked = false
-			}
-		}
-		update3 = function(_, _, fileNo, modelNo, _, lastNo){
-			timelineAmount3.value = modelNo;
-			timelineRange3.value = modelNo;
-			timelineAmount3.max = lastNo - fileNo * 1000000;
-			timelineRange3.max = lastNo - fileNo * 1000000;
-		}
-		update4 = function(_, _, fileNo, modelNo, _, lastNo){
-			timelineAmount4.value = modelNo;
-			timelineRange4.value = modelNo;
-			timelineAmount4.max = lastNo - fileNo * 1000000;
-			timelineRange4.max = lastNo - fileNo * 1000000;
-		}
-		update5 = function(_, _, fileNo, modelNo, _, lastNo){
-			timelineAmount5.value = modelNo;
-			timelineRange5.value = modelNo;
-			timelineAmount5.max = lastNo - fileNo * 1000000;
-			timelineRange5.max = lastNo - fileNo * 1000000;
-		}
-		update6 = function(_, _, fileNo, modelNo, _, lastNo){
-			timelineAmount6.value = modelNo;
-			timelineRange6.value = modelNo;
-			timelineAmount6.max = lastNo - fileNo * 1000000;
-			timelineRange6.max = lastNo - fileNo * 1000000;
-		}
-		update7 = function(_, _, fileNo, modelNo, _, lastNo){
-			timelineAmount7.value = modelNo;
-			timelineRange7.value = modelNo;
-			timelineAmount7.max = lastNo - fileNo * 1000000;
-			timelineRange7.max = lastNo - fileNo * 1000000;
-		}
-		update8 = function(_, _, fileNo, modelNo, _, lastNo){
-			timelineAmount8.value = modelNo;
-			timelineRange8.value = modelNo;
-			timelineAmount8.max = lastNo - fileNo * 1000000;
-			timelineRange8.max = lastNo - fileNo * 1000000;
-		}
-		update9 = function(_, _, fileNo, modelNo, _, lastNo){
-			timelineAmount9.value = modelNo;
-			timelineRange9.value = modelNo;
-			timelineAmount9.max = lastNo - fileNo * 1000000;
-			timelineRange9.max = lastNo - fileNo * 1000000;
-		}
-		update10 = function(_, _, fileNo, modelNo, _, lastNo){
-			timelineAmount10.value = modelNo;
-			timelineRange10.value = modelNo;
-			timelineAmount10.max = lastNo - fileNo * 1000000;
-			timelineRange10.max = lastNo - fileNo * 1000000;
-		}
-		update11 = function(_, _, fileNo, modelNo, _, lastNo){
-			timelineAmount11.value = modelNo;
-			timelineRange11.value = modelNo;
-			timelineAmount11.max = lastNo - fileNo * 1000000;
-			timelineRange11.max = lastNo - fileNo * 1000000;
-		}		
-		update12 = function(_, _, fileNo, modelNo, _, lastNo){
-			timelineAmount12.value = modelNo;
-			timelineRange12.value = modelNo;
-			timelineAmount12.max = lastNo - fileNo * 1000000;
-			timelineRange12.max = lastNo - fileNo * 1000000;
-		}
-		update13 = function(_, _, fileNo, modelNo, _, lastNo){
-			timelineAmount13.value = modelNo;
-			timelineRange13.value = modelNo;
-			timelineAmount13.max = lastNo - fileNo * 1000000;
-			timelineRange13.max = lastNo - fileNo * 1000000;
-		}
-		update14 = function(_, _, fileNo, modelNo, _, lastNo){
-			timelineAmount14.value = modelNo;
-			timelineRange14.value = modelNo;
-			timelineAmount14.max = lastNo - fileNo * 1000000;
-			timelineRange14.max = lastNo - fileNo * 1000000;
-		}
-		update15 = function(_, _, fileNo, modelNo, _, lastNo){
-			timelineAmount15.value = modelNo;
-			timelineRange15.value = modelNo;
-			timelineAmount15.max = lastNo - fileNo * 1000000;
-			timelineRange15.max = lastNo - fileNo * 1000000;
-		}
-		update16 = function(_, _, fileNo, modelNo, _, lastNo){
-			timelineAmount16.value = modelNo;
-			timelineRange16.value = modelNo;
-			timelineAmount16.max = lastNo - fileNo * 1000000;
-			timelineRange16.max = lastNo - fileNo * 1000000;
-		}
-		update17 = function(_, _, fileNo, modelNo, _, lastNo){
-			timelineAmount17.value = modelNo;
-			timelineRange17.value = modelNo;
-			timelineAmount17.max = lastNo - fileNo * 1000000;
-			timelineRange17.max = lastNo - fileNo * 1000000;
-		}
-		update18 = function(_, _, fileNo, modelNo, _, lastNo){
-			timelineAmount18.value = modelNo;
-			timelineRange18.value = modelNo;
-			timelineAmount18.max = lastNo - fileNo * 1000000;
-			timelineRange18.max = lastNo - fileNo * 1000000;
-		}
-		update18a = function(_, _, fileNo, modelNo, _, lastNo){
-			timelineAmount18a.value = modelNo;
-			timelineRange18a.value = modelNo;
-			timelineAmount18a.max = lastNo - fileNo * 1000000;
-			timelineRange18a.max = lastNo - fileNo * 1000000;
-		}
-		update19 = function(_, _, fileNo, modelNo, _, lastNo){
-			timelineAmount19.value = modelNo;
-			timelineRange19.value = modelNo;
-			timelineAmount19.max = lastNo - fileNo * 1000000;
-			timelineRange19.max = lastNo - fileNo * 1000000;
-		}
-		update20 = function(_, _, fileNo, modelNo, _, lastNo){
-			timelineAmount20.value = modelNo;
-			timelineRange20.value = modelNo;
-			timelineAmount20.max = lastNo - fileNo * 1000000;
-			timelineRange20.max = lastNo - fileNo * 1000000;
-		}
-		update21 = function(_, _, fileNo, modelNo, _, lastNo){
-			timelineAmount21.value = modelNo;
-			timelineRange21.value = modelNo;
-			timelineAmount21.max = lastNo - fileNo * 1000000;
-			timelineRange21.max = lastNo - fileNo * 1000000;
-			if (modelNo == 10 && toggle21.checked) {
-				alert("subtitle1");
-				Jmol.script(jmol21,'animation pause');
-				switch21.checked = false;
-			}
-			if (modelNo == 20 && toggle21.checked) {
-				alert("subtitle2");
-				Jmol.script(jmol21,'animation pause');
-				switch21.checked = false
-			}
-		}
-		
-		Info1 = {
-			width: "100%",
-			height: "100%",
-			debug: false,
-			color: "white",
-			addSelectionOptions: false,
-			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
-			use: "HTML5",
-			coverImage: "assets/img/portfolio/2-Bromobutane_E2_Butene.png",//"data/1hxw.png",        // initial image instead of applet
-			coverScript: "",	// special script for click of cover image (otherwise equal to script)
-			deferApplet: true,                  // wait to load applet until click
-			deferUncover: false,                 // wait to uncover applet until script completed
-			jarPath: "java",
-			j2sPath: "js/j2s",
-			jarFile: "JmolApplet.jar",
-			isSigned: false,
-			//disableJ2SLoadMonitor: true,
-			//disableInitialConsole: true,
-			//readyFunction: jmol_isReady,
-			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/2-Bromobutane_E2_Butene.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update1'; set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
-		}
-		Info2 = {
-			width: "100%",
-			height: "100%",
-			debug: false,
-			color: "white",
-			addSelectionOptions: false,
-			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
-			use: "HTML5",
-			coverImage: "assets/img/portfolio/2-Bromobutane_SN2_2-Methoxybutane.png",//"data/1hxw.png",        // initial image instead of applet
-			coverScript: "",	// special script for click of cover image (otherwise equal to script)
-			deferApplet: true,                  // wait to load applet until click
-			deferUncover: false,                 // wait to uncover applet until script completed
-			jarPath: "java",
-			j2sPath: "js/j2s",
-			jarFile: "JmolApplet.jar",
-			isSigned: false,
-			//disableJ2SLoadMonitor: true,
-			//disableInitialConsole: true,
-			//readyFunction: jmol_isReady,
-			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/2-Bromobutane_SN2_2-Methoxybutane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update2'; set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
-		}
-		Info3 = {
-			width: "100%",
-			height: "100%",
-			debug: false,
-			color: "white",
-			addSelectionOptions: false,
-			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
-			use: "HTML5",
-			coverImage: "assets/img/portfolio/Acetone_NA_2-hydroxy-2-methylpropanenitrile.png",//"data/1hxw.png",        // initial image instead of applet
-			coverScript: "",	// special script for click of cover image (otherwise equal to script)
-			deferApplet: true,                  // wait to load applet until click
-			deferUncover: false,                 // wait to uncover applet until script completed
-			jarPath: "java",
-			j2sPath: "js/j2s",
-			jarFile: "JmolApplet.jar",
-			isSigned: false,
-			//disableJ2SLoadMonitor: true,
-			//disableInitialConsole: true,
-			//readyFunction: jmol_isReady,
-			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/Acetone_NA_2-hydroxy-2-methylpropanenitrile.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update3';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
-		}
-		Info4 = {
-			width: "100%",
-			height: "100%",
-			debug: false,
-			color: "white",
-			addSelectionOptions: false,
-			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
-			use: "HTML5",
-			coverImage: "assets/img/portfolio/butadiene_ethene_DA_cyclohexane.png",//"data/1hxw.png",        // initial image instead of applet
-			coverScript: "",	// special script for click of cover image (otherwise equal to script)
-			deferApplet: true,                  // wait to load applet until click
-			deferUncover: false,                 // wait to uncover applet until script completed
-			jarPath: "java",
-			j2sPath: "js/j2s",
-			jarFile: "JmolApplet.jar",
-			isSigned: false,
-			//disableJ2SLoadMonitor: true,
-			//disableInitialConsole: true,
-			//readyFunction: jmol_isReady,
-			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/butadiene_ethene_DA_cyclohexane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update4';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
-		}
-		Info5 = {
-			width: "100%",
-			height: "100%",
-			debug: false,
-			color: "white",
-			addSelectionOptions: false,
-			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
-			use: "HTML5",
-			coverImage: "assets/img/portfolio/butadiene_TS_cyclobutene.png",//"data/1hxw.png",        // initial image instead of applet
-			coverScript: "",	// special script for click of cover image (otherwise equal to script)
-			deferApplet: true,                  // wait to load applet until click
-			deferUncover: false,                 // wait to uncover applet until script completed
-			jarPath: "java",
-			j2sPath: "js/j2s",
-			jarFile: "JmolApplet.jar",
-			isSigned: false,
-			//disableJ2SLoadMonitor: true,
-			//disableInitialConsole: true,
-			//readyFunction: jmol_isReady,
-			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/butadiene_TS_cyclobutene.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update5';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
-		}
-		Info6 = {
-			width: "100%",
-			height: "100%",
-			debug: false,
-			color: "white",
-			addSelectionOptions: false,
-			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
-			use: "HTML5",
-			coverImage: "assets/img/portfolio/butane.png",//"data/1hxw.png",        // initial image instead of applet
-			coverScript: "",	// special script for click of cover image (otherwise equal to script)
-			deferApplet: true,                  // wait to load applet until click
-			deferUncover: false,                 // wait to uncover applet until script completed
-			jarPath: "java",
-			j2sPath: "js/j2s",
-			jarFile: "JmolApplet.jar",
-			isSigned: false,
-			//disableJ2SLoadMonitor: true,
-			//disableInitialConsole: true,
-			//readyFunction: jmol_isReady,
-			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/butane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update6';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
-		}
-		Info7 = {
-			width: "100%",
-			height: "100%",
-			debug: false,
-			color: "white",
-			addSelectionOptions: false,
-			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
-			use: "HTML5",
-			coverImage: "assets/img/portfolio/Butene_EA_bromobutane.png",//"data/1hxw.png",        // initial image instead of applet
-			coverScript: "",	// special script for click of cover image (otherwise equal to script)
-			deferApplet: true,                  // wait to load applet until click
-			deferUncover: false,                 // wait to uncover applet until script completed
-			jarPath: "java",
-			j2sPath: "js/j2s",
-			jarFile: "JmolApplet.jar",
-			isSigned: false,
-			//disableJ2SLoadMonitor: true,
-			//disableInitialConsole: true,
-			//readyFunction: jmol_isReady,
-			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/Butene_EA_bromobutane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update7';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
-		}
-		Info8 = {
-			width: "100%",
-			height: "100%",
-			debug: false,
-			color: "white",
-			addSelectionOptions: false,
-			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
-			use: "HTML5",
-			coverImage: "assets/img/portfolio/Butoxy_TS_hydroxybutyl.png",//"data/1hxw.png",        // initial image instead of applet
-			coverScript: "",	// special script for click of cover image (otherwise equal to script)
-			deferApplet: true,                  // wait to load applet until click
-			deferUncover: false,                 // wait to uncover applet until script completed
-			jarPath: "java",
-			j2sPath: "js/j2s",
-			jarFile: "JmolApplet.jar",
-			isSigned: false,
-			//disableJ2SLoadMonitor: true,
-			//disableInitialConsole: true,
-			//readyFunction: jmol_isReady,
-			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/Butoxy_TS_hydroxybutyl.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update8';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
-		}
-		Info9 = {
-			width: "100%",
-			height: "100%",
-			debug: false,
-			color: "white",
-			addSelectionOptions: false,
-			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
-			use: "HTML5",
-			coverImage: "assets/img/portfolio/cyclohexane.png",//"data/1hxw.png",        // initial image instead of applet
-			coverScript: "",	// special script for click of cover image (otherwise equal to script)
-			deferApplet: true,                  // wait to load applet until click
-			deferUncover: false,                 // wait to uncover applet until script completed
-			jarPath: "java",
-			j2sPath: "js/j2s",
-			jarFile: "JmolApplet.jar",
-			isSigned: false,
-			//disableJ2SLoadMonitor: true,
-			//disableInitialConsole: true,
-			//readyFunction: jmol_isReady,
-			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/cyclohexane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update9';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
-		}
-		Info10 = {
-			width: "100%",
-			height: "100%",
-			debug: false,
-			color: "white",
-			addSelectionOptions: false,
-			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
-			use: "HTML5",
-			coverImage: "assets/img/portfolio/hexadiene_cope_hexadiene.png",//"data/1hxw.png",        // initial image instead of applet
-			coverScript: "",	// special script for click of cover image (otherwise equal to script)
-			deferApplet: true,                  // wait to load applet until click
-			deferUncover: false,                 // wait to uncover applet until script completed
-			jarPath: "java",
-			j2sPath: "js/j2s",
-			jarFile: "JmolApplet.jar",
-			isSigned: false,
-			//disableJ2SLoadMonitor: true,
-			//disableInitialConsole: true,
-			//readyFunction: jmol_isReady,
-			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/hexadiene_cope_hexadiene.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update10';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
-		}
-		Info11 = {
-			width: "100%",
-			height: "100%",
-			debug: false,
-			color: "white",
-			addSelectionOptions: false,
-			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
-			use: "HTML5",
-			coverImage: "assets/img/portfolio/Iodotertbutane_SN1_tertbutyl.png",//"data/1hxw.png",        // initial image instead of applet
-			coverScript: "",	// special script for click of cover image (otherwise equal to script)
-			deferApplet: true,                  // wait to load applet until click
-			deferUncover: false,                 // wait to uncover applet until script completed
-			jarPath: "java",
-			j2sPath: "js/j2s",
-			jarFile: "JmolApplet.jar",
-			isSigned: false,
-			//disableJ2SLoadMonitor: true,
-			//disableInitialConsole: true,
-			//readyFunction: jmol_isReady,
-			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/Iodotertbutane_SN1_tertbutyl.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update11';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
-		}
-		Info12 = {
-			width: "100%",
-			height: "100%",
-			debug: false,
-			color: "white",
-			addSelectionOptions: false,
-			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
-			use: "HTML5",
-			coverImage: "assets/img/portfolio/TertButyl_RA_tertpentyl.png",//"data/1hxw.png",        // initial image instead of applet
-			coverScript: "",	// special script for click of cover image (otherwise equal to script)
-			deferApplet: true,                  // wait to load applet until click
-			deferUncover: false,                 // wait to uncover applet until script completed
-			jarPath: "java",
-			j2sPath: "js/j2s",
-			jarFile: "JmolApplet.jar",
-			isSigned: false,
-			//disableJ2SLoadMonitor: true,
-			//disableInitialConsole: true,
-			//readyFunction: jmol_isReady,
-			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/TertButyl_RA_tertpentyl.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update12';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
-		}
-		Info13 = {
-			width: "100%",
-			height: "100%",
-			debug: false,
-			color: "white",
-			addSelectionOptions: false,
-			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
-			use: "HTML5",
-			coverImage: "assets/img/portfolio/Propene_EA_Propylborane.png",//"data/1hxw.png",        // initial image instead of applet
-			coverScript: "",	// special script for click of cover image (otherwise equal to script)
-			deferApplet: true,                  // wait to load applet until click
-			deferUncover: false,                 // wait to uncover applet until script completed
-			jarPath: "java",
-			j2sPath: "js/j2s",
-			jarFile: "JmolApplet.jar",
-			isSigned: false,
-			//disableJ2SLoadMonitor: true,
-			//disableInitialConsole: true,
-			//readyFunction: jmol_isReady,
-			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/propene_EA_propylborane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update13';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
-		}
-		Info14 = {
-			width: "100%",
-			height: "100%",
-			debug: false,
-			color: "white",
-			addSelectionOptions: false,
-			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
-			use: "HTML5",
-			coverImage: "assets/img/portfolio/Butene_EA_DiMethylOxirane.png",//"data/1hxw.png",        // initial image instead of applet
-			coverScript: "",	// special script for click of cover image (otherwise equal to script)
-			deferApplet: true,                  // wait to load applet until click
-			deferUncover: false,                 // wait to uncover applet until script completed
-			jarPath: "java",
-			j2sPath: "js/j2s",
-			jarFile: "JmolApplet.jar",
-			isSigned: false,
-			//disableJ2SLoadMonitor: true,
-			//disableInitialConsole: true,
-			//readyFunction: jmol_isReady,
-			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/Butene_EA_dimethyloxirane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update14';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement.set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
-		}
-		Info15 = {
-			width: "100%",
-			height: "100%",
-			debug: false,
-			color: "white",
-			addSelectionOptions: false,
-			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
-			use: "HTML5",
-			coverImage: "assets/img/portfolio/DiChloroCarbene_EA_DiChloroCyclopropane.png",//"data/1hxw.png",        // initial image instead of applet
-			coverScript: "",	// special script for click of cover image (otherwise equal to script)
-			deferApplet: true,                  // wait to load applet until click
-			deferUncover: false,                 // wait to uncover applet until script completed
-			jarPath: "java",
-			j2sPath: "js/j2s",
-			jarFile: "JmolApplet.jar",
-			isSigned: false,
-			//disableJ2SLoadMonitor: true,
-			//disableInitialConsole: true,
-			//readyFunction: jmol_isReady,
-			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/DiChloroCarbene_EA_DiChloroCyclopropane.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update15';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
-		}
-		Info16 = {
-			width: "100%",
-			height: "100%",
-			debug: false,
-			color: "white",
-			addSelectionOptions: false,
-			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
-			use: "HTML5",
-			coverImage: "assets/img/portfolio/TFA_Methoxide.png",//"data/1hxw.png",        // initial image instead of applet
-			coverScript: "",	// special script for click of cover image (otherwise equal to script)
-			deferApplet: true,                  // wait to load applet until click
-			deferUncover: false,                 // wait to uncover applet until script completed
-			jarPath: "java",
-			j2sPath: "js/j2s",
-			jarFile: "JmolApplet.jar",
-			isSigned: false,
-			//disableJ2SLoadMonitor: true,
-			//disableInitialConsole: true,
-			//readyFunction: jmol_isReady,
-			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/TFA_Methoxide.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update16';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
-		}
-		Info17 = {
-			width: "100%",
-			height: "100%",
-			debug: false,
-			color: "white",
-			addSelectionOptions: false,
-			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
-			use: "HTML5",
-			coverImage: "assets/img/portfolio/Acetone_LDA.png",//"data/1hxw.png",        // initial image instead of applet
-			coverScript: "",	// special script for click of cover image (otherwise equal to script)
-			deferApplet: true,                  // wait to load applet until click
-			deferUncover: false,                 // wait to uncover applet until script completed
-			jarPath: "java",
-			j2sPath: "js/j2s",
-			jarFile: "JmolApplet.jar",
-			isSigned: false,
-			//disableJ2SLoadMonitor: true,
-			//disableInitialConsole: true,
-			//readyFunction: jmol_isReady,
-			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/Acetone_LDA.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update17';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
-		}
-		Info18 = {
-			width: "100%",
-			height: "100%",
-			debug: false,
-			color: "white",
-			addSelectionOptions: false,
-			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
-			use: "HTML5",
-			coverImage: "assets/img/portfolio/Chloroethane_SN2_Propionitrile.png",//"data/1hxw.png",        // initial image instead of applet
-			coverScript: "",	// special script for click of cover image (otherwise equal to script)
-			deferApplet: true,                  // wait to load applet until click
-			deferUncover: false,                 // wait to uncover applet until script completed
-			jarPath: "java",
-			j2sPath: "js/j2s",
-			jarFile: "JmolApplet.jar",
-			isSigned: false,
-			//disableJ2SLoadMonitor: true,
-			//disableInitialConsole: true,
-			//readyFunction: jmol_isReady,
-			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/Chloroethane_SN2_Propionitrile_nonproductive.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update18';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
-		}
-		Info18a = {
-			width: "100%",
-			height: "100%",
-			debug: false,
-			color: "white",
-			addSelectionOptions: false,
-			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
-			use: "HTML5",
-			coverImage: "assets/img/portfolio/Chloroethane_SN2_Propionitrile_productive.png",//"data/1hxw.png",        // initial image instead of applet
-			coverScript: "",	// special script for click of cover image (otherwise equal to script)
-			deferApplet: true,                  // wait to load applet until click
-			deferUncover: false,                 // wait to uncover applet until script completed
-			jarPath: "java",
-			j2sPath: "js/j2s",
-			jarFile: "JmolApplet.jar",
-			isSigned: false,
-			//disableJ2SLoadMonitor: true,
-			//disableInitialConsole: true,
-			//readyFunction: jmol_isReady,
-			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/Chloroethane_SN2_Propionitrile.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update18a';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
-		}
-		Info19 = {
-			width: "100%",
-			height: "100%",
-			debug: false,
-			color: "white",
-			addSelectionOptions: false,
-			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
-			use: "HTML5",
-			coverImage: "assets/img/portfolio/PhenylChloroNitroPropane_E1cb_NitroPhenylPropene.png",//"data/1hxw.png",        // initial image instead of applet
-			coverScript: "",	// special script for click of cover image (otherwise equal to script)
-			deferApplet: true,                  // wait to load applet until click
-			deferUncover: false,                 // wait to uncover applet until script completed
-			jarPath: "java",
-			j2sPath: "js/j2s",
-			jarFile: "JmolApplet.jar",
-			isSigned: false,
-			//disableJ2SLoadMonitor: true,
-			//disableInitialConsole: true,
-			//readyFunction: jmol_isReady,
-			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/PhenylChloroNitroPropane_E1cb_NitroPhenylPropene.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update19';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
-		}
-		Info20 = {
-			width: "100%",
-			height: "100%",
-			debug: false,
-			color: "white",
-			addSelectionOptions: false,
-			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
-			use: "HTML5",
-			coverImage: "assets/img/portfolio/MethylPentylCation.png",//"data/1hxw.png",        // initial image instead of applet
-			coverScript: "",	// special script for click of cover image (otherwise equal to script)
-			deferApplet: true,                  // wait to load applet until click
-			deferUncover: false,                 // wait to uncover applet until script completed
-			jarPath: "java",
-			j2sPath: "js/j2s",
-			jarFile: "JmolApplet.jar",
-			isSigned: false,
-			//disableJ2SLoadMonitor: true,
-			//disableInitialConsole: true,
-			//readyFunction: jmol_isReady,
-			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/MethylPentylCation.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update20';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
-		}
-		Info21 = {
-			width: "100%",
-			height: "100%",
-			debug: false,
-			color: "white",
-			addSelectionOptions: false,
-			serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
-			use: "HTML5",
-			coverImage: "assets/img/portfolio/Acetone_NA_Isopropanol.png",//"data/1hxw.png",        // initial image instead of applet
-			coverScript: "",	// special script for click of cover image (otherwise equal to script)
-			deferApplet: true,                  // wait to load applet until click
-			deferUncover: false,                 // wait to uncover applet until script completed
-			jarPath: "java",
-			j2sPath: "js/j2s",
-			jarFile: "JmolApplet.jar",
-			isSigned: false,
-			//disableJ2SLoadMonitor: true,
-			//disableInitialConsole: true,
-			//readyFunction: jmol_isReady,
-			//defaultModel: "$dopamine",
-			script: "load ../assets/traj/Acetone_NA_Isopropanol.sdf;animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update21';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
-		}
-		})();
+	</script>
+	<!-- Bootstrap core JS-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Core theme JS-->
+	<script src="js/scripts.js"></script>
+	<!-- Put JSmol script here -->
+	<script src="https://3Dmol.org/build/3Dmol-min.js" async></script>
+	<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+	<script type="text/javascript" src="js/JSmol.min.js"></script>
 
-		$(document).ready(function(){
-		  $("#appletplace1").html(Jmol.getAppletHtml("jmol1", Info1));
-		  $("#appletplace2").html(Jmol.getAppletHtml("jmol2", Info2));
-		  $("#appletplace3").html(Jmol.getAppletHtml("jmol3", Info3));
-		  $("#appletplace4").html(Jmol.getAppletHtml("jmol4", Info4));
-		  $("#appletplace5").html(Jmol.getAppletHtml("jmol5", Info5));
-		  $("#appletplace6").html(Jmol.getAppletHtml("jmol6", Info6));
-		  $("#appletplace7").html(Jmol.getAppletHtml("jmol7", Info7));
-		  $("#appletplace8").html(Jmol.getAppletHtml("jmol8", Info8));
-		  $("#appletplace9").html(Jmol.getAppletHtml("jmol9", Info9));
-		  $("#appletplace10").html(Jmol.getAppletHtml("jmol10", Info10));
-		  $("#appletplace11").html(Jmol.getAppletHtml("jmol11", Info11));
-		  $("#appletplace12").html(Jmol.getAppletHtml("jmol12", Info12));
-		  $("#appletplace13").html(Jmol.getAppletHtml("jmol13", Info13));
-		  $("#appletplace14").html(Jmol.getAppletHtml("jmol14", Info14));
-		  $("#appletplace15").html(Jmol.getAppletHtml("jmol15", Info15));
-		  $("#appletplace16").html(Jmol.getAppletHtml("jmol16", Info16));
-		  $("#appletplace17").html(Jmol.getAppletHtml("jmol17", Info17));
-		  $("#appletplace18").html(Jmol.getAppletHtml("jmol18", Info18));
-		  $("#appletplace18a").html(Jmol.getAppletHtml("jmol18a", Info18a));
-		  $("#appletplace19").html(Jmol.getAppletHtml("jmol19", Info19));
-		  $("#appletplace20").html(Jmol.getAppletHtml("jmol20", Info20));
-		  $("#appletplace21").html(Jmol.getAppletHtml("jmol21", Info21));
+	<script type="text/javascript">
+		update = function (app, _, fileNo, modelNo, _, lastNo) {
+			let index = app.match(/\d+(_\d+)?/g);
+			// console.log(eval('jmol' + index));
+			document.getElementById('timelineAmount' + index).value = modelNo;
+			document.getElementById('timelineRange' + index).value = modelNo;
+			document.getElementById('timelineAmount' + index).max = lastNo - fileNo * 1000000;
+			document.getElementById('timelineRange' + index).max = lastNo - fileNo * 1000000;
+			const splitedIndex = index[0].split('_'); 
+			if(splitedIndex.length == 1) {
+				for (let step in reactions[index].events) {
+					if (modelNo == step && document.getElementById('toggle' + index).checked) {
+						Jmol.script(eval('jmol' + index), "echo " + reactions[index].events[step]);
+						Jmol.script(eval('jmol' + index), 'animation pause');
+						document.getElementById('switch' + index).checked = false;
+					}
+				}
+			}
+			else {
+				for (let step in reactions[splitedIndex[0]].variants[splitedIndex[1]].events) {
+					if (modelNo == step && document.getElementById('toggle' + index).checked) {
+						Jmol.script(eval('jmol' + index), "echo " + reactions[splitedIndex[0]].variants[splitedIndex[1]].events[step]);
+						Jmol.script(eval('jmol' + index), 'animation pause');
+						document.getElementById('switch' + index).checked = false;
+					}
+				}
+			};
+		}
+		$(document).ready(function () {
+			for (let i = 0; i < reactions.length; i++) {
+				const info = {
+					width: "100%",
+					height: "100%",
+					debug: false,
+					color: "white",
+					addSelectionOptions: false,
+					serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
+					use: "HTML5",
+					coverImage: reactions[i].figDir,//"data/1hxw.png",        // initial image instead of applet
+					coverScript: "",	// special script for click of cover image (otherwise equal to script)
+					deferApplet: true,                  // wait to load applet until click
+					deferUncover: false,                 // wait to uncover applet until script completed
+					jarPath: "java",
+					j2sPath: "js/j2s",
+					jarFile: "JmolApplet.jar",
+					isSigned: false,
+					//disableJ2SLoadMonitor: true,
+					//disableInitialConsole: true,
+					//readyFunction: jmol_isReady,
+					//defaultModel: "$dopamine",
+					script: "load " + reactions[i].trjDir + ";animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals |and double click again to end the measurement."
+				}
+				$("#appletplace" + i).html(Jmol.getAppletHtml("jmol" + i, info));
+				for (let j = 0; reactions[i].variants && j < reactions[i].variants.length; j++) {
+					const info = {
+						width: '100%',
+						height: "100%",
+						debug: false,
+						color: "white",
+						addSelectionOptions: false,
+						serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
+						use: "HTML5",
+						coverImage: reactions[i].variants[j].figDir,        // initial image instead of applet
+						coverScript: "",	// special script for click of cover image (otherwise equal to script)
+						deferApplet: true,                  // wait to load applet until click
+						deferUncover: false,                 // wait to uncover applet until script completed
+						jarPath: "java",
+						j2sPath: "js/j2s",
+						jarFile: "JmolApplet.jar",
+						isSigned: false,
+						//disableJ2SLoadMonitor: true,
+						//disableInitialConsole: true,
+						//readyFunction: jmol_isReady,
+						//defaultModel: "$dopamine",
+						script: "load " + reactions[i].variants[j].trjDir + ";animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals |and double click again to end the measurement."
+					}
+					$("#appletplace" + i + "_" + j).html(Jmol.getAppletHtml("jmol" + i + "_" + j, info));
+				}
+			}
+		})
+	</script>
+</body>
 
-		});
-
-		</script>
-    </body>
 </html>
