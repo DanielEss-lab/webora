@@ -419,10 +419,20 @@
 				if (reactions[i].variants[j].TSframe) variantTsBotton = `<a class="btn btn-secondary" href="javascript: Jmol.script(jmol${i}_${j}, 'frame ${reactions[i].variants[j].TSframe}');" title="Transtion State">TS</a>`;
 				variantHtml += `<div id="appletplace${i}_${j}" style="width:100%;height:100%;background-color:white"></div>
 				<br /><br />
-				<input id="switch${i}_${j}" type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol${i}_${j},'animation resume');} else {Jmol.script(jmol${i}_${j},'animation pause');}"/>
-				<input id="timelineRange${i}_${j}" type="range" min="1" max="600" oninput="javascript:Jmol.script(jmol${i}_${j}, 'frame ' + this.value); timelineAmount${i}_${j}.value=this.value" />
-				<input id="timelineAmount${i}_${j}" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol${i}_${j}, 'frame ' + this.value); timelineRange${i}_${j}.value=this.value" />
-				${variantTsBotton}
+				<div class="input-group">
+					<span class="input-group-text"> <input id="switch${i}_${j}" type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol${i}_${j},'animation resume');} else {Jmol.script(jmol${i}_${j},'animation pause');}"/></span>
+					<span class="form-control"><input id="timelineRange${i}_${j}" type="range" class="form-range" min="1" max="600" oninput="javascript:Jmol.script(jmol${i}_${j}, 'frame ' + this.value); timelineAmount${i}_${j}.value=this.value" /></span>
+					<span class="input-group-text"> <input id="timelineAmount${i}_${j}" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol${i}_${j}, 'frame ' + this.value); timelineRange${i}_${j}.value=this.value" /></span>
+					<span class="input-group-text"> ${variantTsBotton} </span>
+					<span class="input-group-text">
+						<div class="dropdown">
+							<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton${i}_${j}" data-bs-toggle="dropdown" aria-expanded="false">Speed</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton${i}_${j}">
+								<input id="fpsRange${i}_${j}" type="range" min="1" max="60" value="30" class="form-range" oninput="javascript:Jmol.script(jmol${i}_${j}, 'animation fps ' + this.value); fpsAmount${i}_${j}.value=this.value" />
+							</ul>
+						</div>
+					</span>
+				</div>
 				<br /><br />
 				<a class="btn btn-secondary">Speed</a>
 				<input id="fpsRange${i}_${j}" type="range" min="1" max="60" value="30" oninput="javascript:Jmol.script(jmol${i}_${j}, 'animation fps ' + this.value); fpsAmount${i}_${j}.value=this.value" />
