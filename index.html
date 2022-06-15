@@ -433,7 +433,7 @@
 							</span>
 						</div>
 					</li>
-				<li class="list-group-item"><input id="toggle${i}_${j}" class="form-check-input" type="checkbox"/><label class="form-check-label" for="toggle${i}_${j}">Walk me through the reaction</label></li>
+				<li class="list-group-item"><input id="toggle${i}_${j}" class="form-check-input me-2" type="checkbox"/><label class="form-check-label" for="toggle${i}_${j}">Walk me through the reaction</label></li>
 				</ul></div>`
 			}
 			//add main reaction
@@ -455,7 +455,7 @@
 												<li class="list-group-item">
 													<div class="input-group">
 														<span class="input-group-text"><input id="switch${i}" type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol${i}, 'animation resume');} else {Jmol.script(jmol${i}, 'animation pause');}"/></span>
-														<span class="form-control"><input id="timelineRange${i}" type="range" class="form-range" min="1" max="600" oninput="javascript:Jmol.script(jmol${i}, 'frame ' + this.value); timelineAmount${i}.value=this.value" /></span>
+														<span class="form-control justify-content-center"><input id="timelineRange${i}" type="range" class="form-range" min="1" max="600" oninput="javascript:Jmol.script(jmol${i}, 'frame ' + this.value); timelineAmount${i}.value=this.value" /></span>
 														<span class="input-group-text"><input id="timelineAmount${i}" type="number" min="1" max="600" oninput="javascript:Jmol.script(jmol${i}, 'frame ' + this.value); timelineRange${i}.value=this.value" /></span>
 														${tsBotton}
 														<span class="input-group-text">
@@ -468,7 +468,7 @@
 														</span>
 													</div>
 												</li>
-												<li class="list-group-item"><input id="toggle${i}" class="form-check-input" type="checkbox"/><label class="form-check-label" for="toggle${i}">Walk me through the reaction</label></li>
+												<li class="list-group-item"><input id="toggle${i}" class="form-check-input me-2" type="checkbox"/><label class="form-check-label" for="toggle${i}">Walk me through the reaction</label></li>
 											</ul>
 											<div class="card mb-3" ><div class="card-body"><p class="card-text">${reactions[i].writeup}</p></div></div>
 											${variantHtml}
