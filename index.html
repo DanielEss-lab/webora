@@ -58,7 +58,8 @@
 					1500: "A third explanation for this non-productive outcome| is that insufficient heat is applied to the reaction."
 				},
 				variants: [
-					{
+					{	
+						name: "Productive SN2 reaction",
 						TSframe: 1000,
 						figDir: "assets/img/portfolio/Chloroethane_SN2_Propionitrile_productive.png",
 						trjDir: "assets/traj/Chloroethane_SN2_Propionitrile.sdf",
@@ -170,9 +171,13 @@
 				figDir: "assets/img/portfolio/MethylPentylCation.png",
 				trjDir: "assets/traj/MethylPentylCation.sdf",
 				variants: [
-					{
+					{	
+						name: "Carbocation generation",
 						figDir: "assets/img/portfolio/Iodotertbutane_Sn1_tertbutyl.png",
 						trjDir: "assets/traj/Carbocation_gen.sdf",
+					},
+					{
+						name: "test"
 					}
 				]
 			},
@@ -407,7 +412,7 @@
 				variantHtml += `<div class="btn-group mb-2 float-start" role="group" aria-label="Basic example">`
 			}
 			for (let j = 0; reactions[i].variants && j < reactions[i].variants.length; j++) {
-				variantHtml += `<a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapse${i}_${j}" role="button" aria-expanded="false" aria-controls="collapse${i}_${j}">Variant Index ${j}</a>`
+				variantHtml += `<a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapse${i}_${j}" role="button" aria-expanded="false" aria-controls="collapse${i}_${j}">${reactions[i].variants[j].name}</a>`
 			}
 			if(reactions[i].variants) {
 				variantHtml += `</div><br></br>`
@@ -416,7 +421,7 @@
 				let variantTsBotton = "";
 				if (reactions[i].variants[j].TSframe) variantTsBotton = `<span class="input-group-text"><a class="btn btn-secondary btn-sm" href="javascript: Jmol.script(jmol${i}_${j}, 'frame ${reactions[i].variants[j].TSframe}');" title="Transtion State">TS</a></span>`;
 				variantHtml += `<div class="collapse mb-2" id="collapse${i}_${j}"><ul class="list-group">
-					<li class="list-group-item"><div id="appletplace${i}_${j}" style="idth: 80vmin;height: 80vmin;margin: auto;"></div></li>
+					<li class="list-group-item"><div id="appletplace${i}_${j}" style="width: 80vmin;height: 80vmin;margin: auto;"></div></li>
 					<li class="list-group-item">
 						<div class="input-group">
 							<span class="input-group-text"><input id="switch${i}_${j}" type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol${i}_${j},'animation resume');} else {Jmol.script(jmol${i}_${j},'animation pause');}"/></span>
