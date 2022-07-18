@@ -274,7 +274,7 @@
 				href="https://testflight.apple.com/join/FEW77U8m">https://testflight.apple.com/join/FEW77U8m</a>
 			<h1 class="masthead-heading text-uppercase mt-6 mb-5">WebORA</h1>
 			<p class="masthead-subheading font-weight-light mb-6">Organic Reaction Trajectories</p>
-			<p class="col-lg-4 text-black text-center fst-italic mt-6">How to use?</p>
+			<!-- <p class="col-lg-4 text-black text-center fst-italic mt-6">How to use?</p>
 			<p class="col-lg-4 text-black text-center fst-italic">1. Click images and play button to activate the
 				animations.</p>
 			<p class="col-lg-4 text-black text-center fst-italic">2. Move molecules with left mouse button and zoom
@@ -282,7 +282,16 @@
 			<p class="col-lg-4 text-black text-center fst-italic">3. Double click to measure bonds/angles/dihedrals and
 				double click again to end the measurement.</p>
 			<p class="col-lg-4 text-black text-center fst-italic"><a style="color:inherit"
-					href="http://biomodel.uah.es/en/DIY/Jmol/help/inicio.en.htm">More...</a></p>
+					href="http://biomodel.uah.es/en/DIY/Jmol/help/inicio.en.htm">More...</a></p> -->
+		</div>
+		<div class="portfolio container d-flex align-items-center flex-column mt-6">
+			<div class="portfolio-item w-25" data-bs-toggle="modal" data-bs-target="#portfolioModal-instruction">
+				<h3 class="masthead-subheading text-uppercase">instruction</h3>
+				<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+					<div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+				</div>
+				<img src="assets/img/instruction.png" class="img-fluid" alt="..." />
+			</div>
 		</div>
 	</header>
 	<!-- Portfolio Section-->
@@ -404,6 +413,27 @@
 		<div class="container"><small>Copyright &copy; WebORA 2021</small></div>
 	</div>
 	<!-- Portfolio Modals-->
+	<div class="portfolio-modal modal fade" style="z-index: 2055" id="portfolioModal-instruction" tabindex="-1" aria-labelledby="portfolioModal${i}" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+				<div class="modal-body text-center pb-5">
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-lg-12">
+								<h2 class="portfolio-modal-title text-secondary text-uppercase mb-5">Instruction</h2>
+								<img src="assets/img/instruction.png" class="img-fluid mb-5" alt="..." />
+								<a class="btn btn-primary" data-bs-dismiss="modal">
+									<i class="fas fa-times fa-fw"></i>
+									Close Window
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script type="text/javascript">
 		for (let i = 0; i < reactions.length; i++) {
 			let variantHtml = "";
@@ -456,7 +486,14 @@
 										<div class="col-lg-12">
 											<h2 class="portfolio-modal-title text-secondary text-uppercase mb-5">${reactions[i].name}</h2>
 											<ul class="list-group mb-3"">
-												<li class="list-group-item"><div id="appletplace${i}" style="width: 80vmin;height: 80vmin;margin: auto;"></div></li>
+												<li class="list-group-item">
+													<div class="portfolio float-end">
+														<div class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal-instruction">
+															<i class="fas fa-question-circle fa-2x"></i>
+														</div>
+													</div>
+													<div id="appletplace${i}" style="width: 80vmin;height: 80vmin;margin: auto;"></div>
+												</li>
 												<li class="list-group-item">
 													<div class="input-group">
 														<span class="input-group-text"><input id="switch${i}" type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol${i}, 'animation resume');} else {Jmol.script(jmol${i}, 'animation pause');}"/></span>
@@ -575,7 +612,8 @@
 						//disableInitialConsole: true,
 						//readyFunction: jmol_isReady,
 						//defaultModel: "$dopamine",
-						script: "load " + reactions[i].variants[j].trjDir + ";animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals |and double click again to end the measurement."
+						// script: "load " + reactions[i].variants[j].trjDir + ";animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals |and double click again to end the measurement."
+						script: "load " + reactions[i].variants[j].trjDir + ";animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update';set echo bottom center; color echo [x2c3e50]"
 					}
 					$("#appletplace" + i + "_" + j).html(Jmol.getAppletHtml("jmol" + i + "_" + j, info));
 				}
