@@ -588,7 +588,8 @@
 					//disableInitialConsole: true,
 					//readyFunction: jmol_isReady,
 					//defaultModel: "$dopamine",
-					script: "load " + reactions[i].trjDir + ";animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals |and double click again to end the measurement."
+					//script: "load " + reactions[i].trjDir + ";animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.|Double click to measure bonds/angles/dihedrals |and double click again to end the measurement."
+					script: "load " + reactions[i].trjDir + ";animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update';set echo bottom center; color echo [x2c3e50]"
 				}
 				$("#appletplace" + i).html(Jmol.getAppletHtml("jmol" + i, info));
 				for (let j = 0; reactions[i].variants && j < reactions[i].variants.length; j++) {
