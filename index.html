@@ -460,7 +460,7 @@
 						<div id="appletplace${i}_${j}" style="width: 80vmin;height: 80vmin;margin: auto;"></div>
 						<div class="row">
 							<div class="lg-4 ms-auto text-center bottom-0 position-absolute" style="z-index: 1555">
-								<p id="description${i}_${j}"class="lead">
+								<p id="description${i}_${j}"class="lead text-secondary">
 								</p>
 							</div>
 						</div>	
@@ -481,7 +481,7 @@
 							</span>
 						</div>
 					</li>
-				<li class="list-group-item"><input id="toggle${i}_${j}" class="form-check-input me-2" type="checkbox"/><label class="form-check-label" for="toggle${i}_${j}">Walk me through the reaction</label></li>
+				<li class="list-group-item"><input id="toggle${i}_${j}" class="form-check-input mt-2 me-2" type="checkbox"/><label class="form-check-label text-secondary lead" for="toggle${i}_${j}">Walk me through the reaction</label></li>
 				</ul></div>`
 			}
 			//add main reaction
@@ -508,7 +508,7 @@
 													<div id="appletplace${i}" style="width: 80vmin; height: 80vmin; margin: auto; "></div>
 													<div class="row">
 														<div class="lg-4 ms-auto text-center bottom-0 position-absolute" style="z-index: 1555">
-															<p id="description${i}"class="lead">
+															<p id="description${i}" class="lead text-secondary">
 															</p>
 														</div>
 													</div>										
@@ -529,9 +529,9 @@
 														</span>
 													</div>
 												</li>
-												<li class="list-group-item"><input id="toggle${i}" class="form-check-input me-2" type="checkbox"/><label class="form-check-label" for="toggle${i}">Walk me through the reaction</label></li>
+												<li class="list-group-item"><input id="toggle${i}" class="form-check-input mt-2 me-2" type="checkbox"/><label class="form-check-label text-secondary lead" for="toggle${i}">Walk me through the reaction</label></li>
 											</ul>
-											<div class="card mb-3" ><div class="card-body"><p class="card-text">${reactions[i].writeup}</p></div></div>
+											<div class="card mb-3" ><div class="card-body"><p class="card-text lead text-secondary">${reactions[i].writeup}</p></div></div>
 											${variantHtml}
 											<a class="btn btn-primary" href="javascript:Jmol.script(jmol${i}, 'animation off')" data-bs-dismiss="modal">
 												<i class="fas fa-times fa-fw"></i>
