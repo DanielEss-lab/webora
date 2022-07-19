@@ -451,7 +451,14 @@
 				let variantTsBotton = "";
 				if (reactions[i].variants[j].TSframe) variantTsBotton = `<span class="input-group-text"><a class="btn btn-secondary btn-sm" href="javascript: Jmol.script(jmol${i}_${j}, 'frame ${reactions[i].variants[j].TSframe}');" title="Transtion State">TS</a></span>`;
 				variantHtml += `<div class="collapse mb-2" id="collapse${i}_${j}"><ul class="list-group">
-					<li class="list-group-item"><div id="appletplace${i}_${j}" style="width: 80vmin;height: 80vmin;margin: auto;"></div></li>
+					<li class="list-group-item">
+						<div class="portfolio float-end" style="z-index: 1555">
+							<div class="portfolio-item" style="z-index: 1555" data-bs-toggle="modal" data-bs-target="#portfolioModal-instruction">
+								<i class="fas fa-question-circle fa-2x" style="z-index: 1555"></i>
+							</div>
+						</div>
+						<div id="appletplace${i}_${j}" style="width: 80vmin;height: 80vmin;margin: auto;"></div>
+					</li>
 					<li class="list-group-item">
 						<div class="input-group">
 							<span class="input-group-text"><input id="switch${i}_${j}" type="checkbox" class="switch switch-anim" onchange="javascript:if (this.checked) {Jmol.script(jmol${i}_${j},'animation resume');} else {Jmol.script(jmol${i}_${j},'animation pause');}"/></span>
@@ -487,9 +494,9 @@
 											<h2 class="portfolio-modal-title text-secondary text-uppercase mb-5">${reactions[i].name}</h2>
 											<ul class="list-group mb-3"">
 												<li class="list-group-item">
-													<div class="portfolio float-end">
-														<div class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal-instruction">
-															<i class="fas fa-question-circle fa-2x"></i>
+													<div class="portfolio float-end" style="z-index: 1555">
+														<div class="portfolio-item" style="z-index: 1555" data-bs-toggle="modal" data-bs-target="#portfolioModal-instruction">
+															<i class="fas fa-question-circle fa-2x" style="z-index: 1555"></i>
 														</div>
 													</div>
 													<div id="appletplace${i}" style="width: 80vmin;height: 80vmin;margin: auto;"></div>
@@ -571,6 +578,7 @@
 				const info = {
 					width: "100%",
 					height: "100%",
+					zIndexBase: 1055, //based on modal z-index
 					debug: false,
 					color: "white",
 					addSelectionOptions: false,
@@ -596,6 +604,7 @@
 					const info = {
 						width: '100%',
 						height: "100%",
+						zIndexBase: 1055, //based on modal z-index
 						debug: false,
 						color: "white",
 						addSelectionOptions: false,
