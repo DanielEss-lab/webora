@@ -564,7 +564,7 @@
 				for (let step in reactions[index].events) {
 					if (modelNo == step && document.getElementById('toggle' + index).checked) {
 						Jmol.script(eval('jmol' + index), "echo " + reactions[index].events[step]);
-						documnet.getElementById('description' + index).innerHTML = reactions[index].events[step];
+						document.getElementById('description' + index).innerHTML = reactions[index].events[step];
 						Jmol.script(eval('jmol' + index), 'animation pause');
 						document.getElementById('switch' + index).checked = false;
 					}
