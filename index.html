@@ -452,9 +452,9 @@
 				if (reactions[i].variants[j].TSframe) variantTsBotton = `<span class="input-group-text"><a class="btn btn-secondary btn-sm" href="javascript: Jmol.script(jmol${i}_${j}, 'frame ${reactions[i].variants[j].TSframe}');" title="Transtion State">TS</a></span>`;
 				variantHtml += `<div class="collapse mb-2" id="collapse${i}_${j}"><ul class="list-group">
 					<li class="list-group-item">
-						<div class="portfolio float-end" style="z-index: 1555">
+						<div class="portfolio float-end">
 							<div class="portfolio-item" style="z-index: 1555" data-bs-toggle="modal" data-bs-target="#portfolioModal-instruction">
-								<i class="fas fa-question-circle fa-2x" style="z-index: 1555"></i>
+								<i class="fas fa-question-circle fa-2x"></i>
 							</div>
 						</div>
 						<div id="appletplace${i}_${j}" style="width: 80vmin;height: 80vmin;margin: auto;"></div>
@@ -494,12 +494,18 @@
 											<h2 class="portfolio-modal-title text-secondary text-uppercase mb-5">${reactions[i].name}</h2>
 											<ul class="list-group mb-3"">
 												<li class="list-group-item">
-													<div class="portfolio float-end" style="z-index: 1555">
+													<div class="portfolio float-end">
 														<div class="portfolio-item" style="z-index: 1555" data-bs-toggle="modal" data-bs-target="#portfolioModal-instruction">
-															<i class="fas fa-question-circle fa-2x" style="z-index: 1555"></i>
+															<i class="fas fa-question-circle fa-2x"></i>
 														</div>
 													</div>
-													<div id="appletplace${i}" style="width: 80vmin;height: 80vmin;margin: auto;"></div>
+													<div id="appletplace${i}" style="width: 80vmin; height: 80vmin; margin: auto; "></div>
+													<div class="row">
+														<div class="lg-4 ms-auto text-center bottom-0 position-absolute" style="z-index: 1555">
+															<p id="description${i}"class="lead">
+															</p>
+														</div>
+													</div>										
 												</li>
 												<li class="list-group-item">
 													<div class="input-group">
@@ -558,6 +564,7 @@
 				for (let step in reactions[index].events) {
 					if (modelNo == step && document.getElementById('toggle' + index).checked) {
 						Jmol.script(eval('jmol' + index), "echo " + reactions[index].events[step]);
+						documnet.getElementById('description' + index).innerHTML = reactions[index].events[step];
 						Jmol.script(eval('jmol' + index), 'animation pause');
 						document.getElementById('switch' + index).checked = false;
 					}
