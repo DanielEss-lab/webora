@@ -48,6 +48,12 @@
 				}
 			},
 			{
+				name: "E2 2-Bromobutane (minor product)",
+				figDir: "assets/img/portfolio/2-Bromobutane.png",
+				trjDir: "assets/traj/2-Bromobutane.sdf",
+				TSframe: 1005
+			},
+			{
 				name: "NON-PRODUCTIVE SN2 REACTION",
 				figDir: "assets/img/portfolio/Chloroethane_SN2_Propionitrile.png",
 				trjDir: "assets/traj/Chloroethane_SN2_Propionitrile_nonproductive.sdf",
@@ -74,7 +80,15 @@
 			{
 				name: "SN1 REACTION",
 				figDir: "assets/img/portfolio/Iodotertbutane_Sn1_tertbutyl.png",
-				trjDir: "assets/traj/Iodotertbutane_SN1_tertbutyl.sdf",
+				trjDir: "assets/traj/Iodotertbutane_SN1_tertbutyl_nosolvent.sdf",
+				writeup: "This SN1 trajectory shows the heterolysis of the C-Br bond of tert-butyl bromide. This process generates a relatively stabilized, but still high in energy, tertiary carbocation intermediate, which can be captured by nucleophiles/Lewis bases. Scroll down to watch the same trajectory surrounded by the polar nitromethane solvent, which stabilizes charged intermediates.",
+				variants: [
+					{
+						name: "In nitromethane solvent",
+						figDir: "assets/img/portfolio/Iodotertbutane_Sn1_tertbutyl.png",
+						trjDir: "assets/traj/Iodotertbutane_SN1_tertbutyl.sdf"
+					}
+				]
 			},
 
 			{
@@ -120,7 +134,7 @@
 			},
 			{
 				name: "EPOXIDATION",
-				writeup: "Epoxidation of an alkene is a reaction that does not have an intermediate. This trajectory shows the collision and reaction of the peroxy acid, m-chloroperbenzoic acid (mCPBA), with trans-2-butene. The nucleophilic pi bond of the alkene simultaneously forms two bonds with the electrophilic oxygen of the peroxy acid. This trajectory shows that there is no carbocation intermediate and therefore the trans relationship of the alkene methyl groups remains in the epoxide product.",
+				writeup: "Epoxidation of an alkene is a reaction that does not have an intermediate. This trajectory shows the collision and reaction of a model peroxy acid with trans-2-butene. The nucleophilic pi bond of the alkene simultaneously forms two bonds with the electrophilic oxygen of the peroxy acid. This trajectory shows that there is no carbocation intermediate and therefore the trans relationship of the alkene methyl groups remains in the epoxide product.",
 				figDir: "assets/img/portfolio/Butene_EA_dimethyloxirane.png",
 				trjDir: "assets/traj/Butene_EA_dimethyloxirane.sdf",
 				TSframe: 528,
@@ -131,21 +145,21 @@
 				}
 			},
 			{
-				name: "CARBENE CYCLOADDITION",
+				name: "Singlet CARBENE CYCLOADDITION",
 				writeup: "This trajectory shows the reactive collision between dichlorocarbene (a divalent form of carbon) and ethylene. The trajectory progresses through a transition state (use the TS button) where the dominant interaction is between the ethylene pi orbital and the empty p orbital of the carbene. This trajectory shows there is no carbocation intermediate and both new C-C bonds are asynchronously formed in one reaction step.",
 				figDir: "assets/img/portfolio/DiChloroCarbene_EA_DiChloroCyclopropane.png",
 				trjDir: "assets/traj/DiChloroCarbene_EA_DiChloroCyclopropane.sdf",
 				TSframe: 251,
 			},
 			{
-				name: "ADN2 REACTION",
+				name: "Carbonyl Addition",
 				figDir: "assets/img/portfolio/Acetone_NA_2-hydroxy-2-methylpropanenitrile.png",
 				trjDir: "assets/traj/Acetone_NA_2-hydroxy-2-methylpropanenitrile.sdf",
 				TSframe: 430,
 				writeup: "This trajectory shows the addition of cyanide to the carbon atom of acetone to form a new C-CN bond with simultaneous cleavage of the C=O π bond. However, before addition, this trajectory shows an initial unproductive collision between cyanide and the ketone. It is important to realize that many unproductive collisions occur between reacting compounds before a productive, product-forming collision occurs."
 			},
 			{
-				name: "ACETONE REDUCTION",
+				name: "Carbonyl Hydride Reduction",
 				writeup: "This trajectory shows the reaction of LiAlH4 with acetone and results in hydride transfer. This trajectory shows that the Li cation templates the motion and direction of hydride transfer to the carbonyl. After hydride addition the anionic oxygen interacts with borane.",
 				figDir: "assets/img/portfolio/Acetone_NA_Isopropanol.png",
 				trjDir: "assets/traj/Acetone_NA_Isopropanol.sdf",
@@ -153,7 +167,7 @@
 			},
 			{
 				name: "PROTON TRANSFER",
-				writeup: "This trajectory shows the proton transfer reaction between methoxide and trifluoroacetic acid. Because there is no transition state, proton transfer occurs as soon as methoxide is within bonding distance. Notice that the proton transfers back and forth very rapidly between methoxide and trifluroacetate several times before dissociation of methanol.",
+				writeup: "This trajectory shows the proton transfer reaction between methoxide and trifluoroacetic acid. Hydrogen bonding precedes, but only for a very short time, proton transfer. Notice that the proton transfers back and forth very rapidly between methoxide and trifluroacetate several times before dissociation of methanol.",
 				figDir: "assets/img/portfolio/TFA_Methoxide.png",
 				trjDir: "assets/traj/TFA_Methoxide.sdf",
 			},
@@ -171,13 +185,13 @@
 					}
 				]
 			},
-			{
-				name: "BUTANE CONFORMATIONS",
-				figDir: "assets/img/portfolio/butane.png",
-				trjDir: "assets/traj/butane.sdf",
-				TSframe: 1000,
-				writeup: "This trajectory shows a simulation of butane with enough energy to achieve the transition state (eclipsed geometry) for rotation around the C2-C3 bond. This allows sampling of both the anti and gauche conformations. Notice that during the trajectory there is both rotation of both the C2-C3 bond and the C1-C2 bond, but not at the exact same time."
-			},
+			// {
+			// 	name: "BUTANE CONFORMATIONS",
+			// 	figDir: "assets/img/portfolio/butane.png",
+			// 	trjDir: "assets/traj/butane.sdf",
+			// 	TSframe: 1000,
+			// 	writeup: "This trajectory shows a simulation of butane with enough energy to achieve the transition state (eclipsed geometry) for rotation around the C2-C3 bond. This allows sampling of both the anti and gauche conformations. Notice that during the trajectory there is both rotation of both the C2-C3 bond and the C1-C2 bond, but not at the exact same time."
+			// },
 			{
 				name: "CARBOCATION REARRANGEMENT",
 				figDir: "assets/img/portfolio/MethylPentylCation.png",
@@ -227,30 +241,35 @@
 				name: "Intramolecular SN2",
 				figDir: "assets/img/portfolio/Bromobutoxide_TS_THF.png",
 				trjDir: "assets/traj/Bromobutoxide_TS_THF.sdf",
+				writeup: "This trajectory shows that the nucleophile is connected to the electrophile through an intramolecular carbon chain. Click on the TS button to see that the familiar backside SN2 transition state.",
 				TSframe: 300
 			},
 			{
 				name: "Grignard reaction",
 				figDir: "assets/img/portfolio/propanal_NA_secbutanol.png",
 				trjDir: "assets/traj/propanal_NA_secbutanol.sdf",
+				writeup: "This trajectory shows that the Mg coordinates to the carbonyl oxygen before delivery of the methyl anion to the carbonyl carbon. After methyl group transfer the Mg remains tightly coordinated to the negatively charged oxygen anion.",
 				TSframe: 700
 			},
 			{
 				name: "Friedel-Crafts Alkylation",
 				figDir: "assets/img/portfolio/Toluene_acylium_AlCl4_TS_tolylethanone.png",
 				trjDir: "assets/traj/Toluene_acylium_AlCl4_TS_tolylethanone.sdf",
+				writeup: "This trajectory shows a very reactive, high energy, acylium cation that collides with toluene to form a new C-C bond. This results in the formation of a dearomatized carbocation intermediate that can subsequently collide with a based to finish the electrophilic aromatic substitution reaction.",
 				TSframe: 500
 			},
 			{
-				name: "SN2 Methyl Iodide",
+				name: "Methyl Iodide SN2 animation",
 				figDir: "assets/img/portfolio/SN2_Methyl_Iodide.png",
 				trjDir: "assets/traj/SN2_Methyl_Iodide.sdf",
+				writeup: "Click on the TS button to compare the C-I partial bond length with the bond length in the reactants.",
 				TSframe: 194
 			},
 			{
 				name: "SN2 Methyl Ammonium",
 				figDir: "assets/img/portfolio/SN2_Methyl_Ammonium.png",
 				trjDir: "assets/traj/SN2_Methyl_Ammonium.sdf",
+				writeup: "Click on the TS button to compare the transition state partial bond lengths with the bond lengths in the reactants.",
 				TSframe: 438
 			},
 			{
@@ -260,15 +279,10 @@
 				TSframe: 166
 			},
 			{
-				name: "E2 2-Bromobutane",
-				figDir: "assets/img/portfolio/2-Bromobutane.png",
-				trjDir: "assets/traj/2-Bromobutane.sdf",
-				TSframe: 1005
-			},
-			{
-				name: "CH2 Carbene",
+				name: "Triplet then Singlet Carbene Addition",
 				figDir: "assets/img/portfolio/CH2_Carbene.png",
 				trjDir: "assets/traj/carbene_TS_cyclopantane_triplet_TS200.sdf",
+				writeup: "This trajectory shows the collision of triplet carbene with ethylene. Triplet carbene two same spin unpaired electrons. In the collision there is first formation of one new C-C bond with simultaneous rupture of the pi bond. The diradical intermediate is still a triplet with same spin electrons. Then the intermediate undergoes triplet to singlet spin state change, which allows formation of the second C-C bond.",
 				TSframe: 200
 			},
 			{
@@ -287,24 +301,28 @@
 				name: "OSO4-Ethylene",
 				figDir: "assets/img/portfolio/OsmiumTetroxide_Ethylene.png",
 				trjDir: "assets/traj/OsmiumTetroxide_Ethylene.sdf",
+				writeup: "This collision shows the alkene nucleophile reacting with the OsO4 electrophile in a one-step cycloaddition type reaction. The OsO4 can be thought of as a diene type reactant. Click on the TS button. Notice that even though OsO4 is symmetric an individual reactive collision might be slightly asynchronous, that is having the forming O-C bonds be slightly different lengths.",
 				TSframe: 157
 			},
 			{
 				name: "Ozone-Ethylene",
 				figDir: "assets/img/portfolio/Ozone_Ethylene.png",
 				trjDir: "assets/traj/Ozone_Ethylene.sdf",
+				writeup: "Ozone is an example of a 1,3-dipole reagent. The anionic allylic type pi system reacts similar to dienes with alkenes in a one-step cycloaddition reaction. Notice that despite the 1,3-dipole having formal charges the reaction is a concerted, one-step process. While on average each reactive collision will have two identical forming C-O bond distances an individual trajectory may have slightly asynchronous distances.",
 				TSframe: 253
 			},
 			{
 				name: "CH4-Chlorine Radical",
 				figDir: "assets/img/portfolio/CH4-Chlorine_Radical.png",
 				trjDir: "assets/traj/CH4-Chlorine_Radical.sdf",
+				writeup: "This trajectory shows the collision of chloride radical with methane. The transition state shows the typical geometry for radical atom transfers where there is a linear arrangement of the Cl-H-C. The transition state also shows the change from tetrahedral to a planar carbon.",
 				TSframe: 56
 			},
 			{
 				name: "3-Hexyne Hydrochloric",
 				figDir: "assets/img/portfolio/3-Hexyne_Hydrochloric.png",
 				trjDir: "assets/traj/3-Hexyne_Hydrochloric.sdf",
+				writeup: "This trajectory shows the protonation of a disubstituted alkyne by HCl. Because no solvent was included in this simulation, and vinyl carbocations are inherently unstable compared to alkyl carbocations, there is no long-lived vinyl carbocation intermediate. Therefore, in this trajectory the addition occurs in a cis fashion.",
 				TSframe: 232
 			},
 			{
@@ -321,6 +339,7 @@
 				name: "Butane Rotation",
 				figDir: "assets/img/portfolio/butane.png",
 				trjDir: "assets/traj/butane_eclipsed_TS870.sdf",
+				writeup: "This trajectory shows a simulation of butane with enough energy to achieve the transition state (eclipsed geometry) for rotation around the C2-C3 bond. This allows sampling of both the anti and gauche conformations. Notice that during the trajectory there is both rotation of both the C2-C3 bond and the C1-C2 bond, but not at the exact same time.",
 				TSframe: 870,
 			}
 		]
