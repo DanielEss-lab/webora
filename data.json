@@ -1,0 +1,45 @@
+[
+    {	
+        "name": "SN2 REACTION", 
+        "TSframe": 500,
+        "writeup": "The SN2 and E2 transition states have similar energies and are therefore competitive. This SN2 trajectory shows a different approach of the methoxide to the secondary alkyl halide. In this trajectory the methoxide collides with the backside of the C-Br bond with enough energy and at the right angle to induce a new O-C bond and cleavage of the C-Br bond.",
+        "figDir": "assets/img/portfolio/2-Bromobutane_SN2_2-Methoxybutane.png",
+        "trjDir": "assets/traj/2-Bromobutane_SN2_2-Methoxybutane.sdf",
+        "events": {
+            "100": "The animation begins with the methoxide in proximity of the backside of the carbon-bromine bond.|It is that position that is required for the reaction to proceed.|The two reagents would be held in proximity of each other by the solvent used in the reaction.|The animation does not show the solvent in this case.",
+            "300": "Notice that the methoxide is tempted to deprotonate one of the beta hydrogens. |That would lead to the E2 reactions[i]. There are two anti-periplanar beta hydrogens and both are acidic.",
+            "500": "Once the methoxide group gets into a conformation that favors |the nucleophilic attack into the unoccupied anti-bond of the C—Br bond (the LUMO),| then the reaction proceeds to give the substituted product. |Note that inversion occurs at the carbon that the methoxide attacks.|"
+        }
+    },
+    {
+        "name": "NON-PRODUCTIVE SN2 REACTION",
+        "TSframe": 1000,
+        "figDir": "assets/img/portfolio/Chloroethane_SN2_Propionitrile_productive.png",
+        "trjDir": "assets/traj/Chloroethane_SN2_Propionitrile.sdf",
+        "variants": [
+            {
+                "figDir": "assets/img/portfolio/Chloroethane_SN2_Propionitrile.png",
+                "trjDir": "assets/traj/Chloroethane_SN2_Propionitrile_nonproductive.sdf"
+            }
+        ]
+    },
+    {
+        "name": "SN1 REACTION",
+        "figDir": "assets/img/portfolio/Iodotertbutane_Sn1_tertbutyl.png"
+    },
+    {
+        "name": "E2 REACTION", 
+        "writeup": "The SN2 and E2 transition states have similar energies and are therefore competitive. This E2 trajectory shows that the methoxide base deprotonates the beta anti-periplanar hydrogen on C-3. As this deprotonation occurs, the  bond is formed and the bromide is ejected. Observe the transition state (TS button) to examine the distances for the atoms involved in the reaction, which are: the base, the beta hydrogen, C-2, C-3, and the leaving group (the bromide). While at the TS rotate the molecule so that the deprotonated hydrogen is anti to the C—Br bond.",
+        "TSframe": 353,
+        "figDir": "assets/img/portfolio/2-Bromobutane_E2_Butene.png",
+        "trjDir": "assets/traj/2-Bromobutane_E2_Butene.sdf",
+        "events": {
+            "2": "The animation begins with the methoxide |in proximity of the backside of the carbon-bromine bond (compare to Reaction #1).| However, the SN2 path from this position would be hindered by the steric interaction |between the C-1 methyl group and the methyl group of the methoxide.",
+            "282": "Notice that the methoxide is tempted to deprotonate the beta anti-periplanar hydrogen on C-1 at step 282.",
+            "321": "The methoxide shifts over to the beta anti-periplanar hydrogen on C-3 at step 321.",
+            "357": "Then at step 357 that beta hydrogen is deprotonated. |The C—Br bond is elongated as the beta hydrogen is deprotonated.",
+            "365": "The alkene forms at roughly the same time as the methanol is formed and the bromide anion is released.| You can see this at step 365.",
+            "400": "The methanol and the bromide both move away from the alkene |because there are no attractive forces to hold them together."
+        }
+    }
+]
