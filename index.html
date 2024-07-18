@@ -23,23 +23,23 @@
 			{
 				name: "SN2 REACTION",
 				TSframe: 500,
-				writeup: "This SN2 trajectory shows the methoxide nucleophile collision into the backside of the C-Br bond with enough energy and at the correct angle (the transition state angle) to induce a new O-C bond and cleavage of the C-Br bond. Note that at the beginning of the trajectory the methoxide nucleophile weakly interacts with C-H bonds adjacent to the C-Br bond. The E2 trajectory animation shows the competitive E2 reaction. The SN2 and E2 trajectories are competitive because the transition states are close in energy.",
+				writeup: "The S<sub>N</sub>2 and E2 transition states have similar energies and are therefore competitive. This S<sub>N</sub>2 trajectory shows an approach of the methoxide to the backside of the secondary alkyl bromide. In this trajectory the methoxide collides with the backside of the C—Br bond with enough energy and at the correct angle to induce a new O—C bond, resulting in inversion at the carbon and cleavage of the C—Br bond.",
 				figDir: "assets/img/portfolio/2-Bromobutane_SN2_2-Methoxybutane.png",
 				trjDir: "assets/traj/2-Bromobutane_SN2_2-Methoxybutane.sdf",
 				events: {
-					100: "The animation begins with the methoxide in proximity of the backside of the carbon-bromine bond.It is that position that is required for the reaction to proceed.The two reagents would be held in proximity of each other by the solvent used in the reaction.The animation does not show the solvent in this case.",
-					300: "Notice that the methoxide is tempted to deprotonate one of the beta hydrogens. That would lead to the E2 reaction. There are two anti-periplanar beta hydrogens and both are acidic.",
+					100: "The animation begins with the methoxide in proximity of the backside of the carbon-bromine bond. It is that position that is required for the reaction to proceed. The two reagents would be held in proximity of each other by the solvent used in the reaction. The animation does not show the solvent in this case.",
+					300: "Notice that the methoxide is tempted to deprotonate one of the beta hydrogens. That would lead to the E2 reaction (see Reaction #2). There are two anti-periplanar beta hydrogens and both are acidic.",
 					500: "Once the methoxide group gets into a conformation that favors the nucleophilic attack into the unoccupied anti-bond of the C—Br bond (the LUMO), then the reaction proceeds to give the substituted product. Note that inversion occurs at the carbon that the methoxide attacks."
 				}
 			},
 			{
 				name: "E2 REACTION",
-				writeup: "This E2 trajectory shows that the methoxide base deprotonates the beta anti-periplanar hydrogen on C-3. As this deprotonation occurs, the pi bond is formed and the bromide is ejected. Use the transition state (TS) button to examine key distances: the base to the beta hydrogen, the C-2 to C-3 distance, and the C-Br distance.",
+				writeup: "The S<sub>N</sub>2 and E2 transition states have similar energies and are therefore competitive. This E2 trajectory shows that the methoxide base deprotonates the beta anti-periplanar hydrogen on C-3. As this deprotonation occurs, the &pi; bond is formed and the bromide is ejected. Observe the transition state (TS button) to examine the distances for the atoms involved in the reaction, which are: the base, the beta hydrogen, C-2, C-3, and the leaving group (the bromide). While at the TS rotate the molecule so that the deprotonated hydrogen is anti to the C—Br bond.",
 				TSframe: 353,
 				figDir: "assets/img/portfolio/2-Bromobutane_E2_Butene.png",
 				trjDir: "assets/traj/2-Bromobutane_E2_Butene.sdf",
 				events: {
-					2: "The animation begins with the methoxide in proximity of the backside of the carbon-bromine bond (compare to Reaction #1). However, the SN2 path from this position would be hindered by the steric interaction between the C-1 methyl group and the methyl group of the methoxide.",
+					2: "he animation begins with the methoxide in proximity of the backside of the carbon-bromine bond (compare to S<sub>N</sub>2 reaction). However, the S<sub>N</sub>2 path from this position would be hindered by the steric interaction between the C-1 methyl group and the methyl group of the methoxide.",
 					282: "Notice that the methoxide is tempted to deprotonate the beta anti-periplanar hydrogen on C-1 at step 282.",
 					321: "The methoxide shifts over to the beta anti-periplanar hydrogen on C-3 at step 321.",
 					357: "Then at step 357 that beta hydrogen is deprotonated. The C—Br bond is elongated as the beta hydrogen is deprotonated.",
@@ -57,20 +57,20 @@
 				name: "NON-PRODUCTIVE SN2 REACTION",
 				figDir: "assets/img/portfolio/Chloroethane_SN2_Propionitrile.png",
 				trjDir: "assets/traj/Chloroethane_SN2_Propionitrile_nonproductive.sdf",
-				writeup: "Most collisions between reactants do not lead to the transition state geometry. Rather, reactants often collide and bounce away from each other in what is referred to as a non-productive collision. This trajectory shows an example where a cyanide anion collides with chloroethane without leading to the SN2 transition state. Compare this non-productive trajectory with the productive SN2 reaction. To view the productive SN2 reaction, click the button “Productive SN2 reaction”.",
+				writeup: "This animation shows the cyanide anion and chloroethane in proximity of one another, without leading to the S<sub>N</sub>2 reaction. Compare this non-productive reaction with the productive S<sub>N</sub>2 reaction shown below it. Although the cyanide is an excellent nucleophile, the correct orientation of the collision is essential for an S<sub>N</sub>2 reaction to proceed. The animation for the productive S<sub>N</sub>2 shows the methoxide eventually lining up with the anti-bond at the backside of the C—Cl bond. The molecules in the non-productive animation never find that proper alignment.",
 				events: {
 					500: "The cyanide ion never finds the proper angle for substitution to occur. There are several factors that can lead to this lack of reaction. One, might be that the solvent (water, for example) solvates the nucleophile and prevents it from finding access to the backside of the C—Cl bond.",
-					1000: "Another situation that prevents the SN2 reaction, is steric hindrance of the backside of the C—Cl bond. You should be familiar with this situation. Leaving groups on tertiary carbons do not undergo the SN2 reaction. But in this case, chloroethane is a primary chloride and sterics are not a problem. ",
+					1000: "Another situation that prevents the SN2 reaction, is steric hindrance of the backside of the C—Cl bond. You should be familiar with this situation. Leaving groups on tertiary carbons do not undergo the SN2 reaction. But in this case, chloroethane is a primary chloride and sterics are not a problem.",
 					1500: "A third explanation for this non-productive outcome is that insufficient heat is applied to the reaction."
 				},
 				variants: [
 					{	
 						name: "Productive SN2 reaction",
-						TSframe: 1000,
+						TSframe: 998,
 						figDir: "assets/img/portfolio/Chloroethane_SN2_Propionitrile_productive.png",
 						trjDir: "assets/traj/Chloroethane_SN2_Propionitrile.sdf",
 						events: {
-							2: "The cyanide ion starts in a position that is not close to the backside of the C—Cl bond. ",
+							2: "The cyanide ion starts in a position that is not close to the backside of the C—Cl bond.",
 							998: "After vibrating and rotating, the cyanide anion does align with the antibond of the C—Cl which allows for orbital mixing. This leads to a transition state at step 998.",
 							1500: "The chloride ion is not nucleophilic enough to lead to the orbital mixing needed for the substitution of the cyanide, the reverse reaction."
 						}
@@ -81,8 +81,12 @@
 				name: "SN1 REACTION",
 				figDir: "assets/img/portfolio/Iodotertbutane_Sn1_tertbutyl.png",
 				trjDir: "assets/traj/Iodotertbutane_SN1_tertbutyl_nosolvent.sdf",
-				writeup: "This SN1 trajectory shows the heterolysis of the C-Br bond of tert-butyl bromide. This process generates a relatively stabilized, but still high in energy, tertiary carbocation intermediate, which can be captured by nucleophiles/Lewis bases. Scroll down to watch the same trajectory surrounded by the polar nitromethane solvent, which stabilizes charged intermediates.",
-				variants: [
+				writeup: "This simulated heterolytic bond cleavage process is simply showing the stretching of the C—I bond which eventually leads to bond breaking. In this case, the bond breaks to give an iodide ion and a secondary carbocation.",
+				events: {
+                    2: "Notice that the iodide ion is a long bond. This means it is a weak bond. Adding heat results in the vibration that ultimately leads to bond cleavage.",
+                    85: "Once the iodide ion is formed, it is able to come back and react with the carbocation. This reaction is reversible."
+                },
+                variants: [
 					{
 						name: "In nitromethane solvent",
 						figDir: "assets/img/portfolio/Iodotertbutane_Sn1_tertbutyl.png",
@@ -93,77 +97,89 @@
 
 			{
 				name: "E1cb REACTION",
-				writeup: "The E1cb reaction occurs when a base deprotonates an acidic hydrogen without leaving group ejection. This E1cb trajectory shows methoxide deprotonation of a hydrogen that is alpha to the nitro group followed by a time delay until the chloride leaving group is ejected and the pi bond is formed.",
+				writeup: "The E1cb reaction occurs when a strong base deprotonates a somewhat acidic hydrogen that is b to a leaving group. In this calculation, methoxide deprotonates a hydrogen that is a to a nitro group. The anion that is formed is stabilized by resonance. In a pure E1cb reaction this is a distinct intermediate. The intermediate anion (the conjugate base) then can kick out the leaving group, in this case the chloride ion.",
 				figDir: "assets/img/portfolio/PhenylChloroNitroPropane_E1cb_NitroPhenylPropene.png",
 				trjDir: "assets/traj/PhenylChloroNitroPropane_E1cb_NitroPhenylPropene.sdf",
 				events: {
-					5: "The animation begins with the methoxide in proximity of the backside of the carbon-bromine bond. The two anti-periplanar beta hydrogens are both drawn to the methoxide, which indicates that both are acidic.",
+					5: "The animation begins with the methoxide in proximity of the backside of the carbon-bromine bond. The two anti-periplanar &beta; hydrogens are both drawn to the methoxide, which indicates that both are acidic.",
 					41: "The methoxide moves toward the more acidic hydrogen in step 41. Eventually, the anti-periplanar beta hydrogen on C-1 is deprotonated.",
-					293: "The anion on C-1 isn’t fully formed until step 293. This can be seen by watching the hybridization of the C-1 carbon. It becomes sp2 hybridized at this point. ",
+					293: "The anion on C-1 isn’t fully formed until step 293. This can be seen by watching the hybridization of the C-1 carbon. It becomes <i>sp<sup>2</sup></i> hybridized at this point.",
 					297: "Then the chloride is dispatched from C-2 carbon at step 297.",
 					350: "The chloride ion and the methanol move away from the less polar alkene product."
 				}
 			},
 			{
 				name: "ALKENE HYDROHALOGENATION",
-				writeup: "This hydrohalogenation trajectory shows HBr protonation of isobutylene to generate a tertiary carbocation intermediate. Because this trajectory does not have solvent around to stabilize the carbocation, bromide very quickly forms the C-Br bond to give the addition product.",
+				writeup: "The hydrohalogenation of an alkene is a reaction that typically forms an intermediate carbocation. This calculated trajectory shows the HBr approach the alkene. It is the H<sup>+</sup> of HBr that is the electrophile. It is the &pi; bond that is the nucleophile in the first step of the reaction. The electrophile adds to the carbon of the alkene that results in the most stable intermediate, a tertiary carbocation in this example. The bromide then adds to the give the <i>t</i>-butyl bromide product.",
 				figDir: "assets/img/portfolio/Butene_EA_bromobutane.png",
 				trjDir: "assets/traj/Butene_EA_bromobutane.sdf",
 				TSframe: 300,
 				events: {
 					5: "The animation begins with the HBr far from the alkene. In a non-polar solvent, like diethyl ether, the H—Br bond is covalent. The HBr eventually approaches the alkene.",
-					258: "At step #258, the H+ electrophile is roughly between both carbons of the alkene.",
-					300: "As the nucleophilic alkene reacts with the electrophilic H+ the more stable carbocation is formed. This also frees up the bromide anion.",
-					315: "The carbocation in this calculation is not long-lived. The bromide anion is formed in close proximity and there is no solvent included in this simulation. As a result, there is no sp2 hybridized carbocation intermediate in the calculation. The structure at step #315 is the closest to the intermediate carbocation in this case.",
-					398: "The animation has t-butyl bromide as the final product at step #398. "
+					258: "At step #258, the H<sup>+</sup> electrophile is roughly between both carbons of the alkene.",
+					300: "As the nucleophilic alkene reacts with the electrophilic H<sup>+</sup> the more stable carbocation is formed. This also frees up the bromide anion.",
+					315: "The carbocation in this calculation is not long-lived. The bromide anion is formed in close proximity and there is no solvent included in this simulation. As a result, there is no <i>sp<sup>2</sup></i> hybridized carbocation intermediate in the calculation. The structure at step 315 is the closest to the intermediate carbocation in this case.",
+					398: "The animation has <i>t</i>-butyl bromide as the final product at step #398."
 				}
 			},
 			{
 				name: "Hydroboration",
-				writeup: "Hydroboration of an alkene generally does not involve a carbocation intermediate. This trajectory shows the reaction between the electrophile BH3 and 1-butene. In the early time of the trajectory the pi bond interacts with the electrophilic boron. Very soon after this electrophilic interaction the boron transfers a hydride to the C-2 atom and this occurs without forming a carbocation intermediate.",
+				writeup: "Hydroboration of an alkene is a reaction that does not have an intermediate. This calculated trajectory shows the BH<sub>3</sub> approach the alkene. It is the B (boron) that is the electrophile. It is the &pi; bond that is the nucleophile in the first step of the reaction. The electrophile adds to the carbon of the alkene that results in what would be the most stable carbocation on C-2, however the hydride from the boron transfers to C-2 before the carbocation is formed.",
 				figDir: "assets/img/portfolio/Propene_EA_Propylborane.png",
 				trjDir: "assets/traj/propene_EA_propylborane.sdf",
 				events: {
-					5: "The animation begins with the BH3 moving toward the alkene. ",
+					5: "The animation begins with the BH<sub>3</sub> moving toward the alkene. ",
 					124: "At step #124, the boron electrophile is roughly between both carbons of the alkene. ",
 					137: "By step #137 the C—B bond between C-1 and the boron has begun to form.",
-					163: "The hydride begins to transfer over to the C-2 carbon at step #163. The C-2 hybridization is sp3 at this point.",
-					173: "At step #173 the hydroboration is complete. The original alkene carbons are both sp3 now and the boron is back to being sp2.",
-					200: "The alkylborane rotates and vibrates freely from step #200 on. We usually treat an alkylborane with NaOH and H2O2 in order to obtain an alcohol. We have not animated this oxidation step. The oxidation process occurs with no change of stereochemistry, therefore the two steps of hydroboration and oxidation result in syn addition of H and OH to an alkene. "
+					163: "The hydride begins to transfer over to the C-2 carbon at step #163. The C-2 hybridization is <i>sp<sup>3</sup></i> at this point.",
+					173: "At step #173 the hydroboration is complete. The original alkene carbons are both <i>sp<sup>3</sup></i> now and the boron is back to being <i>sp<sup>2</sup></i>.",
+					200: "The alkylborane rotates and vibrates freely from step #200 on. We usually treat an alkylborane with NaOH and H<sub>2</sub>O<sub>2</sub> in order to obtain an alcohol. We have not animated this oxidation step. The oxidation process occurs with no change of stereochemistry, therefore the two steps of hydroboration and oxidation result in syn addition of H and OH to an alkene."
 				}
 			},
 			{
 				name: "EPOXIDATION",
-				writeup: "Epoxidation of an alkene is a reaction that does not have an intermediate. This trajectory shows the collision and reaction of a model peroxy acid with trans-2-butene. The nucleophilic pi bond of the alkene simultaneously forms two bonds with the electrophilic oxygen of the peroxy acid. This trajectory shows that there is no carbocation intermediate and therefore the trans relationship of the alkene methyl groups remains in the epoxide product.",
+				writeup: "Epoxidation of an alkene is a reaction that does not have an intermediate. This calculated trajectory shows the peroxy acid, <i>m</i>-chloroperbenzoic acid (mCPBA), approach the alkene. It is the O (oxygen) of the peroxy acid that is the electrophile. It is the &pi; bond that is the nucleophile in the reaction. The electrophile adds to the carbon of the alkene that results in what would be a carbocation on C-3, however the oxygen electrons add to C-3 before a carbocation is formed.",
 				figDir: "assets/img/portfolio/Butene_EA_DiMethylOxirane.png",
 				trjDir: "assets/traj/Butene_EA_dimethyloxirane.sdf",
 				TSframe: 528,
 				events: {
-					5: "The animation begins with the peroxy acid moving toward the alkene. ",
+					5: "The animation begins with the peroxy acid moving toward the alkene.",
 					975: "At step #975, the oxygen electrophile is roughly between both carbons of the alkene. This equal distance is maintained all the way through step #1081 where the epoxide to C-2 and C-3 is formed.",
 					1100: "Once the epoxide is formed the carboxylic acid moves away from the relatively non-polar 3-member ring ether."
 				}
 			},
 			{
 				name: "Singlet CARBENE CYCLOADDITION",
-				writeup: "This trajectory shows the reactive collision between dichlorocarbene (a divalent form of carbon) and ethylene. The trajectory progresses through a transition state (use the TS button) where the dominant interaction is between the ethylene pi orbital and the empty p orbital of the carbene. This trajectory shows there is no carbocation intermediate and both new C-C bonds are asynchronously formed in one reaction step.",
+				writeup: "Carbene addition to an alkene is a reaction that does not have an intermediate. This calculated trajectory shows the carbene approach the alkene. It is the C of the carbene that is the electrophile. It is a singlet carbene, therefore the &pi; bond of the alkene is the nucleophile at the beginning of the reaction. The carbene adds to the alkene carbons in an asynchronous concerted process.",
 				figDir: "assets/img/portfolio/DiChloroCarbene_EA_DiChloroCyclopropane.png",
 				trjDir: "assets/traj/DichloroCarbene_EA_DichloroCyclopropane.sdf",
 				TSframe: 251,
+                events: {
+                    2: "The animation begins with the dichlorocarbene moving toward the alkene.",
+                    272: "At step #272, the carbon electrophile is shown bonded to one carbon of the alkene which suggests there is a polar intermediate.",
+                    309: "The cyclopropane forms at step #309."
+                },
 			},
 			{
 				name: "Carbonyl Addition",
 				figDir: "assets/img/portfolio/Acetone_NA_2-hydroxy-2-methylpropanenitrile.png",
 				trjDir: "assets/traj/Acetone_NA_2-hydroxy-2-methylpropanenitrile.sdf",
 				TSframe: 430,
-				writeup: "This trajectory shows the addition of cyanide to the carbon atom of acetone to form a new C-CN bond with simultaneous cleavage of the C=O π bond. However, before addition, this trajectory shows an initial unproductive collision between cyanide and the ketone. It is important to realize that many unproductive collisions occur between reacting compounds before a productive, product-forming collision occurs."
-			},
+				writeup: "Cyanide ion is sufficiently nucleophilic to undergo bimolecular nucleophilic addition (Ad<sub>N</sub>2) to a ketone. The data for this reaction has been obtained without protonating the ketone first. In basic conditions the reaction is reversible and favors the ketone starting material.",
+                events: {
+                    2: "The animation begins with the cyanide moving aimlessly around the acetone molecule.",
+                    430: "The transition state is actually very close to the tetrahedral intermediate, which is an alkoxide in this case (step #430). Protonating the ketone first would lead to a more stable tetrahedral cyanohydrin."
+                }
+            },
 			{
 				name: "Carbonyl Hydride Reduction",
-				writeup: "This trajectory shows the reaction of LiAlH4 with acetone and results in hydride transfer. This trajectory shows that the Li cation templates the motion and direction of hydride transfer to the carbonyl. After hydride addition the anionic oxygen interacts with borane.",
+				writeup: "Lithium aluminum hydride is a rather complex structure. One possible pathway involves lithium coordination and subsequent hydride addition. In this case, the aluminum hydride adds a hydride nucleophile to the carbonyl carbon. The resulting product is the alkoxide. Washing with water would remove the lithium and aluminum oxide salts, resulting in formation of isopropyl alcohol.",
 				figDir: "assets/img/portfolio/Acetone_NA_Isopropanol.png",
 				trjDir: "assets/traj/Acetone_NA_Isopropanol.sdf",
 				TSframe: 231,
+                events: {
+                    2: "This calculated trajectory begins with the lithium cation bonded to the carbonyl carbon. The aluminum hydride is still associated with the lithium."
+                }
 			},
 			{
 				name: "PROTON TRANSFER",
@@ -717,7 +733,7 @@
 					//readyFunction: jmol_isReady,
 					//defaultModel: "$dopamine",
 					//script: "load " + reactions[i].trjDir + ";animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
-					script: "load " + reactions[i].trjDir + ";animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update';set echo bottom center; color echo [x2c3e50]"
+					script: "load " + reactions[i].trjDir + ";animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update';set echo bottom center; color echo [x2c3e50]; color bonds lightgray; set bondRadiusMilliAngstroms 60; select carbon; color atoms black; {_Ag}.radius = 0.6512; {_Al}.radius = 0.5530; {_Ar}.radius = 0.4852; {_As}.radius = 0.5560; {_Au}.radius = 0.6275; {_B}.radius = 0.4315; {_Ba}.radius = 0.7576; {_Be}.radius = 0.4607; {_Bi}.radius = 0.6328; {_Br}.radius = 0.5406; {_C}.radius = 0.4125; {_Ca}.radius = 0.7032; {_Cd}.radius = 0.6381; {_Cl}.radius = 0.4920; {_Co}.radius = 0.5769; {_Cr}.radius = 0.5798; {_Cs}.radius = 0.8133; {_Cu}.radius = 0.6111; {_F}.radius = 0.3889; {_Fe}.radius = 0.5740; {_Ga}.radius = 0.5769; {_Ge}.radius = 0.5651; {_H}.radius = 0.2335; {_He}.radius = 0.2068; {_Hf}.radius = 0.6434; {_Hg}.radius = 0.6408; {_I}.radius = 0.5971; {_In}.radius = 0.6275; {_Ir}.radius = 0.6083; {_K}.radius = 0.7532; {_Kr}.radius = 0.5280; {_La}.radius = 0.6912; {_Li}.radius = 0.5999; {_Lu}.radius = 0.6691; {_Mg}.radius = 0.5885; {_Mn}.radius = 0.6138; {_Mo}.radius = 0.6301; {_N}.radius = 0.4047; {_Na}.radius = 0.6538; {_Nb}.radius = 0.6083; {_Ne}.radius = 0.3808; {_Ni}.radius = 0.5621; {_O}.radius = 0.3968; {_Os}.radius = 0.5827; {_P}.radius = 0.5152; {_Pb}.radius = 0.6355; {_Pd}.radius = 0.5914; {_Pt}.radius = 0.5827; {_Rb}.radius = 0.7850; {_Re}.radius = 0.6665; {_Rh}.radius = 0.6027; {_Rn}.radius = 0.6301; {_Ru}.radius = 0.5769; {_S}.radius = 0.5020; {_Sb}.radius = 0.6111; {_Sc}.radius = 0.6275; {_Se}.radius = 0.5468; {_Si}.radius = 0.5312; {_Sn}.radius = 0.6193; {_Sr}.radius = 0.7444; {_Ta}.radius = 0.6111; {_Tc}.radius = 0.6589; {_Te}.radius = 0.6027; {_Ti}.radius = 0.6055; {_Tl}.radius = 0.6381; {_V}.radius = 0.5740; {_W}.radius = 0.6328; {_Xe}.radius = 0.5885; {_Y}.radius = 0.6741; {_Zn}.radius = 0.5914; {_Zr}.radius = 0.6381"
 				}
 				$("#appletplace" + i).html(Jmol.getAppletHtml("jmol" + i, info));
 				for (let j = 0; reactions[i].variants && j < reactions[i].variants.length; j++) {
@@ -743,7 +759,7 @@
 						//readyFunction: jmol_isReady,
 						//defaultModel: "$dopamine",
 						// script: "load " + reactions[i].variants[j].trjDir + ";animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update';set echo bottom center; color echo [x2c3e50]; echo Move molecules with left mouse button and zoom in/out with the mouse wheel.Double click to measure bonds/angles/dihedrals and double click again to end the measurement."
-						script: "load " + reactions[i].variants[j].trjDir + ";animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update';set echo bottom center; color echo [x2c3e50]"
+						script: "load " + reactions[i].variants[j].trjDir + ";animation mode loop;animation off;animation fps 30; set measurements angstroms; set AnimFrameCallback 'update';set echo bottom center; color echo [x2c3e50]; color bonds lightgray; set bondRadiusMilliAngstroms 60; select carbon; color atoms black; {_Ag}.radius = 0.6512; {_Al}.radius = 0.5530; {_Ar}.radius = 0.4852; {_As}.radius = 0.5560; {_Au}.radius = 0.6275; {_B}.radius = 0.4315; {_Ba}.radius = 0.7576; {_Be}.radius = 0.4607; {_Bi}.radius = 0.6328; {_Br}.radius = 0.5406; {_C}.radius = 0.4125; {_Ca}.radius = 0.7032; {_Cd}.radius = 0.6381; {_Cl}.radius = 0.4920; {_Co}.radius = 0.5769; {_Cr}.radius = 0.5798; {_Cs}.radius = 0.8133; {_Cu}.radius = 0.6111; {_F}.radius = 0.3889; {_Fe}.radius = 0.5740; {_Ga}.radius = 0.5769; {_Ge}.radius = 0.5651; {_H}.radius = 0.2335; {_He}.radius = 0.2068; {_Hf}.radius = 0.6434; {_Hg}.radius = 0.6408; {_I}.radius = 0.5971; {_In}.radius = 0.6275; {_Ir}.radius = 0.6083; {_K}.radius = 0.7532; {_Kr}.radius = 0.5280; {_La}.radius = 0.6912; {_Li}.radius = 0.5999; {_Lu}.radius = 0.6691; {_Mg}.radius = 0.5885; {_Mn}.radius = 0.6138; {_Mo}.radius = 0.6301; {_N}.radius = 0.4047; {_Na}.radius = 0.6538; {_Nb}.radius = 0.6083; {_Ne}.radius = 0.3808; {_Ni}.radius = 0.5621; {_O}.radius = 0.3968; {_Os}.radius = 0.5827; {_P}.radius = 0.5152; {_Pb}.radius = 0.6355; {_Pd}.radius = 0.5914; {_Pt}.radius = 0.5827; {_Rb}.radius = 0.7850; {_Re}.radius = 0.6665; {_Rh}.radius = 0.6027; {_Rn}.radius = 0.6301; {_Ru}.radius = 0.5769; {_S}.radius = 0.5020; {_Sb}.radius = 0.6111; {_Sc}.radius = 0.6275; {_Se}.radius = 0.5468; {_Si}.radius = 0.5312; {_Sn}.radius = 0.6193; {_Sr}.radius = 0.7444; {_Ta}.radius = 0.6111; {_Tc}.radius = 0.6589; {_Te}.radius = 0.6027; {_Ti}.radius = 0.6055; {_Tl}.radius = 0.6381; {_V}.radius = 0.5740; {_W}.radius = 0.6328; {_Xe}.radius = 0.5885; {_Y}.radius = 0.6741; {_Zn}.radius = 0.5914; {_Zr}.radius = 0.6381"
 					}
 					$("#appletplace" + i + "_" + j).html(Jmol.getAppletHtml("jmol" + i + "_" + j, info));
 				}
