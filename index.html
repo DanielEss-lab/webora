@@ -104,7 +104,7 @@
 					5: "The animation begins with the methoxide in proximity of the backside of the carbon-bromine bond. The two anti-periplanar &beta; hydrogens are both drawn to the methoxide, which indicates that both are acidic.",
 					41: "The methoxide moves toward the more acidic hydrogen in step 41. Eventually, the anti-periplanar beta hydrogen on C-1 is deprotonated.",
 					293: "The anion on C-1 isn’t fully formed until step 293. This can be seen by watching the hybridization of the C-1 carbon. It becomes <i>sp<sup>2</sup></i> hybridized at this point.",
-					297: "Then the chloride is dispatched from C-2 carbon at step 297.",
+					296: "Then the chloride is dispatched from C-2 carbon at step #296.",
 					350: "The chloride ion and the methanol move away from the less polar alkene product."
 				}
 			},
@@ -178,8 +178,10 @@
 				trjDir: "assets/traj/Acetone_NA_Isopropanol.sdf",
 				TSframe: 231,
                 events: {
-                    2: "This calculated trajectory begins with the lithium cation bonded to the carbonyl carbon. The aluminum hydride is still associated with the lithium."
-                }
+                    2: "This calculated trajectory begins with the lithium cation interacting with to the carbonyl due to favorable ion-dipole attraction. The aluminum hydride is still associated with the lithium.",
+					250: "A hydrogen and pair of electrons are transfered from the aluminum hydride to the carbonyl carbon.",
+					315: "The intermediate isopropyl oxide has formed, which can be protonated to yield isopropyl alcohol."
+				}
 			},
 			{
 				name: "PROTON TRANSFER",
@@ -207,7 +209,12 @@
 						name: "Ivolvement of Li",
 						figDir: "assets/img/portfolio/Acetone_LDA_8.png",
 						trjDir: "assets/traj/Acetone_LDA_8_TS500.sdf",
-						TSframe: 500
+						TSframe: 500,
+						events: {
+							2: "The animation shows the nitrogen anion hovering near the acetone molecule.",
+							450: "At step #450 the &alpha; hydrogen is lined up with carbonyl &pi; system and the base is close enough to deprotonate.",
+							540: "The enolate of acetone is completely formed at step #540. At this point the neutral amine and the enolate anion can move away from each other."
+						}
 					}
 				]
 			},
@@ -258,8 +265,8 @@
                 events: {
                     2: "The s-cis butadiene moves toward the alkene. The electron deficient dienophile will react with the nucleophilic diene when they are in close proximity.",
                     439: "At step #439 the two molecules are sufficiently close and oriented correctly for the cycloaddition to occur.",
-                    452: "The asynchronous bond formation is shown at step #452. This is the result of the nuclophilic diene adding into the electrophilic beta carbon of the dienophile.",
-                    466: "The second sigma bond is formed at step #466. These two steps are only separated by a few femtoseconds in real time.",
+                    452: "This reaction exhibits asynchronous bond formation, which is when some bonds form or break faster than others. In this case, the bond at the &beta; carbon forms sooner than the bond at the &alpha; carbon.",
+                    466: "The second bond to the &beta; carbon is fully formed by step #466. These two steps are only separated by a few femtoseconds in real time.",
                 },
             },
 			{
@@ -308,10 +315,12 @@
 				trjDir: "assets/traj/Bromobutoxide_TS_THF.sdf",
 				writeup: "When a nucleophile and an electrophile are present in the same molecule, then an intramolecular S<sub>N</sub>2 reaction can occur. This type of reaction is limited by the orbital alignment that is needed for the nucleophile to attack the electrophile. Formation of five- and six-member rings works well for such an intramolecular reaction. This visualization shows formation of the five-member ring from the alkoxide of 4-bromo-1-butanol.",
 				TSframe: 300,
-                2: "The trajectory begins with the deprotonated 4-bromo-1-butanol. The molecule is in a conformation that has the oxygen anion already oriented toward the backside of the C—Br bond.",
-                443: "The transition state is at step #443. At that point one can see the <i>sp<sup>2</sup></i> hybridization of the C-4 carbon. That is the site of inversion (see steps #436 to #460).",
-                470: "After step #470, the bromide ion is shown drifting away from the newly formed tetrahydrofuran.",
-            },
+                events: {
+					2: "The trajectory begins with the deprotonated 4-bromo-1-butanol. The molecule is in a conformation that has the oxygen anion already oriented toward the backside of the C—Br bond.",
+					443: "The transition state is at step #443. At that point one can see the <i>sp<sup>2</sup></i> hybridization of the C-4 carbon. That is the site of inversion (see steps #436 to #460).",
+					470: "After step #470, the bromide ion is shown drifting away from the newly formed tetrahydrofuran.",
+				}
+			},
 			{
 				name: "Grignard reaction",
 				figDir: "assets/img/portfolio/propanal_NA_secbutanol.png",
@@ -408,13 +417,11 @@
 				figDir: "assets/img/portfolio/OsmiumTetroxide_Ethylene.png",
 				trjDir: "assets/traj/OsmiumTetroxide_Ethylene.sdf",
 				writeup: "Osmium tetroxide addition to an alkene results in formation of an osmate ester. The osmate ester is typically not isolated, but hydrolyzed with water and bisulfite to give the corresponding diol. This calculated trajectory shows the OsO<sub>4</sub> approach ethylene and add across the double bond. Note that the addition occurs in a syn fashion. Hydrolysis of the osmate ester is not illustrated. In this case it would give 1,2-ethanediol.",
-				TSframe: 526,
+				TSframe: 202,
                 events: {
                     2: "The animation begins with the osmium tetroxide moving toward the alkene.",
-                    500: "Around step #500, the oxygen electrophile is sufficiently close to the carbons of the alkene for the reaction to proceed.",
-                    527: "At step #527 the first carbon-oxygen bond is formed.",
-                    536: "The second carbon-oxygen bond is formed at step #536, roughly one vibration after the first C-O bond was formed. We think of the two bonds formed in a single process. There is no intermediate in formation of the osmate ester. This results in syn addition across the alkene.", 
-                    560: "Once the osmate ester is formed, it is shown vibrating to the end of the visualization. Adding water and KHSO<sub>3</sub> (potassium bisulfite) washes the osmium off, leaving a syn-diol.",
+                    200: "Around step #200, the oxygen electrophile is sufficiently close to the carbons of the alkene for the reaction to proceed.",
+                    260: "Once the osmate ester is formed, it is shown vibrating to the end of the visualization. Adding water and KHSO<sub>3</sub> (potassium bisulfite) washes the osmium off, leaving a syn-diol.",
                 },
 			},
 			{
@@ -422,12 +429,12 @@
 				figDir: "assets/img/portfolio/Ozone_Ethylene.png",
 				trjDir: "assets/traj/Ozone_Ethylene.sdf",
 				writeup: "Ozone is an example of a 1,3-dipole reagent. The allylic &pi; system reacts with alkenes in a one-step cycloaddition reaction, much like a diene in the Diels-Alder reaction. Notice that despite the 1,3-dipole having formal charges the reaction is a concerted, one-step process. We expect that the two C-O bond forming events will occur at the exact same time, but an individual trajectory may have slightly asynchronous distances as shown in this case.",
-				TSframe: 518,
+				TSframe: 202,
                 events: {
                     2: "The animation begins with the ozone moving toward the alkene.",
-                    515: "Around step #515, the ozone electrophile is sufficiently close to the carbons of the alkene for the reaction to proceed.",
-                    521: "At step #521 the first carbon-oxygen bond is formed, and the second carbon-oxygen bond will be formed roughly one vibration later. We think of the two bonds being formed in a single process. There is no intermediate in formation of this 5-member ring ozonide.",
-                    550: "Once the ozonide is formed, it is shown vibrating to the end of the visualization. Notice that the C—O and the C—C bonds are all relatively weak. Several vibrational modes show the bonds stretched to their limits. The ozonide can be isolated, but it is subject to further reaction. Addition of zinc will lead to the C—C bond cleavage, rearrangement, and ultimate result in formation of two carbonyls.",
+                    200: "Around step #200, the ozone electrophile is sufficiently close to the carbons of the alkene for the reaction to proceed.",
+                    221: "At step #227 the first carbon-oxygen bond is shown to have formed, and the second carbon-oxygen bond will be formed roughly shortly after. We think of the two bonds being formed in a single process. There is no intermediate in formation of this 5-member ring ozonide.",
+                    250: "Once the ozonide is formed, it is shown vibrating to the end of the visualization. Notice that the C—O and the C—C bonds are all relatively weak. Several vibrational modes show the bonds stretched to their limits. The ozonide can be isolated, but it is subject to further reaction. Addition of zinc will lead to the C—C bond cleavage, rearrangement, and ultimate result in formation of two carbonyls.",
                 },
 			},
 			{
@@ -459,11 +466,10 @@
 			{
 				name: "Ethane Rotation", 
 				figDir: "assets/img/portfolio/Ethane_Rotation.png",
-				trjDir: "assets/traj/enthane_TS_10K.sdf",
+				trjDir: "assets/traj/Ethane_Rotation.sdf",
                 writeup: "This simulation shows the process of C–C bond rotation in the ethane molecule. Arrange the molecule so that you are looking down the C–C bond. This is view is called the Newman Projection. Notice that the staggered conformation appears more often than the eclipsed conformation. There is very little energy difference between staggered and eclipsed conformations in ethane.",
                 events: {
                     2: "The ethane vibrations and rotations are unrestricted. There are no steric interactions in this molecule.",
-                    1460: "The ethane vibrational energy gets channeled into rotational energy. The C–C bond rotates much faster from that point until the end of the animation.",
                 },
             },
 			{
@@ -563,7 +569,7 @@
 								<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
 									<div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
 								</div>
-								<img class="img-fluid" src="${reactions[i].figDir}" alt="..." />
+									<img class="img-fluid" src="${reactions[i].figDir}" alt="..."/>
 							</div>
 						</div>`;
 						document.write(html);
