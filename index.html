@@ -110,7 +110,7 @@
 			},
 			{
 				name: "ALKENE HYDROHALOGENATION",
-				writeup: "The hydrohalogenation of an alkene is a reaction that typically forms an intermediate carbocation. This calculated trajectory shows the HBr approach the alkene. It is the H<sup>+</sup> of HBr that is the electrophile. It is the &pi; bond that is the nucleophile in the first step of the reaction. The electrophile adds to the carbon of the alkene that results in the most stable intermediate, a tertiary carbocation in this example. The bromide then adds to the give the <i>t</i>-butyl bromide product.",
+				writeup: "The hydrohalogenation of an alkene is a reaction that typically forms an intermediate carbocation. This calculated trajectory shows the HBr approach the alkene. The H<sup>+</sup> of HBr is the electrophile, and the &pi; bond is the nucleophile in the first step of the reaction. The electrophile adds to the carbon of the alkene that results in the most stable intermediate, a tertiary carbocation in this example. The bromide then adds to the give the <i>t</i>-butyl bromide product.",
 				figDir: "assets/img/portfolio/Butene_EA_bromobutane.png",
 				trjDir: "assets/traj/Butene_EA_bromobutane.sdf",
 				TSframe: 300,
@@ -118,19 +118,19 @@
 					5: "The animation begins with the HBr far from the alkene. In a non-polar solvent, like diethyl ether, the H—Br bond is covalent. The HBr eventually approaches the alkene.",
 					258: "At step #258, the H<sup>+</sup> electrophile is roughly between both carbons of the alkene.",
 					300: "As the nucleophilic alkene reacts with the electrophilic H<sup>+</sup> the more stable carbocation is formed. This also frees up the bromide anion.",
-					315: "The carbocation in this calculation is not long-lived. The bromide anion is formed in close proximity and there is no solvent included in this simulation. As a result, there is no <i>sp<sup>2</sup></i> hybridized carbocation intermediate in the calculation. The structure at step 315 is the closest to the intermediate carbocation in this case.",
+					315: "The carbocation in this calculation is not long-lived. The bromide anion is formed in close proximity, and there is no solvent included in this simulation, making for a very reactive carbocation intermediate.",
 					398: "The animation has <i>t</i>-butyl bromide as the final product at step #398."
 				}
 			},
 			{
 				name: "Hydroboration",
-				writeup: "Hydroboration of an alkene is a reaction that does not have an intermediate. This calculated trajectory shows the BH<sub>3</sub> approach the alkene. It is the B (boron) that is the electrophile. It is the &pi; bond that is the nucleophile in the first step of the reaction. The electrophile adds to the carbon of the alkene that results in what would be the most stable carbocation on C-2, however the hydride from the boron transfers to C-2 before the carbocation is formed.",
+				writeup: "Hydroboration of an alkene is a reaction that does not have an intermediate. This calculated trajectory shows the BH<sub>3</sub> approach the alkene. The B (boron) is the electrophile, and the &pi; bond is the nucleophile in the first step of the reaction. The electrophile adds to the carbon of the alkene that results in what would be the most stable carbocation on C-2, however the hydride from the boron transfers to C-2 before the carbocation is formed.",
 				figDir: "assets/img/portfolio/Propene_EA_Propylborane.png",
 				trjDir: "assets/traj/propene_EA_propylborane.sdf",
 				events: {
 					5: "The animation begins with the BH<sub>3</sub> moving toward the alkene. ",
 					124: "At step #124, the boron electrophile is roughly between both carbons of the alkene. ",
-					137: "By step #137 the C—B bond between C-1 and the boron has begun to form.",
+					141: "By step #141 boron is interacting with the alkene &pi; bond.",
 					163: "The hydride begins to transfer over to the C-2 carbon at step #163. The C-2 hybridization is <i>sp<sup>3</sup></i> at this point.",
 					173: "At step #173 the hydroboration is complete. The original alkene carbons are both <i>sp<sup>3</sup></i> now and the boron is back to being <i>sp<sup>2</sup></i>.",
 					200: "The alkylborane rotates and vibrates freely from step #200 on. We usually treat an alkylborane with NaOH and H<sub>2</sub>O<sub>2</sub> in order to obtain an alcohol. We have not animated this oxidation step. The oxidation process occurs with no change of stereochemistry, therefore the two steps of hydroboration and oxidation result in syn addition of H and OH to an alkene."
@@ -289,9 +289,9 @@
 				writeup: "The concerted reaction of 2,4-hexadiene ring closing to give 3,4-dimethylcyclobutene is a reversible process. Due to the ring strain of the cyclobutene, the favored product in this thermal reaction is the ring-opened hexadiene. One can visualize the conrototory process of the ring closure by observing the steps prior to the transition state. It is also a conrototory process for the back reaction (ring opening).",
                 events: {
                     2: "The most stable conformation of the 2,4-hexadiene is the s-trans diene, which is the initial structure shown.",
-                    980: "Rotation of the C-3/C-4 bond results in the isomerization of the s-trans to s-cis conformation multiple times between step #1 and step #980.",
-                    1150: "Between step #979 and step #1150 the single bond between C-2 and C-5 of the hexadiene is formed resulting in the cyclobutene product.",
-                    1175: "After step #1150, the cyclobutene is shown as having limited flexibility.",
+                    982: "Rotation of the C-3/C-4 bond results in the isomerization of the s-trans to s-cis conformation multiple times between step #1 and step #980. The s-cis can bring C-2 and C-5 close enough for the reaction to occur.",
+                    1024: "Between step #982 and step #1024 the single bond between C-2 and C-5 of the hexadiene is formed resulting in the cyclobutene product.",
+                    1175: "Note the limited flexibility of the cyclobutene product.",
                 },
 			},
 			{
