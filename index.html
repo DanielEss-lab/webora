@@ -27,9 +27,9 @@
 				figDir: "assets/img/portfolio/2-Bromobutane_SN2_2-Methoxybutane.png",
 				trjDir: "assets/traj/2-Bromobutane_SN2_2-Methoxybutane.sdf",
 				events: {
-					100: "The animation begins with the methoxide in proximity of the backside of the carbon-bromine bond. It is that position that is required for the reaction to proceed. The two reagents would be held in proximity of each other by the solvent used in the reaction. The animation does not show the solvent in this case.",
-					300: "Notice that the methoxide is tempted to deprotonate one of the beta hydrogens. That would lead to the E2 reaction (see Reaction #2). There are two anti-periplanar beta hydrogens and both are acidic.",
-					500: "Once the methoxide group gets into a conformation that favors the nucleophilic attack into the unoccupied anti-bond of the C—Br bond (the LUMO), then the reaction proceeds to give the substituted product. Note that inversion occurs at the carbon that the methoxide attacks."
+					100: "The animation begins with methoxide in proximity to the backside of the carbon-bromine bond. The two reagents are surrounded and caged by solvent. Solvent is not shown in this animation.",
+					300: "Notice that the methoxide is close to one of the &beta; hydrogens. Reaction with a &beta; hydrogen would lead to the E2 reaction (see Reaction #2).",
+					500: "This is the transition-state geometry where the C-O bond is formed simultaneously to the C-Br bond being broken. This transition-state geometry results in inversion of the carbon geometry."
 				}
 			},
 			{
@@ -39,19 +39,17 @@
 				figDir: "assets/img/portfolio/2-Bromobutane_E2_Butene.png",
 				trjDir: "assets/traj/2-Bromobutane_E2_Butene.sdf",
 				events: {
-					2: "he animation begins with the methoxide in proximity of the backside of the carbon-bromine bond (compare to S<sub>N</sub>2 reaction). However, the S<sub>N</sub>2 path from this position would be hindered by the steric interaction between the C-1 methyl group and the methyl group of the methoxide.",
-					282: "Notice that the methoxide is tempted to deprotonate the beta anti-periplanar hydrogen on C-1 at step 282.",
-					321: "The methoxide shifts over to the beta anti-periplanar hydrogen on C-3 at step 321.",
-					357: "Then at step 357 that beta hydrogen is deprotonated. The C—Br bond is elongated as the beta hydrogen is deprotonated.",
-					365: "The alkene forms at roughly the same time as the methanol is formed and the bromide anion is released. You can see this at step 365.",
-					400: "The methanol and the bromide both move away from the alkene because there are no attractive forces to hold them together."
+					2: "The animation begins with methoxide in proximity to the backside of the carbon-bromine bond (compare to S<sub>N</sub>2 reaction).",
+					321: "Methoxide begins to weakly interact with the beta anti-periplanar hydrogen on C-3.",
+					357: "In this transition-state geometry there is simultaneous deprotonation of C-H bond, formation of the &pi; bond, and breaking of the C-Br bond. This transition state features the lowest energy conformation where the methoxide and bromide are on opposite sides of the forming &pi; bond.",
 				}
 			},
 			{
 				name: "E2 2-Bromobutane (minor product)",
+				writeup: "This E2 trajectory shows that the methoxide base deprotonates the beta anti-periplanar hydrogen on C-1. As this deprotonation occurs, the π bond is formed and the bromide is ejected. This trajectory and transition state looks similar to the deprotonation reaction that occurs at C-3.",
 				figDir: "assets/img/portfolio/2-Bromobutane.png",
 				trjDir: "assets/traj/2-Bromobutane.sdf",
-				TSframe: 1005
+				TSframe: 1005,
 			},
 			{
 				name: "NON-PRODUCTIVE SN2 REACTION",
@@ -59,9 +57,8 @@
 				trjDir: "assets/traj/Chloroethane_SN2_Propionitrile_nonproductive.sdf",
 				writeup: "This animation shows the cyanide anion and chloroethane in proximity of one another, without leading to the S<sub>N</sub>2 reaction. Compare this non-productive reaction with the productive S<sub>N</sub>2 reaction shown below it. Although the cyanide is an excellent nucleophile, the correct orientation of the collision is essential for an S<sub>N</sub>2 reaction to proceed. The animation for the productive S<sub>N</sub>2 shows the methoxide eventually lining up with the anti-bond at the backside of the C—Cl bond. The molecules in the non-productive animation never find that proper alignment.",
 				events: {
-					500: "The cyanide ion never finds the proper angle for substitution to occur. There are several factors that can lead to this lack of reaction. One, might be that the solvent (water, for example) solvates the nucleophile and prevents it from finding access to the backside of the C—Cl bond.",
-					1000: "Another situation that prevents the SN2 reaction, is steric hindrance of the backside of the C—Cl bond. You should be familiar with this situation. Leaving groups on tertiary carbons do not undergo the SN2 reaction. But in this case, chloroethane is a primary chloride and sterics are not a problem.",
-					1500: "A third explanation for this non-productive outcome is that insufficient heat is applied to the reaction."
+					500: "To form a product, reactants must collide with enough energy and in the correct geometry. In this animation the nitrogen side of cyanide collides with the alkyl chloride, which does not lead to the transition state. ",
+					1000: "Here the carbon side of the cyanide approaches the backside of the C-Cl bond, but collision does not occur in the exact right orientation to achieve the transition-state geometry and therefore no substitution product is formed.",
 				},
 				variants: [
 					{	
@@ -125,8 +122,8 @@
 			{
 				name: "Hydroboration",
 				writeup: "Hydroboration of an alkene is a reaction that does not have an intermediate. This calculated trajectory shows the BH<sub>3</sub> approach the alkene. The B (boron) is the electrophile, and the &pi; bond is the nucleophile in the first step of the reaction. The electrophile adds to the carbon of the alkene that results in what would be the most stable carbocation on C-2, however the hydride from the boron transfers to C-2 before the carbocation is formed.",
-				figDir: "assets/img/portfolio/Propene_EA_Propylborane.png",
-				trjDir: "assets/traj/propene_EA_propylborane.sdf",
+				figDir: "assets/img/portfolio/Butene_EA_butylborane.png",
+				trjDir: "assets/traj/butene_EA_butylborane.sdf",
 				events: {
 					5: "The animation begins with the BH<sub>3</sub> moving toward the alkene. ",
 					124: "At step #124, the boron electrophile is roughly between both carbons of the alkene. ",
@@ -386,7 +383,7 @@
 				figDir: "assets/img/portfolio/BenzylBromide.png",
 				trjDir: "assets/traj/BenzylBromide.sdf",
 				TSframe: 166,
-                writeup: "The reaction between benzyl bromide and methoxide (CH3O–) gives benzyl methyl ether. This is an SN2 reaction and inversion of the benzyl carbon can be seen in the calculated trajectory. Click on the transition state (TS) button and note the sp2 hybridization of the carbon undergoing nucleophilic attack. Notice that the TS would have some resonance due to <i>p</i> orbital overlap between the <i>sp<sup>2</sup></i> methyl and the aromatic ring.",
+                writeup: "The reaction between benzyl bromide and methoxide (CH3O<sup>–</sup>) gives benzyl methyl ether. This is an S<sub>N</sub>2 reaction and inversion of the benzyl carbon can be seen in the calculated trajectory. Click on the transition state (TS) button and note the <i>sp<sup>2</sup></i> hybridization of the carbon undergoing nucleophilic attack. Notice that the TS would have some resonance due to <i>p</i> orbital overlap between the <i>sp<sup>2</sup></i> methyl and the aromatic ring.",
                 2: "The animation begins with the oxide anion close to the benzylic hydrogen. The current orientation prevents reaction.",
                 158: "The Ph-C bond has rotated such that the S<sub>N</sub>2 reaction is possible.",
                 166: "The transition state is at step #166. The carbon at that point is <i>sp<sup>2</sup></i> hybridized. Move the animation forward or backward from this point to observe the inversion of the carbon atom.",
